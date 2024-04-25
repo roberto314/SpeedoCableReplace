@@ -24,6 +24,7 @@
 #include "table.h"
 #include "i2c_local.h"
 #include "eeprom.h"
+#include "hc05.h"
 //################################################################################################
 //                                  Static Variables
 #define ICPCLKFREQ 18000000
@@ -71,7 +72,11 @@ static PWMConfig pwmcfg = {
   0
 #endif
 };
-
+/* This is the config and callbacks for the
+ * ICP Input for the BLDC Motor feedback
+ * on TIM2/2 (remaped to PB3)
+ *
+ */
 static void icuperiodcb(ICUDriver *icup) {
     //float temp = 2*ICPCLKFREQ/4.42;
     //static uint16_t cnt;
@@ -93,7 +98,7 @@ static void icuoverflowcb(ICUDriver *icup) {
 }
 static ICUConfig icucfg = {
   ICU_INPUT_ACTIVE_LOW,
-  100000,                              // 500kHz initial ICU clock frequency.
+  100000,                              // 100kHz initial ICU clock frequency.
   NULL,
   icuperiodcb,
   icuoverflowcb,
@@ -245,8 +250,7 @@ int main(void) {
   icuStart(&ICUD2, &icucfg);
   icuStartCapture(&ICUD2);
   icuEnableNotifications(&ICUD2);
-  //palSetPadMode(GPIOB, 11, PAL_MODE_INPUT_PULLUP); //TIM2-CH4
-  palSetPadMode(GPIOB, 3, PAL_MODE_INPUT_PULLUP); //TIM2-CH2
+  palSetPadMode(GPIOB, 3, PAL_MODE_INPUT_PULLUP); //TIM2-CH2 Motor Speed feedback
   /*
    * Activates the serial driver 2 using the driver default configuration.
    * PA2(TX) and PA3(RX) are routed to USART2.
@@ -255,6 +259,8 @@ int main(void) {
   palSetPadMode(GPIOA, 2, PAL_MODE_STM32_ALTERNATE_PUSHPULL); //UART TX
   palSetPadMode(GPIOB, 4, PAL_MODE_OUTPUT_PUSHPULL); //CW/CCW
   //palSetPad(GPIOB, 4);
+  palClearPad(GPIOC, 13); // Set EPROM to Write Protect Off
+  palSetPadMode(GPIOC, 13, PAL_MODE_OUTPUT_PUSHPULL); // EPROM WP
 
   chprintf((BaseSequentialStream *)&SD2, "ChibiOS Bluepill F103 Shell v0.1\r\n");
   /*
@@ -263,7 +269,7 @@ int main(void) {
   shellInit();
   I2CInitLocal(); //Starts I2C Driver
   configInit();    //checks config version and checksum and, if OK, copies it to RAM
-
+  hc05_init();
   /*
    * Creates the example thread.
    */
