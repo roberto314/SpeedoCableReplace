@@ -22,7 +22,6 @@
 #include "shell.h"
 #include "comm.h"
 #include "table.h"
-#include "i2c_local.h"
 #include "eeprom.h"
 #include "hc05.h"
 //################################################################################################
@@ -52,6 +51,17 @@ configunion_t cudata = {
         .configstruct.corr = 1050
 };
 */
+static const I2CConfig i2cfg1 = {
+    OPMODE_I2C,
+    400000,
+    FAST_DUTY_CYCLE_2,
+};
+/*
+static const I2CConfig i2cfg1 = {
+    OPMODE_I2C,
+    100000,
+    STD_DUTY_CYCLE
+};*/
 //################################################################################################
 //                                  Function declarations
 void PWM_Off(void);
@@ -263,13 +273,16 @@ int main(void) {
   direction?palSetPad(GPIOB, 4):palClearPad(GPIOB, 4);
   palClearPad(GPIOC, 13); // Set EPROM to Write Protect Off
   palSetPadMode(GPIOC, 13, PAL_MODE_OUTPUT_PUSHPULL); // EPROM WP
-
+  i2cStart(&EEPROM_I2CD, &i2cfg1); // I2C Bus Start
+  //palSetPadMode(GPIOB, 6, PAL_MODE_STM32_ALTERNATE_PUSHPULL); // I2C Pins
+  palSetPadMode(GPIOB, 6, PAL_MODE_STM32_ALTERNATE_OPENDRAIN); // I2C Pins
+    //palSetPadMode(GPIOB, 7, PAL_MODE_STM32_ALTERNATE_PUSHPULL); // I2C Pins
+  palSetPadMode(GPIOB, 7, PAL_MODE_STM32_ALTERNATE_OPENDRAIN); // I2C Pins
   chprintf((BaseSequentialStream *)&SD2, "ChibiOS Bluepill F103 Shell v0.1\r\n");
   /*
    * Shell manager initialization.
    */
   shellInit();
-  I2CInitLocal(); //Starts I2C Driver
   configInit();    //checks config version and checksum and, if OK, copies it to RAM
   hc05_init();
   /*

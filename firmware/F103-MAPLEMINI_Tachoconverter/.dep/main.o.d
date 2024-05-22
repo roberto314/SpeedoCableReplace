@@ -152,8 +152,8 @@ build/obj/main.o: main.c \
  ../../chibios_trunk/os/hal/lib/streams/chprintf.h \
  ../../chibios_trunk/os/various/shell/shell.h cfg/shellconf.h \
  userlib/include/comm.h userlib/include/myStringfunctions.h \
- userlib/include/table.h userlib/include/i2c_local.h \
- userlib/include/eeprom.h userlib/include/table.h userlib/include/hc05.h
+ userlib/include/table.h userlib/include/eeprom.h userlib/include/table.h \
+ userlib/include/hc05.h
 
 /home/rob/Projects/ChibiStudio/ChibiStudio_20/tools/GNU\ Tools\ ARM\ Embedded/9.2.1\ 2019q4/arm-none-eabi/include/string.h:
 
@@ -474,8 +474,6 @@ userlib/include/comm.h:
 userlib/include/myStringfunctions.h:
 
 userlib/include/table.h:
-
-userlib/include/i2c_local.h:
 
 userlib/include/eeprom.h:
 

@@ -17,7 +17,6 @@
 #include "shell.h"
 #include "table.h"
 #include "eeprom.h"
-#include "i2c_local.h"
 #include "main.h"
 
 uint16_t speed;

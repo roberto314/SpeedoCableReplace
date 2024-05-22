@@ -1,4 +1,4 @@
-ARM GAS  /tmp/ccRlXG6C.s 			page 1
+ARM GAS  /tmp/ccmVIraT.s 			page 1
 
 
    1              		.cpu cortex-m3
@@ -58,7 +58,7 @@ ARM GAS  /tmp/ccRlXG6C.s 			page 1
   55 000b 01       		.uleb128 0x1
   56 000c A8030000 		.4byte	.LASF351
   57 0010 0C       		.byte	0xc
-ARM GAS  /tmp/ccRlXG6C.s 			page 2
+ARM GAS  /tmp/ccmVIraT.s 			page 2
 
 
   58 0011 28050000 		.4byte	.LASF352
@@ -118,7 +118,7 @@ ARM GAS  /tmp/ccRlXG6C.s 			page 1
  112 007a 1B0F0000 		.4byte	.LASF9
  113 007e 03       		.uleb128 0x3
  114 007f 7F0F0000 		.4byte	.LASF10
-ARM GAS  /tmp/ccRlXG6C.s 			page 3
+ARM GAS  /tmp/ccmVIraT.s 			page 3
 
 
  115 0083 02       		.byte	0x2
@@ -178,7 +178,7 @@ ARM GAS  /tmp/ccRlXG6C.s 			page 1
  169 00ec 14       		.byte	0x14
  170 00ed 91000000 		.4byte	0x91
  171 00f1 04       		.uleb128 0x4
-ARM GAS  /tmp/ccRlXG6C.s 			page 4
+ARM GAS  /tmp/ccmVIraT.s 			page 4
 
 
  172 00f2 E5000000 		.4byte	0xe5
@@ -238,7 +238,7 @@ ARM GAS  /tmp/ccRlXG6C.s 			page 1
  226 015e E5000000 		.4byte	0xe5
  227 0162 03       		.uleb128 0x3
  228 0163 F7050000 		.4byte	.LASF29
-ARM GAS  /tmp/ccRlXG6C.s 			page 5
+ARM GAS  /tmp/ccmVIraT.s 			page 5
 
 
  229 0167 04       		.byte	0x4
@@ -298,7 +298,7 @@ ARM GAS  /tmp/ccRlXG6C.s 			page 1
  283 01cd 99       		.byte	0x99
  284 01ce 19       		.byte	0x19
  285 01cf 92080000 		.4byte	0x892
-ARM GAS  /tmp/ccRlXG6C.s 			page 6
+ARM GAS  /tmp/ccmVIraT.s 			page 6
 
 
  286 01d3 14       		.byte	0x14
@@ -358,7 +358,7 @@ ARM GAS  /tmp/ccRlXG6C.s 			page 1
  340 0237 19       		.byte	0x19
  341 0238 AF020000 		.4byte	0x2af
  342 023c 2C       		.byte	0x2c
-ARM GAS  /tmp/ccRlXG6C.s 			page 7
+ARM GAS  /tmp/ccmVIraT.s 			page 7
 
 
  343 023d 0B       		.uleb128 0xb
@@ -418,7 +418,7 @@ ARM GAS  /tmp/ccRlXG6C.s 			page 1
  397 02a7 7D       		.byte	0x7d
  398 02a8 1A       		.byte	0x1a
  399 02a9 82020000 		.4byte	0x282
-ARM GAS  /tmp/ccRlXG6C.s 			page 8
+ARM GAS  /tmp/ccmVIraT.s 			page 8
 
 
  400 02ad 00       		.byte	0
@@ -478,7 +478,7 @@ ARM GAS  /tmp/ccRlXG6C.s 			page 1
  454 0313 19       		.byte	0x19
  455 0314 32010000 		.4byte	0x132
  456 0318 08       		.byte	0x8
-ARM GAS  /tmp/ccRlXG6C.s 			page 9
+ARM GAS  /tmp/ccmVIraT.s 			page 9
 
 
  457 0319 0B       		.uleb128 0xb
@@ -538,7 +538,7 @@ ARM GAS  /tmp/ccRlXG6C.s 			page 1
  511 0383 3D01     		.2byte	0x13d
  512 0385 1A       		.byte	0x1a
  513 0386 CE090000 		.4byte	0x9ce
-ARM GAS  /tmp/ccRlXG6C.s 			page 10
+ARM GAS  /tmp/ccmVIraT.s 			page 10
 
 
  514 038a 00       		.byte	0
@@ -598,7 +598,7 @@ ARM GAS  /tmp/ccRlXG6C.s 			page 1
  568 03f4 1A       		.byte	0x1a
  569 03f5 CE090000 		.4byte	0x9ce
  570 03f9 04       		.byte	0x4
-ARM GAS  /tmp/ccRlXG6C.s 			page 11
+ARM GAS  /tmp/ccmVIraT.s 			page 11
 
 
  571 03fa 0B       		.uleb128 0xb
@@ -658,7 +658,7 @@ ARM GAS  /tmp/ccRlXG6C.s 			page 1
  625 0463 E3020000 		.4byte	0x2e3
  626 0467 00       		.byte	0
  627 0468 0B       		.uleb128 0xb
-ARM GAS  /tmp/ccRlXG6C.s 			page 12
+ARM GAS  /tmp/ccmVIraT.s 			page 12
 
 
  628 0469 1A0E0000 		.4byte	.LASF72
@@ -718,7 +718,7 @@ ARM GAS  /tmp/ccRlXG6C.s 			page 1
  682 04d2 12       		.uleb128 0x12
  683 04d3 FC060000 		.4byte	.LASF78
  684 04d7 74       		.sleb128 -12
-ARM GAS  /tmp/ccRlXG6C.s 			page 13
+ARM GAS  /tmp/ccmVIraT.s 			page 13
 
 
  685 04d8 12       		.uleb128 0x12
@@ -778,7 +778,7 @@ ARM GAS  /tmp/ccRlXG6C.s 			page 1
  739 0544 13       		.uleb128 0x13
  740 0545 210E0000 		.4byte	.LASF97
  741 0549 0C       		.byte	0xc
-ARM GAS  /tmp/ccRlXG6C.s 			page 14
+ARM GAS  /tmp/ccmVIraT.s 			page 14
 
 
  742 054a 13       		.uleb128 0x13
@@ -838,7 +838,7 @@ ARM GAS  /tmp/ccRlXG6C.s 			page 1
  796 05b6 13       		.uleb128 0x13
  797 05b7 04060000 		.4byte	.LASF116
  798 05bb 1F       		.byte	0x1f
-ARM GAS  /tmp/ccRlXG6C.s 			page 15
+ARM GAS  /tmp/ccmVIraT.s 			page 15
 
 
  799 05bc 13       		.uleb128 0x13
@@ -898,7 +898,7 @@ ARM GAS  /tmp/ccRlXG6C.s 			page 1
  853 0629 18060000 		.4byte	0x618
  854 062d 15       		.uleb128 0x15
  855 062e 370B0000 		.4byte	.LASF130
-ARM GAS  /tmp/ccRlXG6C.s 			page 16
+ARM GAS  /tmp/ccmVIraT.s 			page 16
 
 
  856 0632 09       		.byte	0x9
@@ -958,7 +958,7 @@ ARM GAS  /tmp/ccRlXG6C.s 			page 1
  910 069d 19       		.uleb128 0x19
  911 069e 230B0000 		.4byte	.LASF135
  912 06a2 0A       		.byte	0xa
-ARM GAS  /tmp/ccRlXG6C.s 			page 17
+ARM GAS  /tmp/ccmVIraT.s 			page 17
 
 
  913 06a3 3B01     		.2byte	0x13b
@@ -1018,7 +1018,7 @@ ARM GAS  /tmp/ccRlXG6C.s 			page 1
  967 0710 0A       		.byte	0xa
  968 0711 9601     		.2byte	0x196
  969 0713 11       		.byte	0x11
-ARM GAS  /tmp/ccRlXG6C.s 			page 18
+ARM GAS  /tmp/ccmVIraT.s 			page 18
 
 
  970 0714 F1000000 		.4byte	0xf1
@@ -1078,7 +1078,7 @@ ARM GAS  /tmp/ccRlXG6C.s 			page 1
  1024 0780 0A       		.byte	0xa
  1025 0781 9E01     		.2byte	0x19e
  1026 0783 03       		.byte	0x3
-ARM GAS  /tmp/ccRlXG6C.s 			page 19
+ARM GAS  /tmp/ccmVIraT.s 			page 19
 
 
  1027 0784 F3060000 		.4byte	0x6f3
@@ -1138,7 +1138,7 @@ ARM GAS  /tmp/ccRlXG6C.s 			page 1
  1081 07ed F1000000 		.4byte	0xf1
  1082 07f1 18       		.byte	0x18
  1083 07f2 00       		.byte	0
-ARM GAS  /tmp/ccRlXG6C.s 			page 20
+ARM GAS  /tmp/ccmVIraT.s 			page 20
 
 
  1084 07f3 19       		.uleb128 0x19
@@ -1198,7 +1198,7 @@ ARM GAS  /tmp/ccRlXG6C.s 			page 1
  1138 085b 0A       		.uleb128 0xa
  1139 085c 723900   		.ascii	"r9\000"
  1140 085f 0C       		.byte	0xc
-ARM GAS  /tmp/ccRlXG6C.s 			page 21
+ARM GAS  /tmp/ccmVIraT.s 			page 21
 
 
  1141 0860 A301     		.2byte	0x1a3
@@ -1258,7 +1258,7 @@ ARM GAS  /tmp/ccRlXG6C.s 			page 1
  1195 08c4 19       		.byte	0x19
  1196 08c5 02010000 		.4byte	0x102
  1197 08c9 00       		.byte	0
-ARM GAS  /tmp/ccRlXG6C.s 			page 22
+ARM GAS  /tmp/ccmVIraT.s 			page 22
 
 
  1198 08ca 00       		.byte	0
@@ -1318,7 +1318,7 @@ ARM GAS  /tmp/ccRlXG6C.s 			page 1
  1252 0930 AB090000 		.4byte	0x9ab
  1253 0934 1D       		.uleb128 0x1d
  1254 0935 F4020000 		.4byte	.LASF156
-ARM GAS  /tmp/ccRlXG6C.s 			page 23
+ARM GAS  /tmp/ccmVIraT.s 			page 23
 
 
  1255 0939 06       		.byte	0x6
@@ -1378,7 +1378,7 @@ ARM GAS  /tmp/ccRlXG6C.s 			page 1
  1309 099d 08       		.uleb128 0x8
  1310 099e CB0F0000 		.4byte	.LASF51
  1311 09a2 0F       		.byte	0xf
-ARM GAS  /tmp/ccRlXG6C.s 			page 24
+ARM GAS  /tmp/ccmVIraT.s 			page 24
 
 
  1312 09a3 3E       		.byte	0x3e
@@ -1438,7 +1438,7 @@ ARM GAS  /tmp/ccRlXG6C.s 			page 1
  1366 0a0d 00       		.byte	0
  1367 0a0e 08       		.uleb128 0x8
  1368 0a0f 45020000 		.4byte	.LASF163
-ARM GAS  /tmp/ccRlXG6C.s 			page 25
+ARM GAS  /tmp/ccmVIraT.s 			page 25
 
 
  1369 0a13 11       		.byte	0x11
@@ -1498,7 +1498,7 @@ ARM GAS  /tmp/ccRlXG6C.s 			page 1
  1423 0a76 08       		.uleb128 0x8
  1424 0a77 C8090000 		.4byte	.LASF171
  1425 0a7b 11       		.byte	0x11
-ARM GAS  /tmp/ccRlXG6C.s 			page 26
+ARM GAS  /tmp/ccmVIraT.s 			page 26
 
 
  1426 0a7c 3E       		.byte	0x3e
@@ -1558,7 +1558,7 @@ ARM GAS  /tmp/ccRlXG6C.s 			page 1
  1480 0adf E4050000 		.4byte	.LASF179
  1481 0ae3 11       		.byte	0x11
  1482 0ae4 46       		.byte	0x46
-ARM GAS  /tmp/ccRlXG6C.s 			page 27
+ARM GAS  /tmp/ccmVIraT.s 			page 27
 
 
  1483 0ae5 0D       		.byte	0xd
@@ -1618,7 +1618,7 @@ ARM GAS  /tmp/ccRlXG6C.s 			page 1
  1537 0b51 08       		.uleb128 0x8
  1538 0b52 2C0D0000 		.4byte	.LASF185
  1539 0b56 12       		.byte	0x12
-ARM GAS  /tmp/ccRlXG6C.s 			page 28
+ARM GAS  /tmp/ccmVIraT.s 			page 28
 
 
  1540 0b57 3D       		.byte	0x3d
@@ -1678,7 +1678,7 @@ ARM GAS  /tmp/ccRlXG6C.s 			page 1
  1594 0bba 03       		.uleb128 0x3
  1595 0bbb 740A0000 		.4byte	.LASF191
  1596 0bbf 13       		.byte	0x13
-ARM GAS  /tmp/ccRlXG6C.s 			page 29
+ARM GAS  /tmp/ccmVIraT.s 			page 29
 
 
  1597 0bc0 47       		.byte	0x47
@@ -1738,7 +1738,7 @@ ARM GAS  /tmp/ccRlXG6C.s 			page 1
  1651 0c29 38       		.byte	0x38
  1652 0c2a 08       		.byte	0x8
  1653 0c2b 3D0C0000 		.4byte	0xc3d
-ARM GAS  /tmp/ccRlXG6C.s 			page 30
+ARM GAS  /tmp/ccmVIraT.s 			page 30
 
 
  1654 0c2f 08       		.uleb128 0x8
@@ -1798,7 +1798,7 @@ ARM GAS  /tmp/ccRlXG6C.s 			page 1
  1708 0c92 10       		.byte	0x10
  1709 0c93 15       		.byte	0x15
  1710 0c94 A9       		.byte	0xa9
-ARM GAS  /tmp/ccRlXG6C.s 			page 31
+ARM GAS  /tmp/ccmVIraT.s 			page 31
 
 
  1711 0c95 10       		.byte	0x10
@@ -1858,7 +1858,7 @@ ARM GAS  /tmp/ccRlXG6C.s 			page 1
  1765 0cfe 00       		.byte	0
  1766 0cff 0C       		.uleb128 0xc
  1767 0d00 04       		.byte	0x4
-ARM GAS  /tmp/ccRlXG6C.s 			page 32
+ARM GAS  /tmp/ccmVIraT.s 			page 32
 
 
  1768 0d01 D80C0000 		.4byte	0xcd8
@@ -1918,7 +1918,7 @@ ARM GAS  /tmp/ccRlXG6C.s 			page 1
  1822 0d6e 810C0000 		.4byte	0xc81
  1823 0d72 2C       		.byte	0x2c
  1824 0d73 0B       		.uleb128 0xb
-ARM GAS  /tmp/ccRlXG6C.s 			page 33
+ARM GAS  /tmp/ccmVIraT.s 			page 33
 
 
  1825 0d74 400C0000 		.4byte	.LASF211
@@ -1978,7 +1978,7 @@ ARM GAS  /tmp/ccRlXG6C.s 			page 1
  1879 0ddf 010B0000 		.4byte	.LASF217
  1880 0de3 16       		.byte	0x16
  1881 0de4 4601     		.2byte	0x146
-ARM GAS  /tmp/ccRlXG6C.s 			page 34
+ARM GAS  /tmp/ccmVIraT.s 			page 34
 
 
  1882 0de6 19       		.byte	0x19
@@ -2038,7 +2038,7 @@ ARM GAS  /tmp/ccRlXG6C.s 			page 1
  1936 0e54 430E0000 		.4byte	0xe43
  1937 0e58 14       		.uleb128 0x14
  1938 0e59 95070000 		.4byte	.LASF223
-ARM GAS  /tmp/ccRlXG6C.s 			page 35
+ARM GAS  /tmp/ccmVIraT.s 			page 35
 
 
  1939 0e5d 16       		.byte	0x16
@@ -2098,7 +2098,7 @@ ARM GAS  /tmp/ccRlXG6C.s 			page 1
  1993 0ec7 17       		.byte	0x17
  1994 0ec8 FD01     		.2byte	0x1fd
  1995 0eca 19       		.byte	0x19
-ARM GAS  /tmp/ccRlXG6C.s 			page 36
+ARM GAS  /tmp/ccmVIraT.s 			page 36
 
 
  1996 0ecb F1000000 		.4byte	0xf1
@@ -2158,7 +2158,7 @@ ARM GAS  /tmp/ccRlXG6C.s 			page 1
  2050 0f38 0502     		.2byte	0x205
  2051 0f3a 19       		.byte	0x19
  2052 0f3b F1000000 		.4byte	0xf1
-ARM GAS  /tmp/ccRlXG6C.s 			page 37
+ARM GAS  /tmp/ccmVIraT.s 			page 37
 
 
  2053 0f3f 44       		.byte	0x44
@@ -2218,7 +2218,7 @@ ARM GAS  /tmp/ccRlXG6C.s 			page 1
  2107 0fad C10F0000 		.4byte	0xfc1
  2108 0fb1 0F       		.uleb128 0xf
  2109 0fb2 61030000 		.4byte	0x361
-ARM GAS  /tmp/ccRlXG6C.s 			page 38
+ARM GAS  /tmp/ccmVIraT.s 			page 38
 
 
  2110 0fb6 0F       		.uleb128 0xf
@@ -2278,7 +2278,7 @@ ARM GAS  /tmp/ccRlXG6C.s 			page 1
  2164 1034 0C       		.uleb128 0xc
  2165 1035 04       		.byte	0x4
  2166 1036 1B100000 		.4byte	0x101b
-ARM GAS  /tmp/ccRlXG6C.s 			page 39
+ARM GAS  /tmp/ccmVIraT.s 			page 39
 
 
  2167 103a 20       		.uleb128 0x20
@@ -2338,7 +2338,7 @@ ARM GAS  /tmp/ccRlXG6C.s 			page 1
  2221 10bb 03       		.uleb128 0x3
  2222 10bc E50D0000 		.4byte	.LASF234
  2223 10c0 18       		.byte	0x18
-ARM GAS  /tmp/ccRlXG6C.s 			page 40
+ARM GAS  /tmp/ccmVIraT.s 			page 40
 
 
  2224 10c1 3A       		.byte	0x3a
@@ -2398,7 +2398,7 @@ ARM GAS  /tmp/ccRlXG6C.s 			page 1
  2278 1127 18       		.byte	0x18
  2279 1128 53       		.byte	0x53
  2280 1129 19       		.byte	0x19
-ARM GAS  /tmp/ccRlXG6C.s 			page 41
+ARM GAS  /tmp/ccmVIraT.s 			page 41
 
 
  2281 112a 3D110000 		.4byte	0x113d
@@ -2458,7 +2458,7 @@ ARM GAS  /tmp/ccRlXG6C.s 			page 1
  2335 1193 19       		.byte	0x19
  2336 1194 6C       		.byte	0x6c
  2337 1195 11       		.byte	0x11
-ARM GAS  /tmp/ccRlXG6C.s 			page 42
+ARM GAS  /tmp/ccmVIraT.s 			page 42
 
 
  2338 1196 E5000000 		.4byte	0xe5
@@ -2518,7 +2518,7 @@ ARM GAS  /tmp/ccRlXG6C.s 			page 1
  2392 11f9 19       		.byte	0x19
  2393 11fa A9110000 		.4byte	0x11a9
  2394 11fe 30       		.byte	0x30
-ARM GAS  /tmp/ccRlXG6C.s 			page 43
+ARM GAS  /tmp/ccmVIraT.s 			page 43
 
 
  2395 11ff 00       		.byte	0
@@ -2578,7 +2578,7 @@ ARM GAS  /tmp/ccRlXG6C.s 			page 1
  2449 126a 19       		.uleb128 0x19
  2450 126b DA0E0000 		.4byte	.LASF263
  2451 126f 1B       		.byte	0x1b
-ARM GAS  /tmp/ccRlXG6C.s 			page 44
+ARM GAS  /tmp/ccmVIraT.s 			page 44
 
 
  2452 1270 6F01     		.2byte	0x16f
@@ -2638,7 +2638,7 @@ ARM GAS  /tmp/ccRlXG6C.s 			page 1
  2506 12d8 8601     		.2byte	0x186
  2507 12da 09       		.byte	0x9
  2508 12db 0A130000 		.4byte	0x130a
-ARM GAS  /tmp/ccRlXG6C.s 			page 45
+ARM GAS  /tmp/ccmVIraT.s 			page 45
 
 
  2509 12df 0B       		.uleb128 0xb
@@ -2698,7 +2698,7 @@ ARM GAS  /tmp/ccRlXG6C.s 			page 1
  2563 134d 1E       		.byte	0x1e
  2564 134e D2130000 		.4byte	0x13d2
  2565 1352 04       		.byte	0x4
-ARM GAS  /tmp/ccRlXG6C.s 			page 46
+ARM GAS  /tmp/ccmVIraT.s 			page 46
 
 
  2566 1353 0B       		.uleb128 0xb
@@ -2758,7 +2758,7 @@ ARM GAS  /tmp/ccRlXG6C.s 			page 1
  2620 13be D8130000 		.4byte	0x13d8
  2621 13c2 30       		.byte	0x30
  2622 13c3 0A       		.uleb128 0xa
-ARM GAS  /tmp/ccRlXG6C.s 			page 47
+ARM GAS  /tmp/ccmVIraT.s 			page 47
 
 
  2623 13c4 69326300 		.ascii	"i2c\000"
@@ -2818,7 +2818,7 @@ ARM GAS  /tmp/ccRlXG6C.s 			page 1
  2677 142f 1C       		.byte	0x1c
  2678 1430 3C       		.byte	0x3c
  2679 1431 1A       		.byte	0x1a
-ARM GAS  /tmp/ccRlXG6C.s 			page 48
+ARM GAS  /tmp/ccmVIraT.s 			page 48
 
 
  2680 1432 36140000 		.4byte	0x1436
@@ -2878,7 +2878,7 @@ ARM GAS  /tmp/ccRlXG6C.s 			page 1
  2734 149f 43       		.byte	0x43
  2735 14a0 10       		.byte	0x10
  2736 14a1 A5140000 		.4byte	0x14a5
-ARM GAS  /tmp/ccRlXG6C.s 			page 49
+ARM GAS  /tmp/ccmVIraT.s 			page 49
 
 
  2737 14a5 0C       		.uleb128 0xc
@@ -2938,7 +2938,7 @@ ARM GAS  /tmp/ccRlXG6C.s 			page 1
  2791 150f 88020000 		.4byte	.LASF304
  2792 1513 1D       		.byte	0x1d
  2793 1514 F002     		.2byte	0x2f0
-ARM GAS  /tmp/ccRlXG6C.s 			page 50
+ARM GAS  /tmp/ccmVIraT.s 			page 50
 
 
  2794 1516 03       		.byte	0x3
@@ -2998,7 +2998,7 @@ ARM GAS  /tmp/ccRlXG6C.s 			page 1
  2848 1581 1D       		.byte	0x1d
  2849 1582 E5000000 		.4byte	0xe5
  2850 1586 18       		.byte	0x18
-ARM GAS  /tmp/ccRlXG6C.s 			page 51
+ARM GAS  /tmp/ccmVIraT.s 			page 51
 
 
  2851 1587 0A       		.uleb128 0xa
@@ -3058,7 +3058,7 @@ ARM GAS  /tmp/ccRlXG6C.s 			page 1
  2905 15f4 00       		.byte	0
  2906 15f5 03       		.uleb128 0x3
  2907 15f6 920E0000 		.4byte	.LASF317
-ARM GAS  /tmp/ccRlXG6C.s 			page 52
+ARM GAS  /tmp/ccmVIraT.s 			page 52
 
 
  2908 15fa 1E       		.byte	0x1e
@@ -3118,7 +3118,7 @@ ARM GAS  /tmp/ccRlXG6C.s 			page 1
  2962 1666 1F       		.byte	0x1f
  2963 1667 8703     		.2byte	0x387
  2964 1669 1D       		.byte	0x1d
-ARM GAS  /tmp/ccRlXG6C.s 			page 53
+ARM GAS  /tmp/ccmVIraT.s 			page 53
 
 
  2965 166a E5000000 		.4byte	0xe5
@@ -3178,7 +3178,7 @@ ARM GAS  /tmp/ccRlXG6C.s 			page 1
  3019 16d8 2B03     		.2byte	0x32b
  3020 16da 09       		.byte	0x9
  3021 16db FC160000 		.4byte	0x16fc
-ARM GAS  /tmp/ccRlXG6C.s 			page 54
+ARM GAS  /tmp/ccmVIraT.s 			page 54
 
 
  3022 16df 0B       		.uleb128 0xb
@@ -3238,7 +3238,7 @@ ARM GAS  /tmp/ccRlXG6C.s 			page 1
  3076 174a 0C       		.byte	0xc
  3077 174b 0A       		.uleb128 0xa
  3078 174c 63723200 		.ascii	"cr2\000"
-ARM GAS  /tmp/ccRlXG6C.s 			page 55
+ARM GAS  /tmp/ccmVIraT.s 			page 55
 
 
  3079 1750 1F       		.byte	0x1f
@@ -3298,7 +3298,7 @@ ARM GAS  /tmp/ccRlXG6C.s 			page 1
  3133 17bd 00       		.byte	0
  3134 17be 03       		.uleb128 0x3
  3135 17bf D50C0000 		.4byte	.LASF334
-ARM GAS  /tmp/ccRlXG6C.s 			page 56
+ARM GAS  /tmp/ccmVIraT.s 			page 56
 
 
  3136 17c3 20       		.byte	0x20
@@ -3358,7 +3358,7 @@ ARM GAS  /tmp/ccRlXG6C.s 			page 1
  3190 1828 20       		.byte	0x20
  3191 1829 7E       		.byte	0x7e
  3192 182a 03       		.byte	0x3
-ARM GAS  /tmp/ccRlXG6C.s 			page 57
+ARM GAS  /tmp/ccmVIraT.s 			page 57
 
 
  3193 182b FF180000 		.4byte	0x18ff
@@ -3418,7 +3418,7 @@ ARM GAS  /tmp/ccRlXG6C.s 			page 1
  3247 1891 71       		.byte	0x71
  3248 1892 03       		.byte	0x3
  3249 1893 E60F0000 		.4byte	0xfe6
-ARM GAS  /tmp/ccRlXG6C.s 			page 58
+ARM GAS  /tmp/ccmVIraT.s 			page 58
 
 
  3250 1897 08       		.byte	0x8
@@ -3478,7 +3478,7 @@ ARM GAS  /tmp/ccRlXG6C.s 			page 1
  3304 18fa 04       		.byte	0x4
  3305 18fb F4180000 		.4byte	0x18f4
  3306 18ff 16       		.uleb128 0x16
-ARM GAS  /tmp/ccRlXG6C.s 			page 59
+ARM GAS  /tmp/ccmVIraT.s 			page 59
 
 
  3307 1900 B7000000 		.4byte	0xb7
@@ -3538,7 +3538,7 @@ ARM GAS  /tmp/ccRlXG6C.s 			page 1
  3361 0020 0B       		.uleb128 0xb
  3362 0021 3B       		.uleb128 0x3b
  3363 0022 0B       		.uleb128 0xb
-ARM GAS  /tmp/ccRlXG6C.s 			page 60
+ARM GAS  /tmp/ccmVIraT.s 			page 60
 
 
  3364 0023 39       		.uleb128 0x39
@@ -3598,7 +3598,7 @@ ARM GAS  /tmp/ccRlXG6C.s 			page 1
  3418 0059 0B       		.uleb128 0xb
  3419 005a 3B       		.uleb128 0x3b
  3420 005b 0B       		.uleb128 0xb
-ARM GAS  /tmp/ccRlXG6C.s 			page 61
+ARM GAS  /tmp/ccmVIraT.s 			page 61
 
 
  3421 005c 39       		.uleb128 0x39
@@ -3658,7 +3658,7 @@ ARM GAS  /tmp/ccRlXG6C.s 			page 1
  3475 0092 13       		.uleb128 0x13
  3476 0093 38       		.uleb128 0x38
  3477 0094 0B       		.uleb128 0xb
-ARM GAS  /tmp/ccRlXG6C.s 			page 62
+ARM GAS  /tmp/ccmVIraT.s 			page 62
 
 
  3478 0095 00       		.byte	0
@@ -3718,7 +3718,7 @@ ARM GAS  /tmp/ccRlXG6C.s 			page 1
  3532 00cb 3E       		.uleb128 0x3e
  3533 00cc 0B       		.uleb128 0xb
  3534 00cd 0B       		.uleb128 0xb
-ARM GAS  /tmp/ccRlXG6C.s 			page 63
+ARM GAS  /tmp/ccmVIraT.s 			page 63
 
 
  3535 00ce 0B       		.uleb128 0xb
@@ -3778,7 +3778,7 @@ ARM GAS  /tmp/ccRlXG6C.s 			page 1
  3589 0104 0E       		.uleb128 0xe
  3590 0105 3A       		.uleb128 0x3a
  3591 0106 0B       		.uleb128 0xb
-ARM GAS  /tmp/ccRlXG6C.s 			page 64
+ARM GAS  /tmp/ccmVIraT.s 			page 64
 
 
  3592 0107 3B       		.uleb128 0x3b
@@ -3838,7 +3838,7 @@ ARM GAS  /tmp/ccRlXG6C.s 			page 1
  3646 013d 39       		.uleb128 0x39
  3647 013e 0B       		.uleb128 0xb
  3648 013f 49       		.uleb128 0x49
-ARM GAS  /tmp/ccRlXG6C.s 			page 65
+ARM GAS  /tmp/ccmVIraT.s 			page 65
 
 
  3649 0140 13       		.uleb128 0x13
@@ -3898,7 +3898,7 @@ ARM GAS  /tmp/ccRlXG6C.s 			page 1
  3703 0176 0B       		.uleb128 0xb
  3704 0177 3B       		.uleb128 0x3b
  3705 0178 05       		.uleb128 0x5
-ARM GAS  /tmp/ccRlXG6C.s 			page 66
+ARM GAS  /tmp/ccmVIraT.s 			page 66
 
 
  3706 0179 39       		.uleb128 0x39
@@ -3958,7 +3958,7 @@ ARM GAS  /tmp/ccRlXG6C.s 			page 1
  3760 01af 39       		.uleb128 0x39
  3761 01b0 0B       		.uleb128 0xb
  3762 01b1 01       		.uleb128 0x1
-ARM GAS  /tmp/ccRlXG6C.s 			page 67
+ARM GAS  /tmp/ccmVIraT.s 			page 67
 
 
  3763 01b2 13       		.uleb128 0x13
@@ -4018,7 +4018,7 @@ ARM GAS  /tmp/ccRlXG6C.s 			page 1
  3812 0055 2E2E2F2E 		.ascii	"../../chibios_trunk/os/common/ext/ST/STM32F1xx"
  3812      2E2F6368 
  3812      6962696F 
-ARM GAS  /tmp/ccRlXG6C.s 			page 68
+ARM GAS  /tmp/ccmVIraT.s 			page 68
 
 
  3812      735F7472 
@@ -4078,7 +4078,7 @@ ARM GAS  /tmp/ccRlXG6C.s 			page 1
  3831      2E2F6368 
  3831      6962696F 
  3831      735F7472 
-ARM GAS  /tmp/ccRlXG6C.s 			page 69
+ARM GAS  /tmp/ccmVIraT.s 			page 69
 
 
  3831      756E6B2F 
@@ -4138,7 +4138,7 @@ ARM GAS  /tmp/ccRlXG6C.s 			page 1
  3847      6162692F 
  3847      392E322E 
  3847      312F696E 
-ARM GAS  /tmp/ccRlXG6C.s 			page 70
+ARM GAS  /tmp/ccmVIraT.s 			page 70
 
 
  3847      636C7564 
@@ -4198,7 +4198,7 @@ ARM GAS  /tmp/ccRlXG6C.s 			page 1
  3882 0450 73797374 		.ascii	"system_stm32f1xx.h\000"
  3882      656D5F73 
  3882      746D3332 
-ARM GAS  /tmp/ccRlXG6C.s 			page 71
+ARM GAS  /tmp/ccmVIraT.s 			page 71
 
 
  3882      66317878 
@@ -4258,7 +4258,7 @@ ARM GAS  /tmp/ccRlXG6C.s 			page 1
  3918      2E6800
  3919 04d9 0D       		.uleb128 0xd
  3920 04da 00       		.uleb128 0
-ARM GAS  /tmp/ccRlXG6C.s 			page 72
+ARM GAS  /tmp/ccmVIraT.s 			page 72
 
 
  3921 04db 00       		.uleb128 0
@@ -4318,7 +4318,7 @@ ARM GAS  /tmp/ccRlXG6C.s 			page 1
  3954      6C6C642E 
  3954      6800
  3955 0564 08       		.uleb128 0x8
-ARM GAS  /tmp/ccRlXG6C.s 			page 73
+ARM GAS  /tmp/ccmVIraT.s 			page 73
 
 
  3956 0565 00       		.uleb128 0
@@ -4378,7 +4378,7 @@ ARM GAS  /tmp/ccRlXG6C.s 			page 1
  3991 0000 6F66665F 		.ascii	"off_ctx\000"
  3991      63747800 
  3992              	.LASF93:
-ARM GAS  /tmp/ccRlXG6C.s 			page 74
+ARM GAS  /tmp/ccmVIraT.s 			page 74
 
 
  3993 0008 45585449 		.ascii	"EXTI2_IRQn\000"
@@ -4438,7 +4438,7 @@ ARM GAS  /tmp/ccRlXG6C.s 			page 1
  4020              	.LASF347:
  4021 0098 77726974 		.ascii	"writet\000"
  4021      657400
-ARM GAS  /tmp/ccRlXG6C.s 			page 75
+ARM GAS  /tmp/ccmVIraT.s 			page 75
 
 
  4022              	.LASF142:
@@ -4498,7 +4498,7 @@ ARM GAS  /tmp/ccRlXG6C.s 			page 1
  4047 0137 73746174 		.ascii	"state\000"
  4047      6500
  4048              	.LASF252:
-ARM GAS  /tmp/ccRlXG6C.s 			page 76
+ARM GAS  /tmp/ccmVIraT.s 			page 76
 
 
  4049 013d 50454461 		.ascii	"PEData\000"
@@ -4558,7 +4558,7 @@ ARM GAS  /tmp/ccRlXG6C.s 			page 1
  4076              	.LASF247:
  4077 01c5 73746D33 		.ascii	"stm32_gpio_setup_t\000"
  4077      325F6770 
-ARM GAS  /tmp/ccRlXG6C.s 			page 77
+ARM GAS  /tmp/ccmVIraT.s 			page 77
 
 
  4077      696F5F73 
@@ -4618,7 +4618,7 @@ ARM GAS  /tmp/ccRlXG6C.s 			page 1
  4105      45525F49 
  4105      52516E00 
  4106              	.LASF23:
-ARM GAS  /tmp/ccRlXG6C.s 			page 78
+ARM GAS  /tmp/ccmVIraT.s 			page 78
 
 
  4107 0256 74737461 		.ascii	"tstate_t\000"
@@ -4678,7 +4678,7 @@ ARM GAS  /tmp/ccRlXG6C.s 			page 1
  4133 02df 696F5F71 		.ascii	"io_queue\000"
  4133      75657565 
  4133      00
-ARM GAS  /tmp/ccRlXG6C.s 			page 79
+ARM GAS  /tmp/ccmVIraT.s 			page 79
 
 
  4134              	.LASF3:
@@ -4738,7 +4738,7 @@ ARM GAS  /tmp/ccRlXG6C.s 			page 1
  4163      5F45525F 
  4163      4952516E 
  4163      00
-ARM GAS  /tmp/ccRlXG6C.s 			page 80
+ARM GAS  /tmp/ccmVIraT.s 			page 80
 
 
  4164              	.LASF66:
@@ -4798,7 +4798,7 @@ ARM GAS  /tmp/ccRlXG6C.s 			page 1
  4183 04ac 55736167 		.ascii	"UsageFault_IRQn\000"
  4183      65466175 
  4183      6C745F49 
-ARM GAS  /tmp/ccRlXG6C.s 			page 81
+ARM GAS  /tmp/ccmVIraT.s 			page 81
 
 
  4183      52516E00 
@@ -4858,7 +4858,7 @@ ARM GAS  /tmp/ccRlXG6C.s 			page 1
  4212      6973722E 
  4212      6300
  4213              	.LASF346:
-ARM GAS  /tmp/ccRlXG6C.s 			page 82
+ARM GAS  /tmp/ccmVIraT.s 			page 82
 
 
  4214 0565 67657474 		.ascii	"gett\000"
@@ -4918,7 +4918,7 @@ ARM GAS  /tmp/ccRlXG6C.s 			page 1
  4240      6F64655F 
  4240      7400
  4241              	.LASF29:
-ARM GAS  /tmp/ccRlXG6C.s 			page 83
+ARM GAS  /tmp/ccmVIraT.s 			page 83
 
 
  4242 05f7 636E745F 		.ascii	"cnt_t\000"
@@ -4978,7 +4978,7 @@ ARM GAS  /tmp/ccRlXG6C.s 			page 1
  4268      516E00
  4269              	.LASF276:
  4270 0685 49324344 		.ascii	"I2CDriver\000"
-ARM GAS  /tmp/ccRlXG6C.s 			page 84
+ARM GAS  /tmp/ccmVIraT.s 			page 84
 
 
  4270      72697665 
@@ -5038,7 +5038,7 @@ ARM GAS  /tmp/ccRlXG6C.s 			page 1
  4294 0725 44494552 		.ascii	"DIER\000"
  4294      00
  4295              	.LASF129:
-ARM GAS  /tmp/ccRlXG6C.s 			page 85
+ARM GAS  /tmp/ccmVIraT.s 			page 85
 
 
  4296 072a 53797374 		.ascii	"SystemCoreClock\000"
@@ -5098,7 +5098,7 @@ ARM GAS  /tmp/ccRlXG6C.s 			page 1
  4320 07c4 76697274 		.ascii	"virtual_timer_t\000"
  4320      75616C5F 
  4320      74696D65 
-ARM GAS  /tmp/ccRlXG6C.s 			page 86
+ARM GAS  /tmp/ccmVIraT.s 			page 86
 
 
  4320      725F7400 
@@ -5158,7 +5158,7 @@ ARM GAS  /tmp/ccRlXG6C.s 			page 1
  4346      69737400 
  4347              	.LASF292:
  4348 0865 69637573 		.ascii	"icustate_t\000"
-ARM GAS  /tmp/ccRlXG6C.s 			page 87
+ARM GAS  /tmp/ccmVIraT.s 			page 87
 
 
  4348      74617465 
@@ -5218,7 +5218,7 @@ ARM GAS  /tmp/ccRlXG6C.s 			page 1
  4374 08fd 6576656E 		.ascii	"event_source_t\000"
  4374      745F736F 
  4374      75726365 
-ARM GAS  /tmp/ccRlXG6C.s 			page 88
+ARM GAS  /tmp/ccmVIraT.s 			page 88
 
 
  4374      5F7400
@@ -5278,7 +5278,7 @@ ARM GAS  /tmp/ccRlXG6C.s 			page 1
  4402              	.LASF171:
  4403 09c8 6F66665F 		.ascii	"off_newer\000"
  4403      6E657765 
-ARM GAS  /tmp/ccRlXG6C.s 			page 89
+ARM GAS  /tmp/ccmVIraT.s 			page 89
 
 
  4403      7200
@@ -5338,7 +5338,7 @@ ARM GAS  /tmp/ccRlXG6C.s 			page 1
  4431 0a56 4943555F 		.ascii	"ICU_READY\000"
  4431      52454144 
  4431      5900
-ARM GAS  /tmp/ccRlXG6C.s 			page 90
+ARM GAS  /tmp/ccmVIraT.s 			page 90
 
 
  4432              	.LASF308:
@@ -5398,7 +5398,7 @@ ARM GAS  /tmp/ccRlXG6C.s 			page 1
  4457 0af4 70776D63 		.ascii	"pwmchannel_t\000"
  4457      68616E6E 
  4457      656C5F74 
-ARM GAS  /tmp/ccRlXG6C.s 			page 91
+ARM GAS  /tmp/ccmVIraT.s 			page 91
 
 
  4457      00
@@ -5458,7 +5458,7 @@ ARM GAS  /tmp/ccRlXG6C.s 			page 1
  4480              	.LASF315:
  4481 0b9b 50574D5F 		.ascii	"PWM_STOP\000"
  4481      53544F50 
-ARM GAS  /tmp/ccRlXG6C.s 			page 92
+ARM GAS  /tmp/ccmVIraT.s 			page 92
 
 
  4481      00
@@ -5518,7 +5518,7 @@ ARM GAS  /tmp/ccRlXG6C.s 			page 1
  4510              	.LASF221:
  4511 0c22 76656374 		.ascii	"vector\000"
  4511      6F7200
-ARM GAS  /tmp/ccRlXG6C.s 			page 93
+ARM GAS  /tmp/ccmVIraT.s 			page 93
 
 
  4512              	.LASF215:
@@ -5578,7 +5578,7 @@ ARM GAS  /tmp/ccRlXG6C.s 			page 1
  4539      516E00
  4540              	.LASF71:
  4541 0cb7 726C6973 		.ascii	"rlist\000"
-ARM GAS  /tmp/ccRlXG6C.s 			page 94
+ARM GAS  /tmp/ccmVIraT.s 			page 94
 
 
  4541      7400
@@ -5638,7 +5638,7 @@ ARM GAS  /tmp/ccRlXG6C.s 			page 1
  4567      516E00
  4568              	.LASF131:
  4569 0d48 41504250 		.ascii	"APBPrescTable\000"
-ARM GAS  /tmp/ccRlXG6C.s 			page 95
+ARM GAS  /tmp/ccmVIraT.s 			page 95
 
 
  4569      72657363 
@@ -5698,7 +5698,7 @@ ARM GAS  /tmp/ccRlXG6C.s 			page 1
  4595      6D5F6465 
  4595      62756700 
  4596              	.LASF204:
-ARM GAS  /tmp/ccRlXG6C.s 			page 96
+ARM GAS  /tmp/ccmVIraT.s 			page 96
 
 
  4597 0dda 64796E5F 		.ascii	"dyn_list_t\000"
@@ -5758,7 +5758,7 @@ ARM GAS  /tmp/ccRlXG6C.s 			page 1
  4625      6164735F 
  4625      6C697374 
  4625      5F7400
-ARM GAS  /tmp/ccRlXG6C.s 			page 97
+ARM GAS  /tmp/ccmVIraT.s 			page 97
 
 
  4626              	.LASF330:
@@ -5818,7 +5818,7 @@ ARM GAS  /tmp/ccRlXG6C.s 			page 1
  4653 0f01 7264796D 		.ascii	"rdymsg\000"
  4653      736700
  4654              	.LASF240:
-ARM GAS  /tmp/ccRlXG6C.s 			page 98
+ARM GAS  /tmp/ccmVIraT.s 			page 98
 
 
  4655 0f08 715F7772 		.ascii	"q_wrptr\000"
@@ -5878,7 +5878,7 @@ ARM GAS  /tmp/ccRlXG6C.s 			page 1
  4681      666C6167 
  4681      7300
  4682              	.LASF77:
-ARM GAS  /tmp/ccRlXG6C.s 			page 99
+ARM GAS  /tmp/ccmVIraT.s 			page 99
 
 
  4683 0fa6 48617264 		.ascii	"HardFault_IRQn\000"
@@ -5925,26 +5925,26 @@ ARM GAS  /tmp/ccRlXG6C.s 			page 1
  4703      61636B5F 
  4703      7400
  4704              		.text
- 4705              		.section	.gnu.lto_.profile.e863a120cfa14ee5,"e",%progbits
+ 4705              		.section	.gnu.lto_.profile.aa003480499d0cda,"e",%progbits
  4706 0000 789CE360 		.ascii	"x\234\343``\004B \000\000\000]\000\013"
  4706      60044220 
  4706      0000005D 
  4706      000B
  4707              		.text
- 4708              		.section	.gnu.lto_.icf.e863a120cfa14ee5,"e",%progbits
+ 4708              		.section	.gnu.lto_.icf.aa003480499d0cda,"e",%progbits
  4709 0000 789CE360 		.ascii	"x\234\343``d\340c@\000&\206\225\327\346n\341b\274\276"
  4709      6064E063 
  4709      40002686 
  4709      95D7E66E 
  4709      E162BCBE 
  4710 0014 B3611D33 		.ascii	"\263a\0353\003\000-T\005\266"
-ARM GAS  /tmp/ccRlXG6C.s 			page 100
+ARM GAS  /tmp/ccmVIraT.s 			page 100
 
 
  4710      03002D54 
  4710      05B6
  4711              		.text
- 4712              		.section	.gnu.lto_.jmpfuncs.e863a120cfa14ee5,"e",%progbits
+ 4712              		.section	.gnu.lto_.jmpfuncs.aa003480499d0cda,"e",%progbits
  4713 0000 789C7590 		.ascii	"x\234u\220\241\016\3020\020\206\373_\233\256\333\013"
  4713      A10EC230 
  4713      1086FB5F 
@@ -5992,13 +5992,13 @@ ARM GAS  /tmp/ccRlXG6C.s 			page 1
  4722      FA00DDD6 
  4722      55C7
  4723              		.text
- 4724              		.section	.gnu.lto_.inline.e863a120cfa14ee5,"e",%progbits
+ 4724              		.section	.gnu.lto_.inline.aa003480499d0cda,"e",%progbits
  4725 0000 789CE360 		.ascii	"x\234\343``d\330\310\200\000L\014\014\022\015\015\015"
  4725      6064D8C8 
  4725      80004C0C 
  4725      0C120D0D 
  4725      0D
-ARM GAS  /tmp/ccRlXG6C.s 			page 101
+ARM GAS  /tmp/ccmVIraT.s 			page 101
 
 
  4726 0011 37983219 		.ascii	"7\2302\031A\354F \273\216\201\201\015H50\2450\201\204"
@@ -6015,7 +6015,7 @@ ARM GAS  /tmp/ccRlXG6C.s 			page 1
  4728      140300D3 
  4728      3E110E
  4729              		.text
- 4730              		.section	.gnu.lto_.pureconst.e863a120cfa14ee5,"e",%progbits
+ 4730              		.section	.gnu.lto_.pureconst.aa003480499d0cda,"e",%progbits
  4731 0000 789CE360 		.ascii	"x\234\343``d`g```b\230\301\3028\203\005\000\005.\001"
  4731      60646067 
  4731      60606062 
@@ -6023,7 +6023,7 @@ ARM GAS  /tmp/ccRlXG6C.s 			page 1
  4731      83050005 
  4732 0016 4C       		.ascii	"L"
  4733              		.text
- 4734              		.section	.gnu.lto_irqInit.e863a120cfa14ee5,"e",%progbits
+ 4734              		.section	.gnu.lto_irqInit.aa003480499d0cda,"e",%progbits
  4735 0000 789C8DD2 		.ascii	"x\234\215\322=H\0031\024\007\360\367\277\324\366*\210"
  4735      3D480331 
  4735      1407F0F7 
@@ -6058,7 +6058,7 @@ ARM GAS  /tmp/ccRlXG6C.s 			page 1
  4741      8A6F5BEC 
  4741      7023
  4742 0079 9D6A5EE2 		.ascii	"\235j^\342\213\255yF\224\021i\005\016\341#\022'\237"
-ARM GAS  /tmp/ccRlXG6C.s 			page 102
+ARM GAS  /tmp/ccmVIraT.s 			page 102
 
 
  4742      8BAD7946 
@@ -6118,7 +6118,7 @@ ARM GAS  /tmp/ccRlXG6C.s 			page 1
  4753      8F1586FF 
  4753      0F43D4
  4754 014c EBF76B62 		.ascii	"\353\367kb\204\306\303c\341\210\036\214Eg\247'\264\210"
-ARM GAS  /tmp/ccRlXG6C.s 			page 103
+ARM GAS  /tmp/ccmVIraT.s 			page 103
 
 
  4754      84C6C363 
@@ -6135,7 +6135,7 @@ ARM GAS  /tmp/ccRlXG6C.s 			page 1
  4756      FD21FA03 
  4756      C00DD8F9 
  4757              		.text
- 4758              		.section	.gnu.lto_irqDeinit.e863a120cfa14ee5,"e",%progbits
+ 4758              		.section	.gnu.lto_irqDeinit.aa003480499d0cda,"e",%progbits
  4759 0000 789C8DD2 		.ascii	"x\234\215\322O(DA\034\007\360\337\367\315\332}\253\344"
  4759      4F284441 
  4759      1C07F0DF 
@@ -6178,7 +6178,7 @@ ARM GAS  /tmp/ccRlXG6C.s 			page 1
  4767      640A87F0 
  4767      8A6644DB 
  4767      773526FF 
-ARM GAS  /tmp/ccRlXG6C.s 			page 104
+ARM GAS  /tmp/ccmVIraT.s 			page 104
 
 
  4767      ABA4B8
@@ -6238,12 +6238,12 @@ ARM GAS  /tmp/ccRlXG6C.s 			page 1
  4779 0172 F4F87857 		.ascii	"\364\370xWg0\242\307\002!\372\007\311\217\324\000"
  4779      6730A2C7 
  4779      0221FA07 
-ARM GAS  /tmp/ccRlXG6C.s 			page 105
+ARM GAS  /tmp/ccmVIraT.s 			page 105
 
 
  4779      C98FD400 
  4780              		.text
- 4781              		.section	.gnu.lto_.symbol_nodes.e863a120cfa14ee5,"e",%progbits
+ 4781              		.section	.gnu.lto_.symbol_nodes.aa003480499d0cda,"e",%progbits
  4782 0000 789C6D8C 		.ascii	"x\234m\214\271\015\2000\020\004\367\316\026\246\013"
  4782      B90D8030 
  4782      1004F7CE 
@@ -6275,13 +6275,13 @@ ARM GAS  /tmp/ccRlXG6C.s 			page 1
  4788      E4800BEE 
  4788      7C49D7
  4789              		.text
- 4790              		.section	.gnu.lto_.refs.e863a120cfa14ee5,"e",%progbits
+ 4790              		.section	.gnu.lto_.refs.aa003480499d0cda,"e",%progbits
  4791 0000 789CE360 		.ascii	"x\234\343``\004B \000\000\000]\000\013"
  4791      60044220 
  4791      0000005D 
  4791      000B
  4792              		.text
- 4793              		.section	.gnu.lto_.decls.e863a120cfa14ee5,"e",%progbits
+ 4793              		.section	.gnu.lto_.decls.aa003480499d0cda,"e",%progbits
  4794 0000 789CA553 		.ascii	"x\234\245S[HTA\030\376\377s\266\\\217[Zt\201|\221^\352"
  4794      5B485441 
  4794      18FEFF73 
@@ -6298,7 +6298,7 @@ ARM GAS  /tmp/ccRlXG6C.s 			page 1
  4796      CC828CB0 
  4797 003b 7C30825C 		.ascii	"|0\202\\m5\315\264\313\352\272\276\030xC\"\012)**\212"
  4797      6D35CDB4 
-ARM GAS  /tmp/ccRlXG6C.s 			page 106
+ARM GAS  /tmp/ccmVIraT.s 			page 106
 
 
  4797      CBEABABE 
@@ -6358,7 +6358,7 @@ ARM GAS  /tmp/ccRlXG6C.s 			page 1
  4808      872CD6
  4809 0114 890A91EE 		.ascii	"\211\012\221\356N\335?6\201c\310\316\204\030\221\021"
  4809      4EDD3F36 
-ARM GAS  /tmp/ccRlXG6C.s 			page 107
+ARM GAS  /tmp/ccmVIraT.s 			page 107
 
 
  4809      8163C8CE 
@@ -6418,7 +6418,7 @@ ARM GAS  /tmp/ccRlXG6C.s 			page 1
  4821      7B901B2B 
  4821      7BD03A62 
  4821      33F4A25B 
-ARM GAS  /tmp/ccRlXG6C.s 			page 108
+ARM GAS  /tmp/ccmVIraT.s 			page 108
 
 
  4821      EAF47031 
@@ -6478,7 +6478,7 @@ ARM GAS  /tmp/ccRlXG6C.s 			page 1
  4833      1E389897 
  4833      95299E
  4834 02ca BB320201 		.ascii	"\2732\002\001\325\347wee\036\325|^\273\303\272{\337"
-ARM GAS  /tmp/ccRlXG6C.s 			page 109
+ARM GAS  /tmp/ccmVIraT.s 			page 109
 
 
  4834      D5E77765 
@@ -6517,7 +6517,7 @@ ARM GAS  /tmp/ccRlXG6C.s 			page 1
  4841      39A15F03 
  4841      EC861A
  4842              		.text
- 4843              		.section	.gnu.lto_.symtab.e863a120cfa14ee5,"e",%progbits
+ 4843              		.section	.gnu.lto_.symtab.aa003480499d0cda,"e",%progbits
  4844 0000 69727149 		.ascii	"irqInit\000"
  4844      6E697400 
  4845 0008 00       		.ascii	"\000"
@@ -6538,7 +6538,7 @@ ARM GAS  /tmp/ccRlXG6C.s 			page 1
  4856 0030 6E766963 		.ascii	"nvicEnableVector\000"
  4856      456E6162 
  4856      6C655665 
-ARM GAS  /tmp/ccRlXG6C.s 			page 110
+ARM GAS  /tmp/ccmVIraT.s 			page 110
 
 
  4856      63746F72 
@@ -6590,12 +6590,12 @@ ARM GAS  /tmp/ccRlXG6C.s 			page 1
  4876              		.comm	__gnu_lto_v1,1,1
  4877              		.comm	__gnu_lto_slim,1,1
  4878              		.ident	"GCC: (GNU Tools for Arm Embedded Processors 9-2019-q4-major) 9.2.1 20191025 (release) [ARM
-ARM GAS  /tmp/ccRlXG6C.s 			page 111
+ARM GAS  /tmp/ccmVIraT.s 			page 111
 
 
 DEFINED SYMBOLS
                             *ABS*:0000000000000000 stm32_isr.c
-     /tmp/ccRlXG6C.s:50     .gnu.debuglto_.debug_info:0000000000000000 stm32_isr.c.5a94b155
+     /tmp/ccmVIraT.s:50     .gnu.debuglto_.debug_info:0000000000000000 stm32_isr.c.5a94b155
                             *COM*:0000000000000001 __gnu_lto_v1
                             *COM*:0000000000000001 __gnu_lto_slim
 

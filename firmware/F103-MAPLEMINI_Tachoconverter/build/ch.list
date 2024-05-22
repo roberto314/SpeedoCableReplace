@@ -97,129 +97,345 @@ Disassembly of section .vectors:
 Disassembly of section .text:
 
 08000160 <_crt0_entry>:
+                .align  2
+                .thumb_func
+                .global _crt0_entry
+_crt0_entry:
+                /* Interrupts are globally masked initially.*/
+                cpsid   i
  8000160:	b672      	cpsid	i
+
+#if CRT0_FORCE_MSP_INIT == TRUE
+                /* MSP stack pointers initialization.*/
+                ldr     r0, =__main_stack_end__
  8000162:	4827      	ldr	r0, [pc, #156]	; (8000200 <endfiniloop+0x4>)
+                msr     MSP, r0
  8000164:	f380 8808 	msr	MSP, r0
+#endif
+
+                /* PSP stack pointers initialization.*/
+                ldr     r0, =__process_stack_end__
  8000168:	4826      	ldr	r0, [pc, #152]	; (8000204 <endfiniloop+0x8>)
+                msr     PSP, r0
  800016a:	f380 8809 	msr	PSP, r0
+
+#if CRT0_VTOR_INIT == TRUE
+                ldr     r0, =_vectors
  800016e:	4826      	ldr	r0, [pc, #152]	; (8000208 <endfiniloop+0xc>)
+                movw    r1, #SCB_VTOR & 0xFFFF
  8000170:	f64e 5108 	movw	r1, #60680	; 0xed08
+                movt    r1, #SCB_VTOR >> 16
  8000174:	f2ce 0100 	movt	r1, #57344	; 0xe000
+                str     r0, [r1]
  8000178:	6008      	str	r0, [r1, #0]
+
+                /* Enforcing FPCA bit in the CONTROL register.*/
+                movs    r0, #CRT0_CONTROL_INIT | CONTROL_FPCA
+
+#else
+                movs    r0, #CRT0_CONTROL_INIT
  800017a:	2002      	movs	r0, #2
+#endif
+
+                /* CONTROL register initialization as configured.*/
+                msr     CONTROL, r0
  800017c:	f380 8814 	msr	CONTROL, r0
+                isb
  8000180:	f3bf 8f6f 	isb	sy
+
+#if CRT0_INIT_CORE == TRUE
+                /* Core initialization.*/
+                bl      __core_init
  8000184:	f005 fe34 	bl	8005df0 <__core_init>
+#endif
+
+                /* Early initialization.*/
+                bl      __early_init
  8000188:	f005 fa8a 	bl	80056a0 <__early_init>
+
+#if CRT0_INIT_STACKS == TRUE
+                ldr     r0, =CRT0_STACKS_FILL_PATTERN
  800018c:	f04f 3055 	mov.w	r0, #1431655765	; 0x55555555
+                /* Main Stack initialization. Note, it assumes that the
+                   stack size is a multiple of 4 so the linker file must
+                   ensure this.*/
+                ldr     r1, =__main_stack_base__
  8000190:	491e      	ldr	r1, [pc, #120]	; (800020c <endfiniloop+0x10>)
+                ldr     r2, =__main_stack_end__
  8000192:	4a1b      	ldr	r2, [pc, #108]	; (8000200 <endfiniloop+0x4>)
 
 08000194 <msloop>:
+msloop:
+                cmp     r1, r2
  8000194:	4291      	cmp	r1, r2
+                itt     lo
  8000196:	bf3c      	itt	cc
+                strlo   r0, [r1], #4
  8000198:	f841 0b04 	strcc.w	r0, [r1], #4
+                blo     msloop
  800019c:	e7fa      	bcc.n	8000194 <msloop>
+
+                /* Process Stack initialization. Note, it assumes that the
+                   stack size is a multiple of 4 so the linker file must
+                   ensure this.*/
+                ldr     r1, =__process_stack_base__
  800019e:	491c      	ldr	r1, [pc, #112]	; (8000210 <endfiniloop+0x14>)
+                ldr     r2, =__process_stack_end__
  80001a0:	4a18      	ldr	r2, [pc, #96]	; (8000204 <endfiniloop+0x8>)
 
 080001a2 <psloop>:
+psloop:
+                cmp     r1, r2
  80001a2:	4291      	cmp	r1, r2
+                itt     lo
  80001a4:	bf3c      	itt	cc
+                strlo   r0, [r1], #4
  80001a6:	f841 0b04 	strcc.w	r0, [r1], #4
+                blo     psloop
  80001aa:	e7fa      	bcc.n	80001a2 <psloop>
+#endif
+
+#if CRT0_INIT_DATA == TRUE
+                /* Data initialization. Note, it assumes that the DATA size
+                  is a multiple of 4 so the linker file must ensure this.*/
+                ldr     r1, =__textdata_base__
  80001ac:	4919      	ldr	r1, [pc, #100]	; (8000214 <endfiniloop+0x18>)
+                ldr     r2, =__data_base__
  80001ae:	4a1a      	ldr	r2, [pc, #104]	; (8000218 <endfiniloop+0x1c>)
+                ldr     r3, =__data_end__
  80001b0:	4b1a      	ldr	r3, [pc, #104]	; (800021c <endfiniloop+0x20>)
 
 080001b2 <dloop>:
+dloop:
+                cmp     r2, r3
  80001b2:	429a      	cmp	r2, r3
+                ittt    lo
  80001b4:	bf3e      	ittt	cc
+                ldrlo   r0, [r1], #4
  80001b6:	f851 0b04 	ldrcc.w	r0, [r1], #4
+                strlo   r0, [r2], #4
  80001ba:	f842 0b04 	strcc.w	r0, [r2], #4
+                blo     dloop
  80001be:	e7f8      	bcc.n	80001b2 <dloop>
+#endif
+
+#if CRT0_INIT_BSS == TRUE
+                /* BSS initialization. Note, it assumes that the DATA size
+                  is a multiple of 4 so the linker file must ensure this.*/
+                movs    r0, #0
  80001c0:	2000      	movs	r0, #0
+                ldr     r1, =__bss_base__
  80001c2:	4917      	ldr	r1, [pc, #92]	; (8000220 <endfiniloop+0x24>)
+                ldr     r2, =__bss_end__
  80001c4:	4a17      	ldr	r2, [pc, #92]	; (8000224 <endfiniloop+0x28>)
 
 080001c6 <bloop>:
+bloop:
+                cmp     r1, r2
  80001c6:	4291      	cmp	r1, r2
+                itt     lo
  80001c8:	bf3c      	itt	cc
+                strlo   r0, [r1], #4
  80001ca:	f841 0b04 	strcc.w	r0, [r1], #4
+                blo     bloop
  80001ce:	e7fa      	bcc.n	80001c6 <bloop>
+#endif
+
+#if CRT0_INIT_RAM_AREAS == TRUE
+                /* RAM areas initialization.*/
+                bl      __init_ram_areas
  80001d0:	f005 fdc6 	bl	8005d60 <__init_ram_areas>
+#endif
+
+                /* Late initialization..*/
+                bl      __late_init
  80001d4:	f005 fe04 	bl	8005de0 <__late_init>
+
+#if CRT0_CALL_CONSTRUCTORS == TRUE
+                /* Constructors invocation.*/
+                ldr     r4, =__init_array_base__
  80001d8:	4c13      	ldr	r4, [pc, #76]	; (8000228 <endfiniloop+0x2c>)
+                ldr     r5, =__init_array_end__
  80001da:	4d14      	ldr	r5, [pc, #80]	; (800022c <endfiniloop+0x30>)
 
 080001dc <initloop>:
+initloop:
+                cmp     r4, r5
  80001dc:	42ac      	cmp	r4, r5
+                bge     endinitloop
  80001de:	da03      	bge.n	80001e8 <endinitloop>
+                ldr     r1, [r4], #4
  80001e0:	f854 1b04 	ldr.w	r1, [r4], #4
+                blx     r1
  80001e4:	4788      	blx	r1
+                b       initloop
  80001e6:	e7f9      	b.n	80001dc <initloop>
 
 080001e8 <endinitloop>:
+endinitloop:
+#endif
+
+                /* Main program invocation, r0 contains the returned value.*/
+                bl      main
  80001e8:	f004 fa42 	bl	8004670 <main>
+
+#if CRT0_CALL_DESTRUCTORS == TRUE
+                /* Destructors invocation.*/
+                ldr     r4, =__fini_array_base__
  80001ec:	4c10      	ldr	r4, [pc, #64]	; (8000230 <endfiniloop+0x34>)
+                ldr     r5, =__fini_array_end__
  80001ee:	4d11      	ldr	r5, [pc, #68]	; (8000234 <endfiniloop+0x38>)
 
 080001f0 <finiloop>:
+finiloop:
+                cmp     r4, r5
  80001f0:	42ac      	cmp	r4, r5
+                bge     endfiniloop
  80001f2:	da03      	bge.n	80001fc <endfiniloop>
+                ldr     r1, [r4], #4
  80001f4:	f854 1b04 	ldr.w	r1, [r4], #4
+                blx     r1
  80001f8:	4788      	blx	r1
+                b       finiloop
  80001fa:	e7f9      	b.n	80001f0 <finiloop>
 
 080001fc <endfiniloop>:
+endfiniloop:
+#endif
+
+                /* Branching to the defined exit handler.*/
+                b       __default_exit
  80001fc:	f005 bde8 	b.w	8005dd0 <__default_exit>
+                ldr     r0, =__main_stack_end__
  8000200:	20000400 	.word	0x20000400
+                ldr     r0, =__process_stack_end__
  8000204:	20000800 	.word	0x20000800
+                ldr     r0, =_vectors
  8000208:	08000000 	.word	0x08000000
+                ldr     r1, =__main_stack_base__
  800020c:	20000000 	.word	0x20000000
+                ldr     r1, =__process_stack_base__
  8000210:	20000400 	.word	0x20000400
+                ldr     r1, =__textdata_base__
  8000214:	080075b0 	.word	0x080075b0
+                ldr     r2, =__data_base__
  8000218:	20000800 	.word	0x20000800
+                ldr     r3, =__data_end__
  800021c:	20000d30 	.word	0x20000d30
+                ldr     r1, =__bss_base__
  8000220:	20000d30 	.word	0x20000d30
+                ldr     r2, =__bss_end__
  8000224:	200013c8 	.word	0x200013c8
+                ldr     r4, =__init_array_base__
  8000228:	08000160 	.word	0x08000160
+                ldr     r5, =__init_array_end__
  800022c:	08000160 	.word	0x08000160
+                ldr     r4, =__fini_array_base__
  8000230:	08000160 	.word	0x08000160
+                ldr     r5, =__fini_array_end__
  8000234:	08000160 	.word	0x08000160
 
 08000238 <Reset_Handler>:
+
+        .align      2
+        .thumb_func
+        .weak       Reset_Handler
+Reset_Handler:
+         b          _crt0_entry
  8000238:	e792      	b.n	8000160 <_crt0_entry>
 
 0800023a <BusFault_Handler>:
+        .thumb_func
+Vector3F8:
+        .thumb_func
+Vector3FC:
+#endif
+        bl          _unhandled_exception
  800023a:	f000 f800 	bl	800023e <_unhandled_exception>
 
 0800023e <_unhandled_exception>:
+
+        .thumb_func
+        .weak       _unhandled_exception
+_unhandled_exception:
+.stay:
+        b           .stay
  800023e:	e7fe      	b.n	800023e <_unhandled_exception>
 
 08000240 <_port_switch>:
+ * Performs a context switch between two threads.
+ *--------------------------------------------------------------------------*/
+                .thumb_func
+                .globl  _port_switch
+_port_switch:
+                push    {r4, r5, r6, r7, r8, r9, r10, r11, lr}
  8000240:	e92d 4ff0 	stmdb	sp!, {r4, r5, r6, r7, r8, r9, sl, fp, lr}
+#if PORT_SWITCHED_REGIONS_NUMBER == 4
+                push    {r4, r5, r6, r7, r8, r9, r10, r11}
+#endif
+#endif
+
+                str     sp, [r1, #CONTEXT_OFFSET]
  8000244:	f8c1 d014 	str.w	sp, [r1, #20]
+#if (CORTEX_SIMPLIFIED_PRIORITY == FALSE) &&                                \
+    ((CORTEX_MODEL == 3) || (CORTEX_MODEL == 4))
+                /* Workaround for ARM errata 752419, only applied if
+                   condition exists for it to be triggered.*/
+                ldr     r3, [r0, #CONTEXT_OFFSET]
  8000248:	6943      	ldr	r3, [r0, #20]
+                mov     sp, r3
  800024a:	469d      	mov	sp, r3
+
+#if CORTEX_USE_FPU
+                /* Restoring FPU context.*/
+                vpop    {s16-s31}
+#endif
+                pop     {r4, r5, r6, r7, r8, r9, r10, r11, pc}
  800024c:	e8bd 8ff0 	ldmia.w	sp!, {r4, r5, r6, r7, r8, r9, sl, fp, pc}
 
 08000250 <_port_thread_start>:
+                bl      _stats_stop_measure_crit_thd
+#endif
+#if CORTEX_SIMPLIFIED_PRIORITY
+                cpsie   i
+#else
+                movs    r3, #0              /* CORTEX_BASEPRI_DISABLED */
  8000250:	2300      	movs	r3, #0
+                msr     BASEPRI, r3
  8000252:	f383 8811 	msr	BASEPRI, r3
+#endif
+                mov     r0, r5
  8000256:	4628      	mov	r0, r5
+                blx     r4
  8000258:	47a0      	blx	r4
+                movs    r0, #0              /* MSG_OK */
  800025a:	2000      	movs	r0, #0
+                bl      chThdExit
  800025c:	f004 f8e0 	bl	8004420 <chThdExit>
 
 08000260 <_zombies>:
+_zombies:       b       _zombies
  8000260:	e7fe      	b.n	8000260 <_zombies>
 
 08000262 <_port_switch_from_isr>:
+                bl      _stats_start_measure_crit_thd
+#endif
+#if CH_DBG_SYSTEM_STATE_CHECK
+                bl      _dbg_check_lock
+#endif
+                bl      chSchDoReschedule
  8000262:	f004 f8e5 	bl	8004430 <chSchDoReschedule>
 
 08000266 <_port_exit_from_isr>:
+                movt    r3, #:upper16:SCB_ICSR
+                mov     r2, ICSR_PENDSVSET
+                str     r2, [r3, #0]
+                cpsie   i
+#else /* !CORTEX_SIMPLIFIED_PRIORITY */
+                svc     #0
  8000266:	df00      	svc	0
+#endif /* !CORTEX_SIMPLIFIED_PRIORITY */
+.L1:            b       .L1
  8000268:	e7fe      	b.n	8000268 <_port_exit_from_isr+0x2>
 	...
 
@@ -10266,207 +10482,203 @@ void sd_lld_start(SerialDriver *sdp, const SerialConfig *config) {
  8004d64:	6141      	str	r1, [r0, #20]
   palSetPadMode(GPIOC, 13, PAL_MODE_OUTPUT_PUSHPULL); // EPROM WP
  8004d66:	f7fc ff8b 	bl	8001c80 <_pal_lld_setgroupmode>
-
-  chprintf((BaseSequentialStream *)&SD2, "ChibiOS Bluepill F103 Shell v0.1\r\n");
- 8004d6a:	495f      	ldr	r1, [pc, #380]	; (8004ee8 <main+0x878>)
- 8004d6c:	485f      	ldr	r0, [pc, #380]	; (8004eec <main+0x87c>)
- 8004d6e:	f7fd fcbf 	bl	80026f0 <chprintf>
- 8004d72:	4b5f      	ldr	r3, [pc, #380]	; (8004ef0 <main+0x880>)
- 8004d74:	2220      	movs	r2, #32
- 8004d76:	601b      	str	r3, [r3, #0]
- 8004d78:	f382 8811 	msr	BASEPRI, r2
+ 8004d6a:	2320      	movs	r3, #32
+ 8004d6c:	f383 8811 	msr	BASEPRI, r3
   if (i2cp->state == I2C_STOP) {
- 8004d7c:	f898 9000 	ldrb.w	r9, [r8]
+ 8004d70:	f898 9000 	ldrb.w	r9, [r8]
   osalDbgCheck((i2cp != NULL) && (config != NULL));
   osalDbgAssert((i2cp->state == I2C_STOP) || (i2cp->state == I2C_READY) ||
                 (i2cp->state == I2C_LOCKED), "invalid state");
 
   osalSysLock();
   i2cp->config = config;
- 8004d80:	4b5c      	ldr	r3, [pc, #368]	; (8004ef4 <main+0x884>)
- 8004d82:	f1b9 0f01 	cmp.w	r9, #1
+ 8004d74:	4b5c      	ldr	r3, [pc, #368]	; (8004ee8 <main+0x878>)
+ 8004d76:	f1b9 0f01 	cmp.w	r9, #1
   I2C_TypeDef *dp = i2cp->i2c;
- 8004d86:	f8d8 7034 	ldr.w	r7, [r8, #52]	; 0x34
- 8004d8a:	f8c8 3004 	str.w	r3, [r8, #4]
+ 8004d7a:	f8d8 7034 	ldr.w	r7, [r8, #52]	; 0x34
+ 8004d7e:	f8c8 3004 	str.w	r3, [r8, #4]
   if (i2cp->state == I2C_STOP) {
- 8004d8e:	d13c      	bne.n	8004e0a <main+0x79a>
+ 8004d82:	d13c      	bne.n	8004dfe <main+0x78e>
     i2cp->txdmamode = STM32_DMA_CR_PSIZE_BYTE | STM32_DMA_CR_MSIZE_BYTE |
- 8004d90:	239a      	movs	r3, #154	; 0x9a
+ 8004d84:	239a      	movs	r3, #154	; 0x9a
     i2cp->rxdmamode = STM32_DMA_CR_PSIZE_BYTE | STM32_DMA_CR_MSIZE_BYTE |
- 8004d92:	228a      	movs	r2, #138	; 0x8a
+ 8004d86:	228a      	movs	r2, #138	; 0x8a
       rccResetI2C1();
- 8004d94:	4e4f      	ldr	r6, [pc, #316]	; (8004ed4 <main+0x864>)
+ 8004d88:	4e52      	ldr	r6, [pc, #328]	; (8004ed4 <main+0x864>)
     i2cp->txdmamode = STM32_DMA_CR_PSIZE_BYTE | STM32_DMA_CR_MSIZE_BYTE |
- 8004d96:	f8c8 3028 	str.w	r3, [r8, #40]	; 0x28
+ 8004d8a:	f8c8 3028 	str.w	r3, [r8, #40]	; 0x28
       rccResetI2C1();
+ 8004d8e:	6933      	ldr	r3, [r6, #16]
+    i2cp->rxdmamode = STM32_DMA_CR_PSIZE_BYTE | STM32_DMA_CR_MSIZE_BYTE |
+ 8004d90:	f8c8 2024 	str.w	r2, [r8, #36]	; 0x24
+      rccResetI2C1();
+ 8004d94:	f443 1300 	orr.w	r3, r3, #2097152	; 0x200000
+ 8004d98:	6133      	str	r3, [r6, #16]
  8004d9a:	6933      	ldr	r3, [r6, #16]
-    i2cp->rxdmamode = STM32_DMA_CR_PSIZE_BYTE | STM32_DMA_CR_MSIZE_BYTE |
- 8004d9c:	f8c8 2024 	str.w	r2, [r8, #36]	; 0x24
-      rccResetI2C1();
- 8004da0:	f443 1300 	orr.w	r3, r3, #2097152	; 0x200000
- 8004da4:	6133      	str	r3, [r6, #16]
+ 8004d9c:	4953      	ldr	r1, [pc, #332]	; (8004eec <main+0x87c>)
+ 8004d9e:	f423 1300 	bic.w	r3, r3, #2097152	; 0x200000
+ 8004da2:	6133      	str	r3, [r6, #16]
+ 8004da4:	2006      	movs	r0, #6
  8004da6:	6933      	ldr	r3, [r6, #16]
- 8004da8:	4953      	ldr	r1, [pc, #332]	; (8004ef8 <main+0x888>)
- 8004daa:	f423 1300 	bic.w	r3, r3, #2097152	; 0x200000
- 8004dae:	6133      	str	r3, [r6, #16]
- 8004db0:	2006      	movs	r0, #6
- 8004db2:	6933      	ldr	r3, [r6, #16]
 const stm32_dma_stream_t *dmaStreamAllocI(uint32_t id,
- 8004db4:	f7fc fc5c 	bl	8001670 <dmaStreamAllocI.part.0.constprop.0>
- 8004db8:	4603      	mov	r3, r0
- 8004dba:	4950      	ldr	r1, [pc, #320]	; (8004efc <main+0x88c>)
- 8004dbc:	2005      	movs	r0, #5
+ 8004da8:	f7fc fc62 	bl	8001670 <dmaStreamAllocI.part.0.constprop.0>
+ 8004dac:	4603      	mov	r3, r0
+ 8004dae:	4950      	ldr	r1, [pc, #320]	; (8004ef0 <main+0x880>)
+ 8004db0:	2005      	movs	r0, #5
       i2cp->dmarx = dmaStreamAllocI(STM32_I2C_I2C1_RX_DMA_STREAM,
- 8004dbe:	f8c8 302c 	str.w	r3, [r8, #44]	; 0x2c
- 8004dc2:	f7fc fc55 	bl	8001670 <dmaStreamAllocI.part.0.constprop.0>
- 8004dc6:	4602      	mov	r2, r0
+ 8004db2:	f8c8 302c 	str.w	r3, [r8, #44]	; 0x2c
+ 8004db6:	f7fc fc5b 	bl	8001670 <dmaStreamAllocI.part.0.constprop.0>
+ 8004dba:	4602      	mov	r2, r0
   NVIC->__IPR[n] = NVIC_PRIORITY_MASK(prio);
- 8004dc8:	f04f 0c50 	mov.w	ip, #80	; 0x50
+ 8004dbc:	f04f 0c50 	mov.w	ip, #80	; 0x50
   NVIC->__ICPR[n >> 5U] = 1U << (n & 0x1FU);
- 8004dcc:	f04f 4000 	mov.w	r0, #2147483648	; 0x80000000
+ 8004dc0:	f04f 4000 	mov.w	r0, #2147483648	; 0x80000000
       rccEnableI2C1(true);
- 8004dd0:	69f3      	ldr	r3, [r6, #28]
+ 8004dc4:	69f3      	ldr	r3, [r6, #28]
       i2cp->dmatx = dmaStreamAllocI(STM32_I2C_I2C1_TX_DMA_STREAM,
- 8004dd2:	f8c8 2030 	str.w	r2, [r8, #48]	; 0x30
+ 8004dc6:	f8c8 2030 	str.w	r2, [r8, #48]	; 0x30
       rccEnableI2C1(true);
- 8004dd6:	f443 1300 	orr.w	r3, r3, #2097152	; 0x200000
- 8004dda:	61f3      	str	r3, [r6, #28]
+ 8004dca:	f443 1300 	orr.w	r3, r3, #2097152	; 0x200000
+ 8004dce:	61f3      	str	r3, [r6, #28]
       i2cp->txdmamode |= STM32_DMA_CR_CHSEL(I2C1_TX_DMA_CHANNEL) |
- 8004ddc:	e9d8 2309 	ldrd	r2, r3, [r8, #36]	; 0x24
+ 8004dd0:	e9d8 2309 	ldrd	r2, r3, [r8, #36]	; 0x24
       i2cp->rxdmamode |= STM32_DMA_CR_CHSEL(I2C1_RX_DMA_CHANNEL) |
- 8004de0:	f442 5140 	orr.w	r1, r2, #12288	; 0x3000
+ 8004dd4:	f442 5140 	orr.w	r1, r2, #12288	; 0x3000
       i2cp->txdmamode |= STM32_DMA_CR_CHSEL(I2C1_TX_DMA_CHANNEL) |
- 8004de4:	f443 5240 	orr.w	r2, r3, #12288	; 0x3000
+ 8004dd8:	f443 5240 	orr.w	r2, r3, #12288	; 0x3000
       rccEnableI2C1(true);
- 8004de8:	69f3      	ldr	r3, [r6, #28]
+ 8004ddc:	69f3      	ldr	r3, [r6, #28]
   NVIC->__IPR[n] = NVIC_PRIORITY_MASK(prio);
- 8004dea:	4b3b      	ldr	r3, [pc, #236]	; (8004ed8 <main+0x868>)
+ 8004dde:	4b3e      	ldr	r3, [pc, #248]	; (8004ed8 <main+0x868>)
       i2cp->rxdmamode |= STM32_DMA_CR_CHSEL(I2C1_RX_DMA_CHANNEL) |
- 8004dec:	f8c8 1024 	str.w	r1, [r8, #36]	; 0x24
- 8004df0:	f883 c31f 	strb.w	ip, [r3, #799]	; 0x31f
+ 8004de0:	f8c8 1024 	str.w	r1, [r8, #36]	; 0x24
+ 8004de4:	f883 c31f 	strb.w	ip, [r3, #799]	; 0x31f
       i2cp->txdmamode |= STM32_DMA_CR_CHSEL(I2C1_TX_DMA_CHANNEL) |
- 8004df4:	f8c8 2028 	str.w	r2, [r8, #40]	; 0x28
+ 8004de8:	f8c8 2028 	str.w	r2, [r8, #40]	; 0x28
   NVIC->__ICPR[n >> 5U] = 1U << (n & 0x1FU);
- 8004df8:	f8c3 0180 	str.w	r0, [r3, #384]	; 0x180
+ 8004dec:	f8c3 0180 	str.w	r0, [r3, #384]	; 0x180
   NVIC->__ISER[n >> 5U] = 1U << (n & 0x1FU);
- 8004dfc:	6018      	str	r0, [r3, #0]
+ 8004df0:	6018      	str	r0, [r3, #0]
   NVIC->__IPR[n] = NVIC_PRIORITY_MASK(prio);
- 8004dfe:	f883 c320 	strb.w	ip, [r3, #800]	; 0x320
+ 8004df2:	f883 c320 	strb.w	ip, [r3, #800]	; 0x320
   NVIC->__ICPR[n >> 5U] = 1U << (n & 0x1FU);
- 8004e02:	f8c3 9184 	str.w	r9, [r3, #388]	; 0x184
+ 8004df6:	f8c3 9184 	str.w	r9, [r3, #388]	; 0x184
   NVIC->__ISER[n >> 5U] = 1U << (n & 0x1FU);
- 8004e06:	f8c3 9004 	str.w	r9, [r3, #4]
+ 8004dfa:	f8c3 9004 	str.w	r9, [r3, #4]
   dp->CR1 = I2C_CR1_SWRST;
- 8004e0a:	f44f 4c00 	mov.w	ip, #32768	; 0x8000
+ 8004dfe:	f44f 4c00 	mov.w	ip, #32768	; 0x8000
   dp->CR2 = I2C_CR2_ITERREN | I2C_CR2_DMAEN;
- 8004e0e:	f44f 6610 	mov.w	r6, #2304	; 0x900
+ 8004e02:	f44f 6610 	mov.w	r6, #2304	; 0x900
   dp->CR1 = 0;
- 8004e12:	2300      	movs	r3, #0
+ 8004e06:	2300      	movs	r3, #0
   dp->CR2 &= (uint16_t)~I2C_CR2_FREQ;
- 8004e14:	f64f 70c0 	movw	r0, #65472	; 0xffc0
+ 8004e08:	f64f 70c0 	movw	r0, #65472	; 0xffc0
   dmaStreamSetPeripheral(i2cp->dmarx, &dp->DR);
- 8004e18:	f8d8 102c 	ldr.w	r1, [r8, #44]	; 0x2c
- 8004e1c:	684a      	ldr	r2, [r1, #4]
+ 8004e0c:	f8d8 102c 	ldr.w	r1, [r8, #44]	; 0x2c
+ 8004e10:	684a      	ldr	r2, [r1, #4]
   dmaStreamSetPeripheral(i2cp->dmatx, &dp->DR);
- 8004e1e:	f8d8 1030 	ldr.w	r1, [r8, #48]	; 0x30
- 8004e22:	f8d1 e004 	ldr.w	lr, [r1, #4]
+ 8004e12:	f8d8 1030 	ldr.w	r1, [r8, #48]	; 0x30
+ 8004e16:	f8d1 e004 	ldr.w	lr, [r1, #4]
   dmaStreamSetPeripheral(i2cp->dmarx, &dp->DR);
- 8004e26:	f107 0110 	add.w	r1, r7, #16
- 8004e2a:	6091      	str	r1, [r2, #8]
+ 8004e1a:	f107 0110 	add.w	r1, r7, #16
+ 8004e1e:	6091      	str	r1, [r2, #8]
   i2c_lld_set_clock(i2cp);
- 8004e2c:	f8d8 2034 	ldr.w	r2, [r8, #52]	; 0x34
+ 8004e20:	f8d8 2034 	ldr.w	r2, [r8, #52]	; 0x34
   dmaStreamSetPeripheral(i2cp->dmatx, &dp->DR);
- 8004e30:	f8ce 1008 	str.w	r1, [lr, #8]
+ 8004e24:	f8ce 1008 	str.w	r1, [lr, #8]
   dp->CR1 = I2C_CR1_SWRST;
- 8004e34:	f8c7 c000 	str.w	ip, [r7]
+ 8004e28:	f8c7 c000 	str.w	ip, [r7]
   dp->CR1 = 0;
- 8004e38:	603b      	str	r3, [r7, #0]
+ 8004e2c:	603b      	str	r3, [r7, #0]
   dp->CR2 = I2C_CR2_ITERREN | I2C_CR2_DMAEN;
- 8004e3a:	607e      	str	r6, [r7, #4]
+ 8004e2e:	607e      	str	r6, [r7, #4]
   dp->CR2 &= (uint16_t)~I2C_CR2_FREQ;
- 8004e3c:	6856      	ldr	r6, [r2, #4]
+ 8004e30:	6856      	ldr	r6, [r2, #4]
   i2c_lld_set_clock(i2cp);
- 8004e3e:	f8d8 1004 	ldr.w	r1, [r8, #4]
+ 8004e32:	f8d8 1004 	ldr.w	r1, [r8, #4]
   dp->CR2 &= (uint16_t)~I2C_CR2_FREQ;
- 8004e42:	4006      	ands	r6, r0
+ 8004e36:	4006      	ands	r6, r0
   i2cdutycycle_t duty = i2cp->config->duty_cycle;
- 8004e44:	f891 c008 	ldrb.w	ip, [r1, #8]
+ 8004e38:	f891 c008 	ldrb.w	ip, [r1, #8]
   int32_t clock_speed = i2cp->config->clock_speed;
- 8004e48:	6848      	ldr	r0, [r1, #4]
+ 8004e3c:	6848      	ldr	r0, [r1, #4]
   dp->CR2 &= (uint16_t)~I2C_CR2_FREQ;
- 8004e4a:	6056      	str	r6, [r2, #4]
+ 8004e3e:	6056      	str	r6, [r2, #4]
   dp->CR2 |= (uint16_t)I2C_CLK_FREQ;
- 8004e4c:	6856      	ldr	r6, [r2, #4]
+ 8004e40:	6856      	ldr	r6, [r2, #4]
   if (clock_speed <= 100000) {
- 8004e4e:	f8df e0bc 	ldr.w	lr, [pc, #188]	; 8004f0c <main+0x89c>
+ 8004e42:	f8df e0c8 	ldr.w	lr, [pc, #200]	; 8004f0c <main+0x89c>
   dp->CR2 |= (uint16_t)I2C_CLK_FREQ;
- 8004e52:	f046 0624 	orr.w	r6, r6, #36	; 0x24
+ 8004e46:	f046 0624 	orr.w	r6, r6, #36	; 0x24
   if (clock_speed <= 100000) {
- 8004e56:	4570      	cmp	r0, lr
+ 8004e4a:	4570      	cmp	r0, lr
   dp->CR2 |= (uint16_t)I2C_CLK_FREQ;
- 8004e58:	6056      	str	r6, [r2, #4]
+ 8004e4c:	6056      	str	r6, [r2, #4]
   if (clock_speed <= 100000) {
- 8004e5a:	f300 8197 	bgt.w	800518c <main+0xb1c>
+ 8004e4e:	f300 819d 	bgt.w	800518c <main+0xb1c>
     clock_div = (uint16_t)(STM32_PCLK1 / (clock_speed * 2));
- 8004e5e:	4b28      	ldr	r3, [pc, #160]	; (8004f00 <main+0x890>)
- 8004e60:	0040      	lsls	r0, r0, #1
- 8004e62:	fb93 f3f0 	sdiv	r3, r3, r0
+ 8004e52:	4b28      	ldr	r3, [pc, #160]	; (8004ef4 <main+0x884>)
+ 8004e54:	0040      	lsls	r0, r0, #1
+ 8004e56:	fb93 f3f0 	sdiv	r3, r3, r0
     dp->TRISE = I2C_CLK_FREQ + 1;
- 8004e66:	2025      	movs	r0, #37	; 0x25
+ 8004e5a:	2025      	movs	r0, #37	; 0x25
     regCCR |= (clock_div & I2C_CCR_CCR);
- 8004e68:	f3c3 030b 	ubfx	r3, r3, #0, #12
+ 8004e5c:	f3c3 030b 	ubfx	r3, r3, #0, #12
     dp->TRISE = I2C_CLK_FREQ + 1;
- 8004e6c:	6210      	str	r0, [r2, #32]
+ 8004e60:	6210      	str	r0, [r2, #32]
   dp->CCR = regCCR;
- 8004e6e:	61d3      	str	r3, [r2, #28]
+ 8004e62:	61d3      	str	r3, [r2, #28]
   i2copmode_t opmode = i2cp->config->op_mode;
- 8004e70:	7809      	ldrb	r1, [r1, #0]
+ 8004e64:	7809      	ldrb	r1, [r1, #0]
   regCR1 = dp->CR1;
- 8004e72:	6813      	ldr	r3, [r2, #0]
+ 8004e66:	6813      	ldr	r3, [r2, #0]
   switch (opmode) {
- 8004e74:	2902      	cmp	r1, #2
+ 8004e68:	2902      	cmp	r1, #2
   regCR1 = dp->CR1;
- 8004e76:	b29b      	uxth	r3, r3
+ 8004e6a:	b29b      	uxth	r3, r3
   switch (opmode) {
- 8004e78:	f000 8182 	beq.w	8005180 <main+0xb10>
- 8004e7c:	2903      	cmp	r1, #3
- 8004e7e:	f000 817c 	beq.w	800517a <main+0xb0a>
- 8004e82:	2901      	cmp	r1, #1
- 8004e84:	f000 8175 	beq.w	8005172 <main+0xb02>
+ 8004e6c:	f000 8188 	beq.w	8005180 <main+0xb10>
+ 8004e70:	2903      	cmp	r1, #3
+ 8004e72:	f000 8182 	beq.w	800517a <main+0xb0a>
+ 8004e76:	2901      	cmp	r1, #1
+ 8004e78:	f000 817b 	beq.w	8005172 <main+0xb02>
   i2c_lld_start(i2cp);
   i2cp->state = I2C_READY;
- 8004e88:	f04f 0902 	mov.w	r9, #2
+ 8004e7c:	f04f 0902 	mov.w	r9, #2
   dp->CR1 = regCR1;
- 8004e8c:	6013      	str	r3, [r2, #0]
+ 8004e80:	6013      	str	r3, [r2, #0]
   dp->CR1 |= I2C_CR1_PE;
- 8004e8e:	683b      	ldr	r3, [r7, #0]
- 8004e90:	2600      	movs	r6, #0
- 8004e92:	f043 0301 	orr.w	r3, r3, #1
- 8004e96:	603b      	str	r3, [r7, #0]
- 8004e98:	f888 9000 	strb.w	r9, [r8]
- 8004e9c:	f386 8811 	msr	BASEPRI, r6
- *******************************************************************************
- */
-void I2CInitLocal(void) {
-  i2cStart(&I2C_BUS, &i2cfg1);
-  //palSetPadMode(GPIOB, 6, PAL_MODE_STM32_ALTERNATE_PUSHPULL);
-  palSetPadMode(GPIOB, 6, PAL_MODE_STM32_ALTERNATE_OPENDRAIN);
- 8004ea0:	2211      	movs	r2, #17
- 8004ea2:	2140      	movs	r1, #64	; 0x40
- 8004ea4:	4808      	ldr	r0, [pc, #32]	; (8004ec8 <main+0x858>)
- 8004ea6:	f7fc feeb 	bl	8001c80 <_pal_lld_setgroupmode>
-    //palSetPadMode(GPIOB, 7, PAL_MODE_STM32_ALTERNATE_PUSHPULL);
-  palSetPadMode(GPIOB, 7, PAL_MODE_STM32_ALTERNATE_OPENDRAIN);
- 8004eaa:	2211      	movs	r2, #17
- 8004eac:	2180      	movs	r1, #128	; 0x80
- 8004eae:	4806      	ldr	r0, [pc, #24]	; (8004ec8 <main+0x858>)
- 8004eb0:	f7fc fee6 	bl	8001c80 <_pal_lld_setgroupmode>
+ 8004e82:	683b      	ldr	r3, [r7, #0]
+ 8004e84:	2600      	movs	r6, #0
+ 8004e86:	f043 0301 	orr.w	r3, r3, #1
+ 8004e8a:	603b      	str	r3, [r7, #0]
+ 8004e8c:	f888 9000 	strb.w	r9, [r8]
+ 8004e90:	f386 8811 	msr	BASEPRI, r6
+  i2cStart(&EEPROM_I2CD, &i2cfg1); // I2C Bus Start
+  //palSetPadMode(GPIOB, 6, PAL_MODE_STM32_ALTERNATE_PUSHPULL); // I2C Pins
+  palSetPadMode(GPIOB, 6, PAL_MODE_STM32_ALTERNATE_OPENDRAIN); // I2C Pins
+ 8004e94:	2211      	movs	r2, #17
+ 8004e96:	2140      	movs	r1, #64	; 0x40
+ 8004e98:	480b      	ldr	r0, [pc, #44]	; (8004ec8 <main+0x858>)
+ 8004e9a:	f7fc fef1 	bl	8001c80 <_pal_lld_setgroupmode>
+    //palSetPadMode(GPIOB, 7, PAL_MODE_STM32_ALTERNATE_PUSHPULL); // I2C Pins
+  palSetPadMode(GPIOB, 7, PAL_MODE_STM32_ALTERNATE_OPENDRAIN); // I2C Pins
+ 8004e9e:	2211      	movs	r2, #17
+ 8004ea0:	2180      	movs	r1, #128	; 0x80
+ 8004ea2:	4809      	ldr	r0, [pc, #36]	; (8004ec8 <main+0x858>)
+ 8004ea4:	f7fc feec 	bl	8001c80 <_pal_lld_setgroupmode>
+  chprintf((BaseSequentialStream *)&SD2, "ChibiOS Bluepill F103 Shell v0.1\r\n");
+ 8004ea8:	4913      	ldr	r1, [pc, #76]	; (8004ef8 <main+0x888>)
+ 8004eaa:	4814      	ldr	r0, [pc, #80]	; (8004efc <main+0x88c>)
+ 8004eac:	f7fd fc20 	bl	80026f0 <chprintf>
+ 8004eb0:	4b13      	ldr	r3, [pc, #76]	; (8004f00 <main+0x890>)
 }
 
 void configInit(void) {
     chprintf((BaseSequentialStream *)&SD2, "Open EEPROM...");
- 8004eb4:	4913      	ldr	r1, [pc, #76]	; (8004f04 <main+0x894>)
- 8004eb6:	480d      	ldr	r0, [pc, #52]	; (8004eec <main+0x87c>)
+ 8004eb2:	4914      	ldr	r1, [pc, #80]	; (8004f04 <main+0x894>)
+ 8004eb4:	4811      	ldr	r0, [pc, #68]	; (8004efc <main+0x88c>)
+ 8004eb6:	601b      	str	r3, [r3, #0]
  8004eb8:	f7fd fc1a 	bl	80026f0 <chprintf>
     if (drv->id == id) {
  8004ebc:	4b12      	ldr	r3, [pc, #72]	; (8004f08 <main+0x898>)
@@ -10482,13 +10694,13 @@ void configInit(void) {
  8004edc:	40010800 	.word	0x40010800
  8004ee0:	20000ff0 	.word	0x20000ff0
  8004ee4:	40011000 	.word	0x40011000
- 8004ee8:	08007004 	.word	0x08007004
- 8004eec:	20000db4 	.word	0x20000db4
- 8004ef0:	20001274 	.word	0x20001274
- 8004ef4:	08007338 	.word	0x08007338
- 8004ef8:	08001c11 	.word	0x08001c11
- 8004efc:	08001bd1 	.word	0x08001bd1
- 8004f00:	02255100 	.word	0x02255100
+ 8004ee8:	08007338 	.word	0x08007338
+ 8004eec:	08001c11 	.word	0x08001c11
+ 8004ef0:	08001bd1 	.word	0x08001bd1
+ 8004ef4:	02255100 	.word	0x02255100
+ 8004ef8:	08007004 	.word	0x08007004
+ 8004efc:	20000db4 	.word	0x20000db4
+ 8004f00:	20001274 	.word	0x20001274
  8004f04:	08007028 	.word	0x08007028
  8004f08:	20000894 	.word	0x20000894
  8004f0c:	000186a0 	.word	0x000186a0
@@ -10849,19 +11061,19 @@ void hc05_init(void){
     regCR1 &= (uint16_t)~(I2C_CR1_SMBUS|I2C_CR1_SMBTYPE);
  8005172:	f023 030a 	bic.w	r3, r3, #10
  8005176:	b29b      	uxth	r3, r3
- 8005178:	e686      	b.n	8004e88 <main+0x818>
+ 8005178:	e680      	b.n	8004e7c <main+0x80c>
     regCR1 |= (I2C_CR1_SMBUS|I2C_CR1_SMBTYPE);
  800517a:	f043 030a 	orr.w	r3, r3, #10
- 800517e:	e683      	b.n	8004e88 <main+0x818>
+ 800517e:	e67d      	b.n	8004e7c <main+0x80c>
  8005180:	f023 0308 	bic.w	r3, r3, #8
  8005184:	b29b      	uxth	r3, r3
     regCR1 &= (uint16_t)~(I2C_CR1_SMBTYPE);
  8005186:	f043 0302 	orr.w	r3, r3, #2
- 800518a:	e67d      	b.n	8004e88 <main+0x818>
+ 800518a:	e677      	b.n	8004e7c <main+0x80c>
   else if (clock_speed <= 400000) {
  800518c:	4e3a      	ldr	r6, [pc, #232]	; (8005278 <main+0xc08>)
  800518e:	42b0      	cmp	r0, r6
- 8005190:	f73f ae6d 	bgt.w	8004e6e <main+0x7fe>
+ 8005190:	f73f ae67 	bgt.w	8004e62 <main+0x7f2>
     if (duty == FAST_DUTY_CYCLE_2) {
  8005194:	f1bc 0f02 	cmp.w	ip, #2
  8005198:	f000 8087 	beq.w	80052aa <main+0xc3a>
@@ -10879,7 +11091,7 @@ void hc05_init(void){
  80051ae:	f443 4300 	orr.w	r3, r3, #32768	; 0x8000
     dp->TRISE = (I2C_CLK_FREQ * 300 / 1000) + 1;
  80051b2:	6216      	str	r6, [r2, #32]
- 80051b4:	e65b      	b.n	8004e6e <main+0x7fe>
+ 80051b4:	e655      	b.n	8004e62 <main+0x7f2>
   direction?palSetPad(GPIOB, 4):palClearPad(GPIOB, 4);
  80051b6:	2310      	movs	r3, #16
  80051b8:	6173      	str	r3, [r6, #20]

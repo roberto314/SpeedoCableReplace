@@ -153,7 +153,7 @@ build/obj/comm.o: userlib/src/comm.c \
  /home/rob/Projects/ChibiStudio/ChibiStudio_20/tools/GNU\ Tools\ ARM\ Embedded/9.2.1\ 2019q4/arm-none-eabi/include/sys/string.h \
  ../../chibios_trunk/os/various/shell/shell.h cfg/shellconf.h \
  userlib/include/table.h userlib/include/eeprom.h userlib/include/table.h \
- userlib/include/i2c_local.h main.h
+ main.h
 
 ../../chibios_trunk/os/rt/include/ch.h:
 
@@ -478,7 +478,5 @@ userlib/include/table.h:
 userlib/include/eeprom.h:
 
 userlib/include/table.h:
-
-userlib/include/i2c_local.h:
 
 main.h:
