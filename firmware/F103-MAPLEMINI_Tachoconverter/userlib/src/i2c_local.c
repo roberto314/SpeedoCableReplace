@@ -20,6 +20,7 @@ along with Trunetcopter.  If not, see <http://www.gnu.org/licenses/>.
 
 #include "i2c_local.h"
 #include <string.h>
+#include "chprintf.h"
 
 /*
  ******************************************************************************
@@ -75,10 +76,10 @@ static systime_t calc_timeout(I2CDriver *i2cp, size_t txbytes, size_t rxbytes){
  */
 void I2CInitLocal(void) {
   i2cStart(&I2C_BUS, &i2cfg1);
-  palSetPadMode(GPIOB, 6, PAL_MODE_STM32_ALTERNATE_PUSHPULL);
-    //palSetPadMode(GPIOB, 6, PAL_MODE_STM32_ALTERNATE_OPENDRAIN);
+  //palSetPadMode(GPIOB, 6, PAL_MODE_STM32_ALTERNATE_PUSHPULL);
+  palSetPadMode(GPIOB, 6, PAL_MODE_STM32_ALTERNATE_OPENDRAIN);
     //palSetPadMode(GPIOB, 7, PAL_MODE_STM32_ALTERNATE_PUSHPULL);
-    palSetPadMode(GPIOB, 7, PAL_MODE_STM32_ALTERNATE_OPENDRAIN);
+  palSetPadMode(GPIOB, 7, PAL_MODE_STM32_ALTERNATE_OPENDRAIN);
 }
 
 msg_t i2c_transmit(i2caddr_t addr, const uint8_t *txbuf, size_t txbytes,
@@ -96,8 +97,10 @@ msg_t i2c_transmit(i2caddr_t addr, const uint8_t *txbuf, size_t txbytes,
     chThdSleepMilliseconds(1);
     i2cStart(&I2C_BUS, &i2cfg1);
     i2cReleaseBus(&I2C_BUS);
+    chprintf((BaseSequentialStream *)&SD2, "I2C Transmit OK.\r\n");
     return status;
   }
+  else chprintf((BaseSequentialStream *)&SD2, "I2C Transmit Error!\r\n");
   return status;
 }
 
@@ -115,8 +118,10 @@ msg_t i2c_receive(i2caddr_t addr, uint8_t *rxbuf, size_t rxbytes){
     chThdSleepMilliseconds(1);
     i2cStart(&I2C_BUS, &i2cfg1);
     i2cReleaseBus(&I2C_BUS);
+    chprintf((BaseSequentialStream *)&SD2, "I2C Receive OK.\r\n");
     return status;
   }
+  else chprintf((BaseSequentialStream *)&SD2, "I2C Receive Error!\r\n");
   return status;
 }
 

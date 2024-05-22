@@ -31,6 +31,8 @@
 uint16_t real_freq, f_enable = 1;
 float speed_in;
 uint16_t cnt;
+uint8_t direction = 0; //Startup Direction of Motor (0=CW, 1=CCW)
+
 //icucnt_t last_width;
 uint32_t last_period;
 configunion_t cudata = {
@@ -258,7 +260,7 @@ int main(void) {
   sdStart(&SD2, NULL);
   palSetPadMode(GPIOA, 2, PAL_MODE_STM32_ALTERNATE_PUSHPULL); //UART TX
   palSetPadMode(GPIOB, 4, PAL_MODE_OUTPUT_PUSHPULL); //CW/CCW
-  //palSetPad(GPIOB, 4);
+  direction?palSetPad(GPIOB, 4):palClearPad(GPIOB, 4);
   palClearPad(GPIOC, 13); // Set EPROM to Write Protect Off
   palSetPadMode(GPIOC, 13, PAL_MODE_OUTPUT_PUSHPULL); // EPROM WP
 
