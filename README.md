@@ -12,3 +12,7 @@ I found some on ebay. They look like this:
 
 This motor should be mounted to the speedometer. The microcontroller is a STM32F103 
 maple mini board. The firmware is based on ChibiOS 20 (trunk).
+
+Schematic:
+
+[Schematic](schematics/pdf/Tachoconverter.pdf)
