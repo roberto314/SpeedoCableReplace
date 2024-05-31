@@ -22,6 +22,7 @@
 #include "shell.h"
 #include "comm.h"
 #include "table.h"
+#include "i2c_local.h"
 #include "eeprom.h"
 #include "hc05.h"
 //################################################################################################
@@ -30,17 +31,15 @@
 uint16_t real_freq, f_enable = 1;
 float speed_in;
 uint16_t cnt;
-uint8_t direction = 0; //Startup Direction of Motor (0=CW, 1=CCW)
-
 //icucnt_t last_width;
 uint32_t last_period;
 configunion_t cudata = {
         .configstruct.ver = CONFIG_VERSION,
         .configstruct.chksm = CHECKSUM,
         .configstruct.table0.t_length = 23,
-        .configstruct.table0.in[0] = 0, 10, 20, 30, 40, 50, 60, 70, 80, 90, 100, 110, 120, 130, 140, 150, 160, 170, 180, 190, 200, 210, 220,
-        .configstruct.table0.out[0] = 48000, 24100, 12000, 8180, 6040, 4810, 3990, 3430, 2990, 2650, 2380, 2140, 1960, 1810, 1677, 1565, 1470, 1385, 1308, 1240, 1175, 1122, 1071
-
+        .configstruct.table0.in[0] =     0,   10,   20,   30,   40,   50,   60,   70,   80,   90,  100,  110,  120,  130,  140,  150,  160,  170, 180,  190,  200,  210, 220,
+        .configstruct.table0.out[0] = 1000, 1660, 1880, 2270, 2660, 3100, 3380, 3800, 4100, 4600, 5010, 5370, 5770, 6210, 6600, 7040, 7340, 7710, 8150, 8540, 8870, 9370, 9770
+// PERIOD
 
 };
 /*
@@ -51,17 +50,6 @@ configunion_t cudata = {
         .configstruct.corr = 1050
 };
 */
-static const I2CConfig i2cfg1 = {
-    OPMODE_I2C,
-    400000,
-    FAST_DUTY_CYCLE_2,
-};
-/*
-static const I2CConfig i2cfg1 = {
-    OPMODE_I2C,
-    100000,
-    STD_DUTY_CYCLE
-};*/
 //################################################################################################
 //                                  Function declarations
 void PWM_Off(void);
@@ -219,8 +207,7 @@ void ch_PWM_Freq(uint32_t freq){
 }
 void ch_Speed(uint16_t speed){
     //table lookup here!
-    //ch_PWM_Freq(read_table_u16(&(cudata.configstruct.table0), speed));
-    pwmEnableChannel(&PWMD4, 2, PWM_PERCENTAGE_TO_WIDTH(&PWMD4, speed));
+    pwmEnableChannel(&PWMD4, 2, PWM_PERCENTAGE_TO_WIDTH(&PWMD4, read_table_u16(&(cudata.configstruct.table0), speed)));
     pwmEnableChannelNotification(&PWMD4, 2);
 }
 void ch_fSpeed(uint16_t speed){ // fspeed is Fake speed. It uses a correction factor (corr)
@@ -270,19 +257,16 @@ int main(void) {
   sdStart(&SD2, NULL);
   palSetPadMode(GPIOA, 2, PAL_MODE_STM32_ALTERNATE_PUSHPULL); //UART TX
   palSetPadMode(GPIOB, 4, PAL_MODE_OUTPUT_PUSHPULL); //CW/CCW
-  direction?palSetPad(GPIOB, 4):palClearPad(GPIOB, 4);
+  palClearPad(GPIOB, 4);
   palClearPad(GPIOC, 13); // Set EPROM to Write Protect Off
   palSetPadMode(GPIOC, 13, PAL_MODE_OUTPUT_PUSHPULL); // EPROM WP
-  i2cStart(&EEPROM_I2CD, &i2cfg1); // I2C Bus Start
-  //palSetPadMode(GPIOB, 6, PAL_MODE_STM32_ALTERNATE_PUSHPULL); // I2C Pins
-  palSetPadMode(GPIOB, 6, PAL_MODE_STM32_ALTERNATE_OPENDRAIN); // I2C Pins
-    //palSetPadMode(GPIOB, 7, PAL_MODE_STM32_ALTERNATE_PUSHPULL); // I2C Pins
-  palSetPadMode(GPIOB, 7, PAL_MODE_STM32_ALTERNATE_OPENDRAIN); // I2C Pins
+
   chprintf((BaseSequentialStream *)&SD2, "ChibiOS Bluepill F103 Shell v0.1\r\n");
   /*
    * Shell manager initialization.
    */
   shellInit();
+  I2CInitLocal(); //Starts I2C Driver
   configInit();    //checks config version and checksum and, if OK, copies it to RAM
   hc05_init();
   /*

@@ -4,6 +4,8 @@
 
 ** TARGET **
 
+Tachoconverter
+
 The demo runs on the MapleMini without the original MapleMini bootloader.
 Serial Shell @ 38400 Baud, External I2C EPROM, PWM and ICP.
 

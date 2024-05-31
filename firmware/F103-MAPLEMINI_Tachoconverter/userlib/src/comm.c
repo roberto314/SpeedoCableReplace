@@ -17,6 +17,7 @@
 #include "shell.h"
 #include "table.h"
 #include "eeprom.h"
+#include "i2c_local.h"
 #include "main.h"
 
 uint16_t speed;
@@ -28,7 +29,6 @@ extern configunion_t cudata;
 extern I2CEepromFileStream eeFile;
 extern EepromFileStream *eeFS;
 extern uint16_t real_freq, f_enable;
-extern uint8_t direction;
 extern icucnt_t last_period;
 
 void update_values(uint16_t * v){
@@ -612,22 +612,16 @@ void cmd_dir(BaseSequentialStream *chp, int argc, char *argv[]) {
   (void) argc;
   (void )* argv;
   uint16_t dir;
-  if (argc == 0){
-    chprintf(chp, "Changes direction of Motor\r\n");
-    chprintf(chp, "Usage: dir[0,1] where 0 == CW and 1 == CCW\r\n");
-    chprintf(chp, "Dir is now: %d\r\n", direction);
-    return;
-  }
+  chprintf(chp, "Changes direction of Motor\r\n");
+  chprintf(chp, "Usage: dir[0,1] where 0 == CW and 1 == CW\r\n");
   dir = atoi(argv[0]);
   if (dir == 0){
-    direction = 0;
-    chprintf(chp, "Direction changed to: %d\r\n", dir);
-    palClearPad(GPIOB, 4);
+      chprintf(chp, "Direction changed to: %d\r\n", dir);
+      palSetPad(GPIOB, 4);
   }
   else if (dir == 1){
-    direction = 1;
     chprintf(chp, "Direction changed to: %d\r\n", dir);
-    palSetPad(GPIOB, 4);
+    palClearPad(GPIOB, 4);
   }
 }
 void cmd_ch_inp_f(BaseSequentialStream *chp, int argc, char *argv[]){

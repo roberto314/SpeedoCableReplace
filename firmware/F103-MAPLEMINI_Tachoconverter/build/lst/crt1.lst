@@ -1,4 +1,4 @@
-ARM GAS  /tmp/ccQv33l2.s 			page 1
+ARM GAS  /tmp/ccFOstLS.s 			page 1
 
 
    1              		.cpu cortex-m3
@@ -12,32 +12,32 @@ ARM GAS  /tmp/ccQv33l2.s 			page 1
    9              		.eabi_attribute 34, 1
   10              		.eabi_attribute 18, 4
   11              		.file	"crt1.c"
-  12              		.file 1 "/home/rob/Projects/ChibiStudio/ChibiStudio_20/tools/GNU Tools ARM Embedded/9.2.1 2019q4/a
-  13              		.file 2 "/home/rob/Projects/ChibiStudio/ChibiStudio_20/tools/GNU Tools ARM Embedded/9.2.1 2019q4/a
+  12              		.file 1 "/home/rob/Data/rob/Projects/ChibiStudio/ChibiStudio_20/tools/GNU Tools ARM Embedded/9.2.1
+  13              		.file 2 "/home/rob/Data/rob/Projects/ChibiStudio/ChibiStudio_20/tools/GNU Tools ARM Embedded/9.2.1
   14              		.file 3 "../../chibios_trunk/os/common/ext/ARM/CMSIS/Core/Include/core_cm3.h"
   15              		.file 4 "../../chibios_trunk/os/common/ext/ST/STM32F1xx/system_stm32f1xx.h"
   16              		.file 5 "../../chibios_trunk/os/common/startup/ARMCMx/compilers/GCC/crt1.c"
   17              		.section	.gnu.debuglto_.debug_info,"e",%progbits
   18              	.Ldebug_info0:
-  19              		.hidden	crt1.c.167fc036
-  20              		.weak	crt1.c.167fc036
-  21              	crt1.c.167fc036:
+  19              		.hidden	crt1.c.45af5080
+  20              		.weak	crt1.c.45af5080
+  21              	crt1.c.45af5080:
   22 0000 59030000 		.4byte	0x359
   23 0004 0400     		.2byte	0x4
   24 0006 00000000 		.4byte	.Ldebug_abbrev0
   25 000a 04       		.byte	0x4
   26 000b 01       		.uleb128 0x1
-  27 000c C1020000 		.4byte	.LASF60
+  27 000c CA020000 		.4byte	.LASF60
   28 0010 0C       		.byte	0xc
-  29 0011 A7030000 		.4byte	.LASF61
-  30 0015 F8000000 		.4byte	.LASF62
+  29 0011 B0030000 		.4byte	.LASF61
+  30 0015 64010000 		.4byte	.LASF62
   31 0019 00000000 		.4byte	.Ldebug_line0
   32 001d 02       		.uleb128 0x2
   33 001e 01       		.byte	0x1
   34 001f 06       		.byte	0x6
-  35 0020 1E020000 		.4byte	.LASF0
+  35 0020 27020000 		.4byte	.LASF0
   36 0024 03       		.uleb128 0x3
-  37 0025 A7010000 		.4byte	.LASF4
+  37 0025 4A010000 		.4byte	.LASF4
   38 0029 01       		.byte	0x1
   39 002a 2B       		.byte	0x2b
   40 002b 18       		.byte	0x18
@@ -45,7 +45,7 @@ ARM GAS  /tmp/ccQv33l2.s 			page 1
   42 0030 02       		.uleb128 0x2
   43 0031 01       		.byte	0x1
   44 0032 08       		.byte	0x8
-  45 0033 E3010000 		.4byte	.LASF1
+  45 0033 EC010000 		.4byte	.LASF1
   46 0037 02       		.uleb128 0x2
   47 0038 02       		.byte	0x2
   48 0039 05       		.byte	0x5
@@ -53,12 +53,12 @@ ARM GAS  /tmp/ccQv33l2.s 			page 1
   50 003e 02       		.uleb128 0x2
   51 003f 02       		.byte	0x2
   52 0040 07       		.byte	0x7
-  53 0041 F1030000 		.4byte	.LASF3
+  53 0041 FA030000 		.4byte	.LASF3
   54 0045 03       		.uleb128 0x3
-  55 0046 A8040000 		.4byte	.LASF5
+  55 0046 B1040000 		.4byte	.LASF5
   56 004a 01       		.byte	0x1
   57 004b 4D       		.byte	0x4d
-ARM GAS  /tmp/ccQv33l2.s 			page 2
+ARM GAS  /tmp/ccFOstLS.s 			page 2
 
 
   58 004c 18       		.byte	0x18
@@ -66,7 +66,7 @@ ARM GAS  /tmp/ccQv33l2.s 			page 1
   60 0051 02       		.uleb128 0x2
   61 0052 04       		.byte	0x4
   62 0053 05       		.byte	0x5
-  63 0054 73010000 		.4byte	.LASF6
+  63 0054 16010000 		.4byte	.LASF6
   64 0058 03       		.uleb128 0x3
   65 0059 55000000 		.4byte	.LASF7
   66 005d 01       		.byte	0x1
@@ -76,7 +76,7 @@ ARM GAS  /tmp/ccQv33l2.s 			page 1
   70 0064 02       		.uleb128 0x2
   71 0065 04       		.byte	0x4
   72 0066 07       		.byte	0x7
-  73 0067 73020000 		.4byte	.LASF8
+  73 0067 7C020000 		.4byte	.LASF8
   74 006b 02       		.uleb128 0x2
   75 006c 08       		.byte	0x8
   76 006d 05       		.byte	0x5
@@ -84,7 +84,7 @@ ARM GAS  /tmp/ccQv33l2.s 			page 1
   78 0072 02       		.uleb128 0x2
   79 0073 08       		.byte	0x8
   80 0074 07       		.byte	0x7
-  81 0075 37020000 		.4byte	.LASF10
+  81 0075 40020000 		.4byte	.LASF10
   82 0079 04       		.uleb128 0x4
   83 007a 04       		.byte	0x4
   84 007b 05       		.byte	0x5
@@ -92,7 +92,7 @@ ARM GAS  /tmp/ccQv33l2.s 			page 1
   86 0080 02       		.uleb128 0x2
   87 0081 04       		.byte	0x4
   88 0082 07       		.byte	0x7
-  89 0083 66020000 		.4byte	.LASF11
+  89 0083 6F020000 		.4byte	.LASF11
   90 0087 03       		.uleb128 0x3
   91 0088 7F000000 		.4byte	.LASF12
   92 008c 02       		.byte	0x2
@@ -102,7 +102,7 @@ ARM GAS  /tmp/ccQv33l2.s 			page 1
   96 0093 05       		.uleb128 0x5
   97 0094 87000000 		.4byte	0x87
   98 0098 03       		.uleb128 0x3
-  99 0099 E9030000 		.4byte	.LASF13
+  99 0099 F2030000 		.4byte	.LASF13
  100 009d 02       		.byte	0x2
  101 009e 2C       		.byte	0x2c
  102 009f 13       		.byte	0x13
@@ -110,22 +110,22 @@ ARM GAS  /tmp/ccQv33l2.s 			page 1
  104 00a4 06       		.uleb128 0x6
  105 00a5 98000000 		.4byte	0x98
  106 00a9 03       		.uleb128 0x3
- 107 00aa 4E020000 		.4byte	.LASF14
+ 107 00aa 57020000 		.4byte	.LASF14
  108 00ae 02       		.byte	0x2
  109 00af 30       		.byte	0x30
  110 00b0 14       		.byte	0x14
  111 00b1 58000000 		.4byte	0x58
  112 00b5 07       		.uleb128 0x7
- 113 00b6 8B040000 		.4byte	.LASF15
+ 113 00b6 94040000 		.4byte	.LASF15
  114 00ba 03       		.byte	0x3
-ARM GAS  /tmp/ccQv33l2.s 			page 3
+ARM GAS  /tmp/ccFOstLS.s 			page 3
 
 
  115 00bb 4807     		.2byte	0x748
  116 00bd 19       		.byte	0x19
  117 00be A4000000 		.4byte	0xa4
  118 00c2 08       		.uleb128 0x8
- 119 00c3 2A040000 		.4byte	.LASF16
+ 119 00c3 33040000 		.4byte	.LASF16
  120 00c7 04       		.byte	0x4
  121 00c8 45       		.byte	0x45
  122 00c9 11       		.byte	0x11
@@ -140,7 +140,7 @@ ARM GAS  /tmp/ccQv33l2.s 			page 1
  131 00de 05       		.uleb128 0x5
  132 00df CE000000 		.4byte	0xce
  133 00e3 08       		.uleb128 0x8
- 134 00e4 5B040000 		.4byte	.LASF17
+ 134 00e4 64040000 		.4byte	.LASF17
  135 00e8 04       		.byte	0x4
  136 00e9 46       		.byte	0x46
  137 00ea 17       		.byte	0x17
@@ -155,7 +155,7 @@ ARM GAS  /tmp/ccQv33l2.s 			page 1
  146 00ff 05       		.uleb128 0x5
  147 0100 EF000000 		.4byte	0xef
  148 0104 08       		.uleb128 0x8
- 149 0105 10020000 		.4byte	.LASF18
+ 149 0105 19020000 		.4byte	.LASF18
  150 0109 04       		.byte	0x4
  151 010a 47       		.byte	0x47
  152 010b 17       		.byte	0x17
@@ -167,18 +167,18 @@ ARM GAS  /tmp/ccQv33l2.s 			page 1
  158 0114 09       		.byte	0x9
  159 0115 4E010000 		.4byte	0x14e
  160 0119 0C       		.uleb128 0xc
- 161 011a FB040000 		.4byte	.LASF19
+ 161 011a 04050000 		.4byte	.LASF19
  162 011e 05       		.byte	0x5
  163 011f 36       		.byte	0x36
  164 0120 1A       		.byte	0x1a
  165 0121 4E010000 		.4byte	0x14e
  166 0125 00       		.byte	0
  167 0126 0C       		.uleb128 0xc
- 168 0127 F1040000 		.4byte	.LASF20
+ 168 0127 FA040000 		.4byte	.LASF20
  169 012b 05       		.byte	0x5
  170 012c 37       		.byte	0x37
  171 012d 1A       		.byte	0x1a
-ARM GAS  /tmp/ccQv33l2.s 			page 4
+ARM GAS  /tmp/ccFOstLS.s 			page 4
 
 
  172 012e 4E010000 		.4byte	0x14e
@@ -202,7 +202,7 @@ ARM GAS  /tmp/ccQv33l2.s 			page 1
  190 014f 04       		.byte	0x4
  191 0150 A9000000 		.4byte	0xa9
  192 0154 03       		.uleb128 0x3
- 193 0155 55010000 		.4byte	.LASF23
+ 193 0155 F8000000 		.4byte	.LASF23
  194 0159 05       		.byte	0x5
  195 015a 3A       		.byte	0x3a
  196 015b 03       		.byte	0x3
@@ -210,7 +210,7 @@ ARM GAS  /tmp/ccQv33l2.s 			page 1
  198 0160 05       		.uleb128 0x5
  199 0161 54010000 		.4byte	0x154
  200 0165 08       		.uleb128 0x8
- 201 0166 17040000 		.4byte	.LASF24
+ 201 0166 20040000 		.4byte	.LASF24
  202 016a 05       		.byte	0x5
  203 016b 41       		.byte	0x41
  204 016c 11       		.byte	0x11
@@ -222,58 +222,58 @@ ARM GAS  /tmp/ccQv33l2.s 			page 1
  210 0178 25       		.byte	0x25
  211 0179 A9000000 		.4byte	0xa9
  212 017d 08       		.uleb128 0x8
- 213 017e 69040000 		.4byte	.LASF26
+ 213 017e 72040000 		.4byte	.LASF26
  214 0182 05       		.byte	0x5
  215 0183 41       		.byte	0x41
  216 0184 34       		.byte	0x34
  217 0185 A9000000 		.4byte	0xa9
  218 0189 08       		.uleb128 0x8
- 219 018a 00020000 		.4byte	.LASF27
+ 219 018a 09020000 		.4byte	.LASF27
  220 018e 05       		.byte	0x5
  221 018f 41       		.byte	0x41
  222 0190 44       		.byte	0x44
  223 0191 A9000000 		.4byte	0xa9
  224 0195 08       		.uleb128 0x8
- 225 0196 D0010000 		.4byte	.LASF28
+ 225 0196 D9010000 		.4byte	.LASF28
  226 019a 05       		.byte	0x5
  227 019b 44       		.byte	0x44
  228 019c 11       		.byte	0x11
-ARM GAS  /tmp/ccQv33l2.s 			page 5
+ARM GAS  /tmp/ccFOstLS.s 			page 5
 
 
  229 019d A9000000 		.4byte	0xa9
  230 01a1 08       		.uleb128 0x8
- 231 01a2 65010000 		.4byte	.LASF29
+ 231 01a2 08010000 		.4byte	.LASF29
  232 01a6 05       		.byte	0x5
  233 01a7 44       		.byte	0x44
  234 01a8 25       		.byte	0x25
  235 01a9 A9000000 		.4byte	0xa9
  236 01ad 08       		.uleb128 0x8
- 237 01ae 98010000 		.4byte	.LASF30
+ 237 01ae 3B010000 		.4byte	.LASF30
  238 01b2 05       		.byte	0x5
  239 01b3 44       		.byte	0x44
  240 01b4 34       		.byte	0x34
  241 01b5 A9000000 		.4byte	0xa9
  242 01b9 08       		.uleb128 0x8
- 243 01ba B2040000 		.4byte	.LASF31
+ 243 01ba BB040000 		.4byte	.LASF31
  244 01be 05       		.byte	0x5
  245 01bf 44       		.byte	0x44
  246 01c0 44       		.byte	0x44
  247 01c1 A9000000 		.4byte	0xa9
  248 01c5 08       		.uleb128 0x8
- 249 01c6 48040000 		.4byte	.LASF32
+ 249 01c6 51040000 		.4byte	.LASF32
  250 01ca 05       		.byte	0x5
  251 01cb 47       		.byte	0x47
  252 01cc 11       		.byte	0x11
  253 01cd A9000000 		.4byte	0xa9
  254 01d1 08       		.uleb128 0x8
- 255 01d2 3A040000 		.4byte	.LASF33
+ 255 01d2 43040000 		.4byte	.LASF33
  256 01d6 05       		.byte	0x5
  257 01d7 47       		.byte	0x47
  258 01d8 25       		.byte	0x25
  259 01d9 A9000000 		.4byte	0xa9
  260 01dd 08       		.uleb128 0x8
- 261 01de C1010000 		.4byte	.LASF34
+ 261 01de CA010000 		.4byte	.LASF34
  262 01e2 05       		.byte	0x5
  263 01e3 47       		.byte	0x47
  264 01e4 34       		.byte	0x34
@@ -285,7 +285,7 @@ ARM GAS  /tmp/ccQv33l2.s 			page 1
  270 01f0 44       		.byte	0x44
  271 01f1 A9000000 		.4byte	0xa9
  272 01f5 08       		.uleb128 0x8
- 273 01f6 DE040000 		.4byte	.LASF36
+ 273 01f6 E7040000 		.4byte	.LASF36
  274 01fa 05       		.byte	0x5
  275 01fb 4A       		.byte	0x4a
  276 01fc 11       		.byte	0x11
@@ -297,8 +297,8 @@ ARM GAS  /tmp/ccQv33l2.s 			page 1
  282 0208 25       		.byte	0x25
  283 0209 A9000000 		.4byte	0xa9
  284 020d 08       		.uleb128 0x8
- 285 020e F1010000 		.4byte	.LASF38
-ARM GAS  /tmp/ccQv33l2.s 			page 6
+ 285 020e FA010000 		.4byte	.LASF38
+ARM GAS  /tmp/ccFOstLS.s 			page 6
 
 
  286 0212 05       		.byte	0x5
@@ -312,13 +312,13 @@ ARM GAS  /tmp/ccQv33l2.s 			page 1
  294 0220 44       		.byte	0x44
  295 0221 A9000000 		.4byte	0xa9
  296 0225 08       		.uleb128 0x8
- 297 0226 78040000 		.4byte	.LASF40
+ 297 0226 81040000 		.4byte	.LASF40
  298 022a 05       		.byte	0x5
  299 022b 4D       		.byte	0x4d
  300 022c 11       		.byte	0x11
  301 022d A9000000 		.4byte	0xa9
  302 0231 08       		.uleb128 0x8
- 303 0232 C2040000 		.4byte	.LASF41
+ 303 0232 CB040000 		.4byte	.LASF41
  304 0236 05       		.byte	0x5
  305 0237 4D       		.byte	0x4d
  306 0238 25       		.byte	0x25
@@ -330,7 +330,7 @@ ARM GAS  /tmp/ccQv33l2.s 			page 1
  312 0244 34       		.byte	0x34
  313 0245 A9000000 		.4byte	0xa9
  314 0249 08       		.uleb128 0x8
- 315 024a 94020000 		.4byte	.LASF43
+ 315 024a 9D020000 		.4byte	.LASF43
  316 024e 05       		.byte	0x5
  317 024f 4D       		.byte	0x4d
  318 0250 44       		.byte	0x44
@@ -348,17 +348,17 @@ ARM GAS  /tmp/ccQv33l2.s 			page 1
  330 0268 25       		.byte	0x25
  331 0269 A9000000 		.4byte	0xa9
  332 026d 08       		.uleb128 0x8
- 333 026e 57020000 		.4byte	.LASF46
+ 333 026e 60020000 		.4byte	.LASF46
  334 0272 05       		.byte	0x5
  335 0273 50       		.byte	0x50
  336 0274 34       		.byte	0x34
  337 0275 A9000000 		.4byte	0xa9
  338 0279 08       		.uleb128 0x8
- 339 027a B1010000 		.4byte	.LASF47
+ 339 027a 54010000 		.4byte	.LASF47
  340 027e 05       		.byte	0x5
  341 027f 50       		.byte	0x50
  342 0280 44       		.byte	0x44
-ARM GAS  /tmp/ccQv33l2.s 			page 7
+ARM GAS  /tmp/ccFOstLS.s 			page 7
 
 
  343 0281 A9000000 		.4byte	0xa9
@@ -369,43 +369,43 @@ ARM GAS  /tmp/ccQv33l2.s 			page 1
  348 028c 11       		.byte	0x11
  349 028d A9000000 		.4byte	0xa9
  350 0291 08       		.uleb128 0x8
- 351 0292 A4020000 		.4byte	.LASF49
+ 351 0292 AD020000 		.4byte	.LASF49
  352 0296 05       		.byte	0x5
  353 0297 53       		.byte	0x53
  354 0298 25       		.byte	0x25
  355 0299 A9000000 		.4byte	0xa9
  356 029d 08       		.uleb128 0x8
- 357 029e 85020000 		.4byte	.LASF50
+ 357 029e 8E020000 		.4byte	.LASF50
  358 02a2 05       		.byte	0x5
  359 02a3 53       		.byte	0x53
  360 02a4 34       		.byte	0x34
  361 02a5 A9000000 		.4byte	0xa9
  362 02a9 08       		.uleb128 0x8
- 363 02aa 88010000 		.4byte	.LASF51
+ 363 02aa 2B010000 		.4byte	.LASF51
  364 02ae 05       		.byte	0x5
  365 02af 53       		.byte	0x53
  366 02b0 44       		.byte	0x44
  367 02b1 A9000000 		.4byte	0xa9
  368 02b5 08       		.uleb128 0x8
- 369 02b6 04040000 		.4byte	.LASF52
+ 369 02b6 0D040000 		.4byte	.LASF52
  370 02ba 05       		.byte	0x5
  371 02bb 56       		.byte	0x56
  372 02bc 11       		.byte	0x11
  373 02bd A9000000 		.4byte	0xa9
  374 02c1 08       		.uleb128 0x8
- 375 02c2 D0040000 		.4byte	.LASF53
+ 375 02c2 D9040000 		.4byte	.LASF53
  376 02c6 05       		.byte	0x5
  377 02c7 56       		.byte	0x56
  378 02c8 25       		.byte	0x25
  379 02c9 A9000000 		.4byte	0xa9
  380 02cd 08       		.uleb128 0x8
- 381 02ce B2020000 		.4byte	.LASF54
+ 381 02ce BB020000 		.4byte	.LASF54
  382 02d2 05       		.byte	0x5
  383 02d3 56       		.byte	0x56
  384 02d4 34       		.byte	0x34
  385 02d5 A9000000 		.4byte	0xa9
  386 02d9 08       		.uleb128 0x8
- 387 02da 98040000 		.4byte	.LASF55
+ 387 02da A1040000 		.4byte	.LASF55
  388 02de 05       		.byte	0x5
  389 02df 56       		.byte	0x56
  390 02e0 44       		.byte	0x44
@@ -418,7 +418,7 @@ ARM GAS  /tmp/ccQv33l2.s 			page 1
  397 02f3 07       		.byte	0x7
  398 02f4 00       		.byte	0
  399 02f5 05       		.uleb128 0x5
-ARM GAS  /tmp/ccQv33l2.s 			page 8
+ARM GAS  /tmp/ccFOstLS.s 			page 8
 
 
  400 02f6 E5020000 		.4byte	0x2e5
@@ -464,12 +464,12 @@ ARM GAS  /tmp/ccQv33l2.s 			page 1
  440 0342 B7       		.byte	0xb7
  441 0343 06       		.byte	0x6
  442 0344 13       		.uleb128 0x13
- 443 0345 7C010000 		.4byte	.LASF57
+ 443 0345 1F010000 		.4byte	.LASF57
  444 0349 05       		.byte	0x5
  445 034a AA       		.byte	0xaa
  446 034b 06       		.byte	0x6
  447 034c 13       		.uleb128 0x13
- 448 034d 2A020000 		.4byte	.LASF58
+ 448 034d 33020000 		.4byte	.LASF58
  449 0351 05       		.byte	0x5
  450 0352 9C       		.byte	0x9c
  451 0353 06       		.byte	0x6
@@ -478,7 +478,7 @@ ARM GAS  /tmp/ccQv33l2.s 			page 1
  454 0359 05       		.byte	0x5
  455 035a 89       		.byte	0x89
  456 035b 06       		.byte	0x6
-ARM GAS  /tmp/ccQv33l2.s 			page 9
+ARM GAS  /tmp/ccFOstLS.s 			page 9
 
 
  457 035c 00       		.byte	0
@@ -538,7 +538,7 @@ ARM GAS  /tmp/ccQv33l2.s 			page 1
  511 0033 00       		.byte	0
  512 0034 05       		.uleb128 0x5
  513 0035 26       		.uleb128 0x26
-ARM GAS  /tmp/ccQv33l2.s 			page 10
+ARM GAS  /tmp/ccFOstLS.s 			page 10
 
 
  514 0036 00       		.byte	0
@@ -598,7 +598,7 @@ ARM GAS  /tmp/ccQv33l2.s 			page 1
  568 006c 13       		.uleb128 0x13
  569 006d 01       		.uleb128 0x1
  570 006e 13       		.uleb128 0x13
-ARM GAS  /tmp/ccQv33l2.s 			page 11
+ARM GAS  /tmp/ccFOstLS.s 			page 11
 
 
  571 006f 00       		.byte	0
@@ -658,7 +658,7 @@ ARM GAS  /tmp/ccQv33l2.s 			page 1
  625 00a5 00       		.byte	0
  626 00a6 03       		.uleb128 0x3
  627 00a7 0E       		.uleb128 0xe
-ARM GAS  /tmp/ccQv33l2.s 			page 12
+ARM GAS  /tmp/ccFOstLS.s 			page 12
 
 
  628 00a8 3A       		.uleb128 0x3a
@@ -718,7 +718,7 @@ ARM GAS  /tmp/ccQv33l2.s 			page 1
  682 00de 03       		.uleb128 0x3
  683 00df 0E       		.uleb128 0xe
  684 00e0 3A       		.uleb128 0x3a
-ARM GAS  /tmp/ccQv33l2.s 			page 13
+ARM GAS  /tmp/ccFOstLS.s 			page 13
 
 
  685 00e1 0B       		.uleb128 0xb
@@ -752,10 +752,10 @@ ARM GAS  /tmp/ccQv33l2.s 			page 1
  713 00fe 00       		.byte	0
  714              		.section	.gnu.debuglto_.debug_line,"e",%progbits
  715              	.Ldebug_line0:
- 716 0000 F4010000 		.4byte	.LELT0-.LSLT0
+ 716 0000 06020000 		.4byte	.LELT0-.LSLT0
  717              	.LSLT0:
  718 0004 0400     		.2byte	0x4
- 719 0006 EE010000 		.4byte	.LELTP0-.LASLTP0
+ 719 0006 00020000 		.4byte	.LELTP0-.LASLTP0
  720              	.LASLTP0:
  721 000a 01       		.byte	0x1
  722 000b 01       		.byte	0x1
@@ -778,7 +778,7 @@ ARM GAS  /tmp/ccQv33l2.s 			page 1
  739 001c 2E2E2F2E 		.ascii	"../../chibios_trunk/os/common/ext/ARM/CMSIS/Core/In"
  739      2E2F6368 
  739      6962696F 
-ARM GAS  /tmp/ccQv33l2.s 			page 14
+ARM GAS  /tmp/ccFOstLS.s 			page 14
 
 
  739      735F7472 
@@ -800,73 +800,76 @@ ARM GAS  /tmp/ccQv33l2.s 			page 1
  745 00b7 6572732F 		.ascii	"ers/GCC"
  745      474343
  746 00be 00       		.byte	0
- 747 00bf 2F686F6D 		.ascii	"/home/rob/Projects/ChibiStudio/ChibiStudio_20/tools"
+ 747 00bf 2F686F6D 		.ascii	"/home/rob/Data/rob/Projects/ChibiStudio/ChibiStudio"
  747      652F726F 
- 747      622F5072 
- 747      6F6A6563 
- 747      74732F43 
- 748 00f2 2F474E55 		.ascii	"/GNU Tools ARM Embedded/9.2.1 2019q4/arm-none-eabi/"
- 748      20546F6F 
- 748      6C732041 
- 748      524D2045 
- 748      6D626564 
- 749 0125 696E636C 		.ascii	"include/machine"
- 749      7564652F 
- 749      6D616368 
- 749      696E65
- 750 0134 00       		.byte	0
- 751 0135 2F686F6D 		.ascii	"/home/rob/Projects/ChibiStudio/ChibiStudio_20/tools"
+ 747      622F4461 
+ 747      74612F72 
+ 747      6F622F50 
+ 748 00f2 5F32302F 		.ascii	"_20/tools/GNU Tools ARM Embedded/9.2.1 2019q4/arm-n"
+ 748      746F6F6C 
+ 748      732F474E 
+ 748      5520546F 
+ 748      6F6C7320 
+ 749 0125 6F6E652D 		.ascii	"one-eabi/include/machine"
+ 749      65616269 
+ 749      2F696E63 
+ 749      6C756465 
+ 749      2F6D6163 
+ 750 013d 00       		.byte	0
+ 751 013e 2F686F6D 		.ascii	"/home/rob/Data/rob/Projects/ChibiStudio/ChibiStudio"
  751      652F726F 
- 751      622F5072 
- 751      6F6A6563 
- 751      74732F43 
- 752 0168 2F474E55 		.ascii	"/GNU Tools ARM Embedded/9.2.1 2019q4/arm-none-eabi/"
- 752      20546F6F 
- 752      6C732041 
- 752      524D2045 
- 752      6D626564 
- 753 019b 696E636C 		.ascii	"include/sys"
- 753      7564652F 
- 753      737973
- 754 01a6 00       		.byte	0
- 755 01a7 00       		.byte	0
- 756 01a8 5F646566 		.ascii	"_default_types.h\000"
+ 751      622F4461 
+ 751      74612F72 
+ 751      6F622F50 
+ 752 0171 5F32302F 		.ascii	"_20/tools/GNU Tools ARM Embedded/9.2.1 2019q4/arm-n"
+ 752      746F6F6C 
+ 752      732F474E 
+ 752      5520546F 
+ 752      6F6C7320 
+ 753 01a4 6F6E652D 		.ascii	"one-eabi/include/sys"
+ 753      65616269 
+ 753      2F696E63 
+ 753      6C756465 
+ 753      2F737973 
+ 754 01b8 00       		.byte	0
+ 755 01b9 00       		.byte	0
+ 756 01ba 5F646566 		.ascii	"_default_types.h\000"
  756      61756C74 
  756      5F747970 
  756      65732E68 
  756      00
- 757 01b9 04       		.uleb128 0x4
- 758 01ba 00       		.uleb128 0
- 759 01bb 00       		.uleb128 0
-ARM GAS  /tmp/ccQv33l2.s 			page 15
+ARM GAS  /tmp/ccFOstLS.s 			page 15
 
 
- 760 01bc 5F737464 		.ascii	"_stdint.h\000"
+ 757 01cb 04       		.uleb128 0x4
+ 758 01cc 00       		.uleb128 0
+ 759 01cd 00       		.uleb128 0
+ 760 01ce 5F737464 		.ascii	"_stdint.h\000"
  760      696E742E 
  760      6800
- 761 01c6 05       		.uleb128 0x5
- 762 01c7 00       		.uleb128 0
- 763 01c8 00       		.uleb128 0
- 764 01c9 636F7265 		.ascii	"core_cm3.h\000"
+ 761 01d8 05       		.uleb128 0x5
+ 762 01d9 00       		.uleb128 0
+ 763 01da 00       		.uleb128 0
+ 764 01db 636F7265 		.ascii	"core_cm3.h\000"
  764      5F636D33 
  764      2E6800
- 765 01d4 01       		.uleb128 0x1
- 766 01d5 00       		.uleb128 0
- 767 01d6 00       		.uleb128 0
- 768 01d7 73797374 		.ascii	"system_stm32f1xx.h\000"
+ 765 01e6 01       		.uleb128 0x1
+ 766 01e7 00       		.uleb128 0
+ 767 01e8 00       		.uleb128 0
+ 768 01e9 73797374 		.ascii	"system_stm32f1xx.h\000"
  768      656D5F73 
  768      746D3332 
  768      66317878 
  768      2E6800
- 769 01ea 02       		.uleb128 0x2
- 770 01eb 00       		.uleb128 0
- 771 01ec 00       		.uleb128 0
- 772 01ed 63727431 		.ascii	"crt1.c\000"
+ 769 01fc 02       		.uleb128 0x2
+ 770 01fd 00       		.uleb128 0
+ 771 01fe 00       		.uleb128 0
+ 772 01ff 63727431 		.ascii	"crt1.c\000"
  772      2E6300
- 773 01f4 03       		.uleb128 0x3
- 774 01f5 00       		.uleb128 0
- 775 01f6 00       		.uleb128 0
- 776 01f7 00       		.byte	0
+ 773 0206 03       		.uleb128 0x3
+ 774 0207 00       		.uleb128 0
+ 775 0208 00       		.uleb128 0
+ 776 0209 00       		.byte	0
  777              	.LELTP0:
  778              	.LELT0:
  779              		.section	.gnu.debuglto_.debug_str,"eMS",%progbits,1
@@ -895,12 +898,12 @@ ARM GAS  /tmp/ccQv33l2.s 			page 1
  789      7420696E 
  789      7400
  790              	.LASF63:
+ARM GAS  /tmp/ccFOstLS.s 			page 16
+
+
  791 0044 5F5F696E 		.ascii	"__init_ram_areas\000"
  791      69745F72 
  791      616D5F61 
-ARM GAS  /tmp/ccQv33l2.s 			page 16
-
-
  791      72656173 
  791      00
  792              	.LASF7:
@@ -955,317 +958,317 @@ ARM GAS  /tmp/ccQv33l2.s 			page 1
  813      745F6578 
  813      697400
  814              	.LASF22:
+ARM GAS  /tmp/ccFOstLS.s 			page 17
+
+
  815 00eb 6E6F5F69 		.ascii	"no_init_area\000"
  815      6E69745F 
  815      61726561 
-ARM GAS  /tmp/ccQv33l2.s 			page 17
-
-
  815      00
- 816              	.LASF62:
- 817 00f8 2F686F6D 		.ascii	"/home/rob/Projects/ChibiStudio/ChibiStudio_20/works"
- 817      652F726F 
- 817      622F5072 
- 817      6F6A6563 
- 817      74732F43 
- 818 012b 70616365 		.ascii	"pace_trunk/F103-MAPLEMINI_Tachoconverter/\000"
- 818      5F747275 
- 818      6E6B2F46 
- 818      3130332D 
- 818      4D41504C 
- 819              	.LASF23:
- 820 0155 72616D5F 		.ascii	"ram_init_area_t\000"
- 820      696E6974 
- 820      5F617265 
- 820      615F7400 
- 821              	.LASF29:
- 822 0165 5F5F7261 		.ascii	"__ram1_init__\000"
- 822      6D315F69 
- 822      6E69745F 
- 822      5F00
- 823              	.LASF6:
- 824 0173 6C6F6E67 		.ascii	"long int\000"
- 824      20696E74 
- 824      00
- 825              	.LASF57:
- 826 017c 5F5F6C61 		.ascii	"__late_init\000"
- 826      74655F69 
- 826      6E697400 
- 827              	.LASF51:
- 828 0188 5F5F7261 		.ascii	"__ram6_noinit__\000"
- 828      6D365F6E 
- 828      6F696E69 
- 828      745F5F00 
- 829              	.LASF30:
- 830 0198 5F5F7261 		.ascii	"__ram1_clear__\000"
- 830      6D315F63 
- 830      6C656172 
- 830      5F5F00
- 831              	.LASF4:
- 832 01a7 5F5F7569 		.ascii	"__uint8_t\000"
- 832      6E74385F 
- 832      7400
- 833              	.LASF47:
- 834 01b1 5F5F7261 		.ascii	"__ram5_noinit__\000"
- 834      6D355F6E 
- 834      6F696E69 
- 834      745F5F00 
+ 816              	.LASF23:
+ 817 00f8 72616D5F 		.ascii	"ram_init_area_t\000"
+ 817      696E6974 
+ 817      5F617265 
+ 817      615F7400 
+ 818              	.LASF29:
+ 819 0108 5F5F7261 		.ascii	"__ram1_init__\000"
+ 819      6D315F69 
+ 819      6E69745F 
+ 819      5F00
+ 820              	.LASF6:
+ 821 0116 6C6F6E67 		.ascii	"long int\000"
+ 821      20696E74 
+ 821      00
+ 822              	.LASF57:
+ 823 011f 5F5F6C61 		.ascii	"__late_init\000"
+ 823      74655F69 
+ 823      6E697400 
+ 824              	.LASF51:
+ 825 012b 5F5F7261 		.ascii	"__ram6_noinit__\000"
+ 825      6D365F6E 
+ 825      6F696E69 
+ 825      745F5F00 
+ 826              	.LASF30:
+ 827 013b 5F5F7261 		.ascii	"__ram1_clear__\000"
+ 827      6D315F63 
+ 827      6C656172 
+ 827      5F5F00
+ 828              	.LASF4:
+ 829 014a 5F5F7569 		.ascii	"__uint8_t\000"
+ 829      6E74385F 
+ 829      7400
+ 830              	.LASF47:
+ 831 0154 5F5F7261 		.ascii	"__ram5_noinit__\000"
+ 831      6D355F6E 
+ 831      6F696E69 
+ 831      745F5F00 
+ 832              	.LASF62:
+ 833 0164 2F686F6D 		.ascii	"/home/rob/Data/rob/Projects/ChibiStudio/ChibiStudio"
+ 833      652F726F 
+ 833      622F4461 
+ 833      74612F72 
+ 833      6F622F50 
+ 834 0197 5F32302F 		.ascii	"_20/workspace_trunk/F103-MAPLEMINI_Tachoconverter/\000"
+ 834      776F726B 
+ 834      73706163 
+ 834      655F7472 
+ 834      756E6B2F 
  835              	.LASF34:
- 836 01c1 5F5F7261 		.ascii	"__ram2_clear__\000"
+ 836 01ca 5F5F7261 		.ascii	"__ram2_clear__\000"
  836      6D325F63 
  836      6C656172 
  836      5F5F00
+ARM GAS  /tmp/ccFOstLS.s 			page 18
+
+
  837              	.LASF28:
- 838 01d0 5F5F7261 		.ascii	"__ram1_init_text__\000"
+ 838 01d9 5F5F7261 		.ascii	"__ram1_init_text__\000"
  838      6D315F69 
-ARM GAS  /tmp/ccQv33l2.s 			page 18
-
-
  838      6E69745F 
  838      74657874 
  838      5F5F00
  839              	.LASF1:
- 840 01e3 756E7369 		.ascii	"unsigned char\000"
+ 840 01ec 756E7369 		.ascii	"unsigned char\000"
  840      676E6564 
  840      20636861 
  840      7200
  841              	.LASF38:
- 842 01f1 5F5F7261 		.ascii	"__ram3_clear__\000"
+ 842 01fa 5F5F7261 		.ascii	"__ram3_clear__\000"
  842      6D335F63 
  842      6C656172 
  842      5F5F00
  843              	.LASF27:
- 844 0200 5F5F7261 		.ascii	"__ram0_noinit__\000"
+ 844 0209 5F5F7261 		.ascii	"__ram0_noinit__\000"
  844      6D305F6E 
  844      6F696E69 
  844      745F5F00 
  845              	.LASF18:
- 846 0210 41504250 		.ascii	"APBPrescTable\000"
+ 846 0219 41504250 		.ascii	"APBPrescTable\000"
  846      72657363 
  846      5461626C 
  846      6500
  847              	.LASF0:
- 848 021e 7369676E 		.ascii	"signed char\000"
+ 848 0227 7369676E 		.ascii	"signed char\000"
  848      65642063 
  848      68617200 
  849              	.LASF58:
- 850 022a 5F5F6561 		.ascii	"__early_init\000"
+ 850 0233 5F5F6561 		.ascii	"__early_init\000"
  850      726C795F 
  850      696E6974 
  850      00
  851              	.LASF10:
- 852 0237 6C6F6E67 		.ascii	"long long unsigned int\000"
+ 852 0240 6C6F6E67 		.ascii	"long long unsigned int\000"
  852      206C6F6E 
  852      6720756E 
  852      7369676E 
  852      65642069 
  853              	.LASF14:
- 854 024e 75696E74 		.ascii	"uint32_t\000"
+ 854 0257 75696E74 		.ascii	"uint32_t\000"
  854      33325F74 
  854      00
  855              	.LASF46:
- 856 0257 5F5F7261 		.ascii	"__ram5_clear__\000"
+ 856 0260 5F5F7261 		.ascii	"__ram5_clear__\000"
  856      6D355F63 
  856      6C656172 
  856      5F5F00
  857              	.LASF11:
- 858 0266 756E7369 		.ascii	"unsigned int\000"
+ 858 026f 756E7369 		.ascii	"unsigned int\000"
  858      676E6564 
  858      20696E74 
  858      00
  859              	.LASF8:
- 860 0273 6C6F6E67 		.ascii	"long unsigned int\000"
+ 860 027c 6C6F6E67 		.ascii	"long unsigned int\000"
+ARM GAS  /tmp/ccFOstLS.s 			page 19
+
+
  860      20756E73 
  860      69676E65 
  860      6420696E 
-ARM GAS  /tmp/ccQv33l2.s 			page 19
-
-
  860      7400
  861              	.LASF50:
- 862 0285 5F5F7261 		.ascii	"__ram6_clear__\000"
+ 862 028e 5F5F7261 		.ascii	"__ram6_clear__\000"
  862      6D365F63 
  862      6C656172 
  862      5F5F00
  863              	.LASF43:
- 864 0294 5F5F7261 		.ascii	"__ram4_noinit__\000"
+ 864 029d 5F5F7261 		.ascii	"__ram4_noinit__\000"
  864      6D345F6E 
  864      6F696E69 
  864      745F5F00 
  865              	.LASF49:
- 866 02a4 5F5F7261 		.ascii	"__ram6_init__\000"
+ 866 02ad 5F5F7261 		.ascii	"__ram6_init__\000"
  866      6D365F69 
  866      6E69745F 
  866      5F00
  867              	.LASF54:
- 868 02b2 5F5F7261 		.ascii	"__ram7_clear__\000"
+ 868 02bb 5F5F7261 		.ascii	"__ram7_clear__\000"
  868      6D375F63 
  868      6C656172 
  868      5F5F00
  869              	.LASF60:
- 870 02c1 474E5520 		.ascii	"GNU C17 9.2.1 20191025 (release) [ARM/arm-9-branch "
+ 870 02ca 474E5520 		.ascii	"GNU C17 9.2.1 20191025 (release) [ARM/arm-9-branch "
  870      43313720 
  870      392E322E 
  870      31203230 
  870      31393130 
- 871 02f4 72657669 		.ascii	"revision 277599] -mcpu=cortex-m3 -mthumb -mfloat-ab"
+ 871 02fd 72657669 		.ascii	"revision 277599] -mcpu=cortex-m3 -mthumb -mfloat-ab"
  871      73696F6E 
  871      20323737 
  871      3539395D 
  871      202D6D63 
- 872 0327 693D736F 		.ascii	"i=soft -march=armv7-m -ggdb -O2 -fomit-frame-pointe"
+ 872 0330 693D736F 		.ascii	"i=soft -march=armv7-m -ggdb -O2 -fomit-frame-pointe"
  872      6674202D 
  872      6D617263 
  872      683D6172 
  872      6D76372D 
- 873 035a 72202D66 		.ascii	"r -falign-functions=16 -ffunction-sections -fdata-s"
+ 873 0363 72202D66 		.ascii	"r -falign-functions=16 -ffunction-sections -fdata-s"
  873      616C6967 
  873      6E2D6675 
  873      6E637469 
  873      6F6E733D 
- 874 038d 65637469 		.ascii	"ections -fno-common -flto\000"
+ 874 0396 65637469 		.ascii	"ections -fno-common -flto\000"
  874      6F6E7320 
  874      2D666E6F 
  874      2D636F6D 
  874      6D6F6E20 
  875              	.LASF61:
- 876 03a7 2E2E2F2E 		.ascii	"../../chibios_trunk/os/common/startup/ARMCMx/compil"
+ 876 03b0 2E2E2F2E 		.ascii	"../../chibios_trunk/os/common/startup/ARMCMx/compil"
  876      2E2F6368 
  876      6962696F 
  876      735F7472 
  876      756E6B2F 
- 877 03da 6572732F 		.ascii	"ers/GCC/crt1.c\000"
+ 877 03e3 6572732F 		.ascii	"ers/GCC/crt1.c\000"
+ARM GAS  /tmp/ccFOstLS.s 			page 20
+
+
  877      4743432F 
  877      63727431 
  877      2E6300
-ARM GAS  /tmp/ccQv33l2.s 			page 20
-
-
  878              	.LASF13:
- 879 03e9 696E7433 		.ascii	"int32_t\000"
+ 879 03f2 696E7433 		.ascii	"int32_t\000"
  879      325F7400 
  880              	.LASF3:
- 881 03f1 73686F72 		.ascii	"short unsigned int\000"
+ 881 03fa 73686F72 		.ascii	"short unsigned int\000"
  881      7420756E 
  881      7369676E 
  881      65642069 
  881      6E7400
  882              	.LASF52:
- 883 0404 5F5F7261 		.ascii	"__ram7_init_text__\000"
+ 883 040d 5F5F7261 		.ascii	"__ram7_init_text__\000"
  883      6D375F69 
  883      6E69745F 
  883      74657874 
  883      5F5F00
  884              	.LASF24:
- 885 0417 5F5F7261 		.ascii	"__ram0_init_text__\000"
+ 885 0420 5F5F7261 		.ascii	"__ram0_init_text__\000"
  885      6D305F69 
  885      6E69745F 
  885      74657874 
  885      5F5F00
  886              	.LASF16:
- 887 042a 53797374 		.ascii	"SystemCoreClock\000"
+ 887 0433 53797374 		.ascii	"SystemCoreClock\000"
  887      656D436F 
  887      7265436C 
  887      6F636B00 
  888              	.LASF33:
- 889 043a 5F5F7261 		.ascii	"__ram2_init__\000"
+ 889 0443 5F5F7261 		.ascii	"__ram2_init__\000"
  889      6D325F69 
  889      6E69745F 
  889      5F00
  890              	.LASF32:
- 891 0448 5F5F7261 		.ascii	"__ram2_init_text__\000"
+ 891 0451 5F5F7261 		.ascii	"__ram2_init_text__\000"
  891      6D325F69 
  891      6E69745F 
  891      74657874 
  891      5F5F00
  892              	.LASF17:
- 893 045b 41484250 		.ascii	"AHBPrescTable\000"
+ 893 0464 41484250 		.ascii	"AHBPrescTable\000"
  893      72657363 
  893      5461626C 
  893      6500
  894              	.LASF26:
- 895 0469 5F5F7261 		.ascii	"__ram0_clear__\000"
+ 895 0472 5F5F7261 		.ascii	"__ram0_clear__\000"
  895      6D305F63 
  895      6C656172 
  895      5F5F00
  896              	.LASF40:
- 897 0478 5F5F7261 		.ascii	"__ram4_init_text__\000"
+ 897 0481 5F5F7261 		.ascii	"__ram4_init_text__\000"
  897      6D345F69 
  897      6E69745F 
  897      74657874 
  897      5F5F00
  898              	.LASF15:
- 899 048b 49544D5F 		.ascii	"ITM_RxBuffer\000"
+ARM GAS  /tmp/ccFOstLS.s 			page 21
+
+
+ 899 0494 49544D5F 		.ascii	"ITM_RxBuffer\000"
  899      52784275 
  899      66666572 
-ARM GAS  /tmp/ccQv33l2.s 			page 21
-
-
  899      00
  900              	.LASF55:
- 901 0498 5F5F7261 		.ascii	"__ram7_noinit__\000"
+ 901 04a1 5F5F7261 		.ascii	"__ram7_noinit__\000"
  901      6D375F6E 
  901      6F696E69 
  901      745F5F00 
  902              	.LASF5:
- 903 04a8 5F5F696E 		.ascii	"__int32_t\000"
+ 903 04b1 5F5F696E 		.ascii	"__int32_t\000"
  903      7433325F 
  903      7400
  904              	.LASF31:
- 905 04b2 5F5F7261 		.ascii	"__ram1_noinit__\000"
+ 905 04bb 5F5F7261 		.ascii	"__ram1_noinit__\000"
  905      6D315F6E 
  905      6F696E69 
  905      745F5F00 
  906              	.LASF41:
- 907 04c2 5F5F7261 		.ascii	"__ram4_init__\000"
+ 907 04cb 5F5F7261 		.ascii	"__ram4_init__\000"
  907      6D345F69 
  907      6E69745F 
  907      5F00
  908              	.LASF53:
- 909 04d0 5F5F7261 		.ascii	"__ram7_init__\000"
+ 909 04d9 5F5F7261 		.ascii	"__ram7_init__\000"
  909      6D375F69 
  909      6E69745F 
  909      5F00
  910              	.LASF36:
- 911 04de 5F5F7261 		.ascii	"__ram3_init_text__\000"
+ 911 04e7 5F5F7261 		.ascii	"__ram3_init_text__\000"
  911      6D335F69 
  911      6E69745F 
  911      74657874 
  911      5F5F00
  912              	.LASF20:
- 913 04f1 696E6974 		.ascii	"init_area\000"
+ 913 04fa 696E6974 		.ascii	"init_area\000"
  913      5F617265 
  913      6100
  914              	.LASF19:
- 915 04fb 696E6974 		.ascii	"init_text_area\000"
+ 915 0504 696E6974 		.ascii	"init_text_area\000"
  915      5F746578 
  915      745F6172 
  915      656100
  916              		.text
- 917              		.section	.gnu.lto_.profile.c40960afb88821e2,"e",%progbits
+ 917              		.section	.gnu.lto_.profile.45572236c120b9a4,"e",%progbits
  918 0000 789CE360 		.ascii	"x\234\343``\004B \000\000\000]\000\013"
  918      60044220 
  918      0000005D 
  918      000B
  919              		.text
- 920              		.section	.gnu.lto_.icf.c40960afb88821e2,"e",%progbits
+ 920              		.section	.gnu.lto_.icf.45572236c120b9a4,"e",%progbits
  921 0000 789CE360 		.ascii	"x\234\343``dPc@\0006\206+3\317Nec\004\223L`\222\271"
  921      60645063 
  921      40003686 
  921      2B33CF4E 
  921      65630493 
  922 0018 F3EDBE29 		.ascii	"\363\355\276)\214,\307\337<>\301\304:\377\334\274\026"
+ARM GAS  /tmp/ccFOstLS.s 			page 22
+
+
  922      8C2CC7DF 
  922      3C3EC1C4 
  922      3AFFDCBC 
-ARM GAS  /tmp/ccQv33l2.s 			page 22
-
-
  922      16
  923 0029 1E06005B 		.ascii	"\036\006\000[a\021\210"
  923      611188
  924              		.text
- 925              		.section	.gnu.lto_.jmpfuncs.c40960afb88821e2,"e",%progbits
+ 925              		.section	.gnu.lto_.jmpfuncs.45572236c120b9a4,"e",%progbits
  926 0000 789CE360 		.ascii	"x\234\343``d\020d@\000V fd``b``f``\001r\000\003\320"
  926      60641064 
  926      40005620 
@@ -1273,7 +1276,7 @@ ARM GAS  /tmp/ccQv33l2.s 			page 1
  926      62606066 
  927 001b 002A     		.ascii	"\000*"
  928              		.text
- 929              		.section	.gnu.lto_.inline.c40960afb88821e2,"e",%progbits
+ 929              		.section	.gnu.lto_.inline.45572236c120b9a4,"e",%progbits
  930 0000 789CE360 		.ascii	"x\234\343``d\330\310\200\000\254\014\014\314\015@\300"
  930      6064D8C8 
  930      8000AC0C 
@@ -1298,7 +1301,7 @@ ARM GAS  /tmp/ccQv33l2.s 			page 1
  934      6C0A0300 
  934      DA5C27A9 
  935              		.text
- 936              		.section	.gnu.lto_.pureconst.c40960afb88821e2,"e",%progbits
+ 936              		.section	.gnu.lto_.pureconst.45572236c120b9a4,"e",%progbits
  937 0000 789CE360 		.ascii	"x\234\343``d\020````e\230\301\3028\203\205i\006\013"
  937      60641060 
  937      60606065 
@@ -1308,19 +1311,19 @@ ARM GAS  /tmp/ccQv33l2.s 			page 1
  938      592C001B 
  938      960353
  939              		.text
- 940              		.section	.gnu.lto___core_init.c40960afb88821e2,"e",%progbits
+ 940              		.section	.gnu.lto___core_init.45572236c120b9a4,"e",%progbits
  941 0000 789CE360 		.ascii	"x\234\343``d\230\306\300\300\340\002\304\262@\314\310"
  941      606498C6 
  941      C0C0E002 
  941      C4B240CC 
  941      C8
  942 0011 CCC0C8D4 		.ascii	"\314\300\310\324\320\320\340\300\336\310\301\304\310"
+ARM GAS  /tmp/ccFOstLS.s 			page 23
+
+
  942      D0D0E0C0 
  942      DEC8C1C4 
  942      C8
-ARM GAS  /tmp/ccQv33l2.s 			page 23
-
-
  943 001e 08663570 		.ascii	"\010f5p02\32431\3263\3663Ogf<\324\376l'\223\346r\240"
  943      3032D433 
  943      31D633F6 
@@ -1373,14 +1376,14 @@ ARM GAS  /tmp/ccQv33l2.s 			page 1
  953      002B4A48 
  953      E2
  954              		.text
- 955              		.section	.gnu.lto___early_init.c40960afb88821e2,"e",%progbits
+ 955              		.section	.gnu.lto___early_init.45572236c120b9a4,"e",%progbits
  956 0000 789CE360 		.ascii	"x\234\343``d\230\316\300\300\340\002\304\262@\314\310"
+ARM GAS  /tmp/ccFOstLS.s 			page 24
+
+
  956      606498CE 
  956      C0C0E002 
  956      C4B240CC 
-ARM GAS  /tmp/ccQv33l2.s 			page 24
-
-
  956      C8
  957 0011 CCC0C8D4 		.ascii	"\314\300\310\324\320\320\340\300\336\310\301\304\310"
  957      D0D0E0C0 
@@ -1435,14 +1438,14 @@ ARM GAS  /tmp/ccQv33l2.s 			page 1
  967      45C5FAEE 
  967      CECEFAC9 
  967      4525
+ARM GAS  /tmp/ccFOstLS.s 			page 25
+
+
  968 00da 867AC90C 		.ascii	"\206z\311\014\000\231\370I\233"
  968      0099F849 
  968      9B
-ARM GAS  /tmp/ccQv33l2.s 			page 25
-
-
  969              		.text
- 970              		.section	.gnu.lto___late_init.c40960afb88821e2,"e",%progbits
+ 970              		.section	.gnu.lto___late_init.45572236c120b9a4,"e",%progbits
  971 0000 789CE360 		.ascii	"x\234\343``d\230\316\300\300\340\002\304\262@\314\310"
  971      606498CE 
  971      C0C0E002 
@@ -1495,12 +1498,12 @@ ARM GAS  /tmp/ccQv33l2.s 			page 1
  981      F3F48B4B 
  981      128B4A4A 
  981      0BF41D83 
+ARM GAS  /tmp/ccFOstLS.s 			page 26
+
+
  981      7C9D
  982 00c8 7D2B40A2 		.ascii	"}+@\242\005\2319\251E\305\372\356\316\316\372\311E%"
  982      059939A9 
-ARM GAS  /tmp/ccQv33l2.s 			page 26
-
-
  982      45C5FAEE 
  982      CECEFAC9 
  982      4525
@@ -1508,7 +1511,7 @@ ARM GAS  /tmp/ccQv33l2.s 			page 1
  983      005F6849 
  983      4C
  984              		.text
- 985              		.section	.gnu.lto___default_exit.c40960afb88821e2,"e",%progbits
+ 985              		.section	.gnu.lto___default_exit.45572236c120b9a4,"e",%progbits
  986 0000 789CE360 		.ascii	"x\234\343``d\330\314\300\300\340\002\304\266@\314\310"
  986      6064D8CC 
  986      C0C0E002 
@@ -1555,12 +1558,12 @@ ARM GAS  /tmp/ccQv33l2.s 			page 1
  995 00a2 B1DF8AC3 		.ascii	"\261\337\212\303\231\257\247K\202\331 \315,\020\035"
  995      99AFA74B 
  995      82D920CD 
+ARM GAS  /tmp/ccFOstLS.s 			page 27
+
+
  995      2C101D
  996 00b1 8C402623 		.ascii	"\214@&#\003;\310Z'==} J\316\310L\312\314/\216/)*\315"
  996      033BC85A 
-ARM GAS  /tmp/ccQv33l2.s 			page 27
-
-
  996      273D3D7D 
  996      204ACEC8 
  996      4CCACC2F 
@@ -1579,1686 +1582,1680 @@ ARM GAS  /tmp/ccQv33l2.s 			page 1
  999      003B1258 
  999      9C
  1000              		.text
- 1001              		.section	.gnu.lto___init_ram_areas.c40960afb88821e2,"e",%progbits
- 1002 0000 789C9555 		.ascii	"x\234\225U]LTW\020>s\317\275{\357\376f\003>\264\305"
- 1002      5D4C5457 
- 1002      103E73CF 
- 1002      BD7BEFFE 
- 1002      66033EB4 
- 1003 0015 5A5E7830 		.ascii	"Z^x0MX\320\304\362XK\232\326\007_\372\3304m,iS\322*"
- 1003      4D58D0C4 
- 1003      F2584B9A 
- 1003      D6075FFA 
- 1003      D8346D2C 
- 1004 002d 04D6A44F 		.ascii	"\004\326\244O\365\260\200Vi\264!\255\177a\273\0101\330"
- 1004      F5B08056 
- 1004      69B421AD 
- 1004      7F61BB08 
- 1004      31D8
- 1005 003f 3682364D 		.ascii	"6\2026MT\020\330u\265\202\277Hk\021\004\232\330\012"
- 1005      5410D875 
- 1005      B582BF48 
- 1005      6B11049A 
- 1005      D80A
- 1006 0051 09245529 		.ascii	"\011$U)jK\014tf\366\354\362\263\375\335\354\236\235"
- 1006      6A4B0C74 
- 1006      66F6ECF2 
- 1006      B3FDDDEC 
- 1006      9E9D
- 1007 0063 7BCEFC7C 		.ascii	"{\316\374|\363\315\234\271\216\000\021\266\205xS\010"
- 1007      F3CD9CB9 
- 1007      8E0011B6 
- 1007      85785308 
- 1008 0073 91C41FF8 		.ascii	"\221\304\037\370\005\030J\251\027\355\032\307\000\251"
- 1008      05184AA9 
- 1008      17ED1AC7 
- 1008      00A9
- 1009 0081 25099696 		.ascii	"%\011\226\226L-%\034\3130\007\357\317\225\230\312\343"
- 1009      4C2D251C 
- 1009      CB3007EF 
- 1009      CF9598CA 
- 1009      E3
-ARM GAS  /tmp/ccQv33l2.s 			page 28
+ 1001              		.section	.gnu.lto___init_ram_areas.45572236c120b9a4,"e",%progbits
+ 1002 0000 789C9555 		.ascii	"x\234\225U[L\224W\020>\363\237\377\337\377\337k6\340"
+ 1002      5B4C9457 
+ 1002      103EF39F 
+ 1002      FFDFFFDF 
+ 1002      6B36E0
+ 1003 0013 435BACE5 		.ascii	"C[\254\345\205\007\323\204ES\023\036kI\323\372\340K"
+ 1003      8507D384 
+ 1003      4553131E 
+ 1003      6B49D3FA 
+ 1003      E04B
+ 1004 0025 1F9BA60D 		.ascii	"\037\233\246\015%mJZ\205\300\232\364\251\036\026\320"
+ 1004      256D4A5A 
+ 1004      85C09AF4 
+ 1004      A91E16D0 
+ 1005 0035 2A8D36A4 		.ascii	"*\2156\244\365\026\266\213\020\203m#h\323D\005\201]"
+ 1005      F516B68B 
+ 1005      10836D23 
+ 1005      68D34405 
+ 1005      815D
+ 1006 0047 D70B7845 		.ascii	"\327\013xE\324R\020hb+$\220T\245\250-1\320\231\331\263"
+ 1006      D4521068 
+ 1006      622B2490 
+ 1006      54A5A82D 
+ 1006      31D099D9 
+ 1007 005c CB657BDD 		.ascii	"\313e{\335\354\236\235\377\234\271|\363\315\234\371"
+ 1007      EC9E9DFF 
+ 1007      9CB97CF3 
+ 1007      CD9CF9
+ 1008 006b 1D01226C 		.ascii	"\035\001\"l\013\361\266\020\"\211?\360\0130\224R/\333"
+ 1008      0BF1B610 
+ 1008      22893FF0 
+ 1008      0B309452 
+ 1008      2FDB
+ 1009 007d 358E0152 		.ascii	"5\216\001RK\022,-\231ZJ8\226a\016>\230+6\225\307\333"
+ 1009      4B122C2D 
+ARM GAS  /tmp/ccFOstLS.s 			page 28
 
 
- 1010 0092 6DDF576F 		.ascii	"m\337Wo\233\312\347\005\207\317\300\326B\302q\014[+"
- 1010      9BCAE705 
- 1010      87CFC0D6 
- 1010      42C2710C 
- 1010      5B2B
- 1011 00a4 B9B592DB 		.ascii	"\271\265\222\333\360\341\031\355x\360\337\301\035\237"
- 1011      F0E119ED 
- 1011      78F0DFC1 
- 1011      1D9F
- 1012 00b2 0EB3D103 		.ascii	"\016\263\321\003\300\202r@\3540\244iym\307\355\363\300"
- 1012      C0827240 
- 1012      EC30A469 
- 1012      796DC7ED 
- 1012      F3C0
- 1013 00c4 0E530A88 		.ascii	"\016S\012\210\233\3506\263\010\376X\"\363q\026\305}"
- 1013      9BE836B3 
- 1013      08FE5822 
- 1013      F37116C5 
- 1013      7D
- 1014 00d5 F2808473 		.ascii	"\362\200\204s\273&\316\030k\333\320\237\212\037h\014"
- 1014      BB26CE18 
- 1014      6BDBD09F 
- 1014      8A1F680C 
- 1015 00e5 EC54F54F 		.ascii	"\354T\365O\305\244\020\207dZ\013:a\255\020\2509\036"
- 1015      C5A41087 
- 1015      645A0B3A 
- 1015      61AD10A8 
- 1015      391E
- 1016 00f7 89FEEEDB 		.ascii	"\211\376\356\333+c\022\300\304\307\317.}\333\357\241"
- 1016      2B6312C0 
- 1016      C4C7CF2E 
- 1016      7DDBEFA1 
- 1017 0107 4703F2F1 		.ascii	"G\003\362\361\261.v\254\303\224/\003i>n89\347+hU*\242"
- 1017      B12E76AC 
- 1017      C3942F03 
- 1017      693E6E38 
- 1017      39E72B68 
- 1018 011e E2E3A757 		.ascii	"\342\343\247W\265\326\252>e\306\244\204n\220\350\030"
- 1018      B5D6AA3E 
- 1018      65C6A484 
- 1018      6E90E818 
- 1019 012e CE421E74 		.ascii	"\316B\036tA\036y\337\324\350\"\213;'\347?\367\273L\350"
- 1019      411E79DF 
- 1019      D4E8228B 
- 1019      3B27E73F 
- 1019      F7BB4CE8 
- 1020 0142 81021D1A 		.ascii	"\201\002\035\032z\301\005xr%\276\273\303#_g\277C\023"
- 1020      7AC10578 
- 1020      7225BEBB 
- 1020      C3235F67 
- 1020      BF4313
- 1021 0155 0FEFD8DA 		.ascii	"\017\357\330\332\357\374\3515G\264_\023\342\331~\277"
- 1021      EFFCE935 
- 1021      47B45F13 
- 1021      E2D97EBF 
- 1022 0165 62BFE7EF 		.ascii	"b\277\347\357>\031\364\3127\330:rc\366\241\241\255g"
- 1022      3E19F4CA 
-ARM GAS  /tmp/ccQv33l2.s 			page 29
+ 1009      995A4A38 
+ 1009      96610E3E 
+ 1009      982B3695 
+ 1010 0093 BEB7DE36 		.ascii	"\276\267\3366\225\317\013\016\237\201\255\205\204\343"
+ 1010      95CF0B0E 
+ 1010      9F81AD85 
+ 1010      84E3
+ 1011 00a1 18B65672 		.ascii	"\030\266Vrk%\267\341\3033\332\361\340\277\203;>\035"
+ 1011      6B25B7E1 
+ 1011      C333DAF1 
+ 1011      E0BF833B 
+ 1011      3E1D
+ 1012 00b3 66A30780 		.ascii	"f\243\007\200\005\345\200\330nH\323\362\332\216\333"
+ 1012      05E580D8 
+ 1012      6E48D3F2 
+ 1012      DA8EDB
+ 1013 00c2 E781EDA6 		.ascii	"\347\201\355\246\024\0207\321mf\021\374\261D\346\343"
+ 1013      141037D1 
+ 1013      6D6611FC 
+ 1013      B144E6E3 
+ 1014 00d2 2C8A7BE5 		.ascii	",\212{\345~\011gwN\2346\326\266\241?\025\337\337\030"
+ 1014      7E096777 
+ 1014      4E9C36D6 
+ 1014      B6A13F15 
+ 1014      DFDF18
+ 1015 00e5 D8A1EA9F 		.ascii	"\330\241\352\237\211I!\016\312\264\026t\302Z!Ps<\022"
+ 1015      8949210E 
+ 1015      CAB41674 
+ 1015      C25A2150 
+ 1015      733C12
+ 1016 00f8 FDDDB747 		.ascii	"\375\335\267G\306$\200\211\217_\\\372\276\337C\217\006"
+ 1016      C6248089 
+ 1016      8F5F5CFA 
+ 1016      BEDF438F 
+ 1016      06
+ 1017 0109 E4E3635D 		.ascii	"\344\343c]\354h\207)_\005\322|\322pb\316W\320\252TD"
+ 1017      EC688729 
+ 1017      5F05D27C 
+ 1017      D27062CE 
+ 1017      57D0AA54 
+ 1018 011e C5C74FAD 		.ascii	"\305\307O\255j\255U}\312\214I\011\335 \3211\234\201"
+ 1018      6AAD557D 
+ 1018      CA8C4909 
+ 1018      DD20D131 
+ 1018      9C81
+ 1019 0130 3CE8823C 		.ascii	"<\350\202<\362\276\251\321E\026wO\314\177\351w\231\320"
+ 1019      F2BEA9D1 
+ 1019      4516774F 
+ 1019      CC7FE977 
+ 1019      99D0
+ 1020 0142 03053A34 		.ascii	"\003\005:4\364\202\013\360\344J|W\207G\276\311~\207"
+ 1020      F4820BF0 
+ 1020      E44A7C57 
+ 1020      8747BEC9 
+ 1020      7E87
+ 1021 0154 261EDDB5 		.ascii	"&\036\335\265\265\337\371Sk\016k\277&\304\263\375~\303"
+ 1021      B5DFF953 
+ARM GAS  /tmp/ccFOstLS.s 			page 29
 
 
- 1022      37D83A72 
- 1022      63F6A1A1 
- 1022      AD67
- 1023 0177 4A0EAB78 		.ascii	"J\016\253x]>\331\236\313\266\215-\303\224\204\002H "
- 1023      5D3ED99E 
- 1023      CBB68D2D 
- 1023      C3948402 
- 1023      4820
- 1024 0189 2E422436 		.ascii	".B$6}\341\022p\036\241\011!\011m\372\264c\320\212\253"
- 1024      7DE11270 
- 1024      1EA10921 
- 1024      096DFAB4 
- 1024      63D08AAB 
- 1025 019d F9855D2A 		.ascii	"\371\205]*~\255\244{v4w\025\210\230\264\014\\\260&\270"
- 1025      7EADA47B 
- 1025      76347715 
- 1025      8898B40C 
- 1025      5CB026B8 
- 1026 01b1 9882B42D 		.ascii	"\230\202\264-A\372\350\001-l^}\274\343g9\300:A\226s"
- 1026      41FAE801 
- 1026      2D6C5E7D 
- 1026      BCE36739 
- 1026      C03A4196 
- 1027 01c6 78CDE553 		.ascii	"x\315\345S!\032\2448\216]\001*.\304'\322`\271\006\345"
- 1027      211AA438 
- 1027      8E5D012A 
- 1027      2EC427D2 
- 1027      60B906E5 
- 1028 01da 09502D1D 		.ascii	"\011P-\035M\222\221M@\244y\012\2306\364\202\370\367"
- 1028      4D92914D 
- 1028      40A4790A 
- 1028      9836F482 
- 1028      F8F7
- 1029 01ec D6DE1B77 		.ascii	"\326\336\033w\250@.N\277k\266{\312]\007\221\032\254"
- 1029      A8402E4E 
- 1029      BF6BB67B 
- 1029      CA5D0791 
- 1029      1AAC
- 1030 01fe AFAB9538 		.ascii	"\257\253\2258\306\315\237\324\314U\317Qh\255\011\306"
- 1030      C6CD9FD4 
- 1030      CC55CF51 
- 1030      68AD09C6 
- 1031 020e A40DDF41 		.ascii	"\244\015\337A\035\300\005\"\001\217~\233\274\320\343"
- 1031      1DC00522 
- 1031      018F7E9B 
- 1031      BCD0E3
- 1032 021d 90FE41A5 		.ascii	"\220\376A\245\232[\014rs\021\216b\336\320\207j\202\200"
- 1032      9A5B0C72 
- 1032      73118E62 
- 1032      DED0876A 
- 1032      8280
- 1033 022f C8FB73C7 		.ascii	"\310\373s\307J4\020\203\301G\245\311\240Ne@\251\226"
- 1033      4A341083 
- 1033      C147A5C9 
- 1033      A04E6540 
- 1033      A996
- 1034 0241 AE268B18 		.ascii	"\256&\213\030\023S\0209\333\377\034\211Q\351[\212O2"
-ARM GAS  /tmp/ccQv33l2.s 			page 30
+ 1021      6B0E6BBF 
+ 1021      26C4B3FD 
+ 1021      7EC3
+ 1022 0166 7ECFDD7B 		.ascii	"~\317\335{:\350\225o\261u\344\306\354#C[\317\024\037"
+ 1022      3AE8956F 
+ 1022      B175E4C6 
+ 1022      EC23435B 
+ 1022      CF141F
+ 1023 0179 52F1BA7C 		.ascii	"R\361\272|\262=\233m\033[\206)\011\005\220@\\\204Hl"
+ 1023      B23D9B6D 
+ 1023      1B5B8629 
+ 1023      09059040 
+ 1023      5C84486C 
+ 1024 018d FACA25E0 		.ascii	"\372\312%\340\034B\023B\022\332\364i\307\240\025W\363"
+ 1024      1C421342 
+ 1024      12DAF469 
+ 1024      C7A01557 
+ 1024      F3
+ 1025 019e 0B3B55FC 		.ascii	"\013;U\374Zq\367\354h\356*\0201i\031\270`Mp1\005i[\202"
+ 1025      5A71F7EC 
+ 1025      68EE2A10 
+ 1025      316919B8 
+ 1025      604D7031 
+ 1026 01b6 F4D1035A 		.ascii	"\364\321\003Z\330\274\372x\307\317r\200u\202,\347\360"
+ 1026      D8BCFA78 
+ 1026      C7CF7280 
+ 1026      75822CE7 
+ 1026      F0
+ 1027 01c7 9ACBA742 		.ascii	"\232\313\247B4Hq\014\273\002T\\\210\317\244\301r\015"
+ 1027      3448710C 
+ 1027      BB02545C 
+ 1027      88CFA4C1 
+ 1027      720D
+ 1028 01d9 CA13A05A 		.ascii	"\312\023\240Z:\232$#\233\200H\363\0240m\350\005\361"
+ 1028      3A9A2423 
+ 1028      9B8048F3 
+ 1028      14306DE8 
+ 1028      05F1
+ 1029 01eb EFA9BD3F 		.ascii	"\357\251\275?\356P\201\\\234~\327l\367\224\273\016\""
+ 1029      EE50815C 
+ 1029      9C7ED76C 
+ 1029      F794BB0E 
+ 1029      22
+ 1030 01fc 35585F57 		.ascii	"5X_W+q\214\233?\251\231\253\236#\320Z\023\214I\033."
+ 1030      2B718C9B 
+ 1030      3FA999AB 
+ 1030      9E23D05A 
+ 1030      138C491B 
+ 1031 0211 401DC079 		.ascii	"@\035\300y\"\001\217~\233<\337\343\220\376\001\245\232"
+ 1031      22018F7E 
+ 1031      9B3CDFE3 
+ 1031      90FE01A5 
+ 1031      9A
+ 1032 0222 5B0C7273 		.ascii	"[\014rs\021\216`\336\320\207j\202\200\310\007sG\213"
+ 1032      118E60DE 
+ 1032      D0876A82 
+ 1032      80C80773 
+ARM GAS  /tmp/ccFOstLS.s 			page 30
 
 
- 1034      13531039 
- 1034      DBFF1C89 
- 1034      51E95B8A 
- 1034      4F32
- 1035 0253 BEF8C889 		.ascii	"\276\370\310\211\341\000A\301Nl\356!\372\034\364\006"
- 1035      E10041C1 
- 1035      4E6CEE21 
- 1035      FA1CF406 
- 1036 0263 FD1A4EFB 		.ascii	"\375\032N\373\251\266\353\376\242v\365\251RX67\\B,\007"
- 1036      A9B6EBFE 
- 1036      A276F5A9 
- 1036      52583637 
- 1036      5C422C07 
- 1037 0277 539D7219 		.ascii	"S\235r\031\2128\373\217\2700IB\341\343\310\275\177\021"
- 1037      8A38FB8F 
- 1037      B8304942 
- 1037      E1E3C8BD 
- 1037      7F11
- 1038 0289 D9BF3254 		.ascii	"\331\2772T\347\277\206\272\302\241(e\270\272,T\202B"
- 1038      E7BF86BA 
- 1038      C2A12865 
- 1038      B8BA2C54 
- 1038      8242
- 1039 029b F939D4B4 		.ascii	"\3719\324\264\016%\036\361\345\310\220M\344u4\275\232"
- 1039      0E251EF1 
- 1039      E5C8904D 
- 1039      E47534BD 
- 1039      9A
- 1040 02ac A61CAE21 		.ascii	"\246\034\256!w\306` *\003\276\316\351\004 \211fC\375"
- 1040      77C66020 
- 1040      2A03BECE 
+ 1032      478B
+ 1033 0234 351083C1 		.ascii	"5\020\203\301G\245\311\240Nf@\251\226\256&\213\030\023"
+ 1033      47A5C9A0 
+ 1033      4E6640A9 
+ 1033      96AE268B 
+ 1033      1813
+ 1034 0246 531039D3 		.ascii	"S\0209\323\377\002\211Q\351[\212O2\276\370\310\361\341"
+ 1034      FF028951 
+ 1034      E95B8A4F 
+ 1034      32BEF8C8 
+ 1034      F1E1
+ 1035 0258 0041C14E 		.ascii	"\000A\301Nl\356!\372\034\364\006\375\032N\373\311\266"
+ 1035      6CEE21FA 
+ 1035      1CF406FD 
+ 1035      1A4EFBC9 
+ 1035      B6
+ 1036 0269 EBFEA276 		.ascii	"\353\376\242v\365\271RX67\\B,\007R\235r\031\2128\373"
+ 1036      F5B95258 
+ 1036      36375C42 
+ 1036      2C07529D 
+ 1036      72198A38 
+ 1037 027e 4FB83049 		.ascii	"O\2700IB\341\343\310\275\177\021\331\2772T\347\277\206"
+ 1037      42E1E3C8 
+ 1037      BD7F11D9 
+ 1037      BF3254E7 
+ 1037      BF86
+ 1038 0290 BAC2A128 		.ascii	"\272\302\241(e\270\272,T\202B\3719\324\264\016%\036"
+ 1038      65B8BA2C 
+ 1038      548242F9 
+ 1038      39D4B40E 
+ 1038      251E
+ 1039 02a2 F3E5C890 		.ascii	"\363\345\310\220M\344u4\275\236\246\034\256!w\306` "
+ 1039      4DE47534 
+ 1039      BD9EA61C 
+ 1039      AE2177C6 
+ 1039      6020
+ 1040 02b4 2A03BECE 		.ascii	"*\003\276\316\351\004 \211fC\375\320E\231)\347\375&"
  1040      E9042089 
- 1040      6643FD
- 1041 02bf D0459929 		.ascii	"\320E\231)\347\275&;\215y\177C\277L\201\206\245t\231"
- 1041      E7BD263B 
- 1041      8D797F43 
- 1041      BF4C8186 
- 1041      A57499
- 1042 02d2 5974214A 		.ascii	"Yt!JOTZp\235\022\200\001\252\022\232\217\357\371\222"
- 1042      4F545A70 
- 1042      9D128001 
- 1042      AA129A8F 
- 1042      EFF992
- 1043 02e5 CD5726BC 		.ascii	"\315W&\274\206\265]Z\373\006jc\000\216\375`\265\016"
- 1043      86B55D5A 
- 1043      FB066A63 
- 1043      008EFD60 
- 1043      B50E
- 1044 02f7 5DFBCDCE 		.ascii	"]\373\315\316\335:t\016\251\322\305\300\264\363\027"
- 1044      DD3A740E 
- 1044      A9D2C5C0 
- 1044      B4F317
- 1045 0306 B3CE6183 		.ascii	"\263\316a\203\307\031\260hqH[\344\022\224e\026\\\222"
- 1045      C719B068 
- 1045      71485BE4 
- 1045      12946516 
- 1045      5C92
-ARM GAS  /tmp/ccQv33l2.s 			page 31
+ 1040      6643FDD0 
+ 1040      459929E7 
+ 1040      FD26
+ 1041 02c6 3B8D795F 		.ascii	";\215y_C\277L\201\206\245t\231Yt!JOTZp\235\022\200\001"
+ 1041      43BF4C81 
+ 1041      86A57499 
+ 1041      5974214A 
+ 1041      4F545A70 
+ 1042 02de AA129A8F 		.ascii	"\252\022\232\217\357\376\232\315W&\274\206\265]Z\373"
+ 1042      EFFE9ACD 
+ 1042      5726BC86 
+ 1042      B55D5AFB 
+ 1043 02ee 066A6300 		.ascii	"\006jc\000\216\375p\265\016]\373\335\216]:t\016\251"
+ 1043      8EFD70B5 
+ 1043      0E5DFBDD 
+ 1043      8E5D3A74 
+ 1043      0EA9
+ 1044 0300 D2C5C0B4 		.ascii	"\322\305\300\264\363\027\263\316a\203'\031\260hqP[\344"
+ 1044      F317B3CE 
+ARM GAS  /tmp/ccFOstLS.s 			page 31
 
 
- 1046 0318 5C6E19EB 		.ascii	"\\n\031\353\311\302\302\202\\\354\031v\346J\311\254"
- 1046      C9C2C282 
- 1046      5CEC1976 
- 1046      E64AC9AC 
- 1047 0328 66693AF3 		.ascii	"fi:\363\026+\367|\312\257\221\235\365?\226m\220\313"
- 1047      162BF77C 
- 1047      CAAF919D 
- 1047      F53F966D 
- 1047      90CB
- 1048 033a 6610EBDF 		.ascii	"f\020\353\337c\331\356B\335Xr\024\264/\012*\250Z\026"
- 1048      63D9EE42 
- 1048      DD587214 
- 1048      B42F0A2A 
- 1048      A85A16
- 1049 034d 368B1CF9 		.ascii	"6\213\034\371\371\017$!\327\354\234\354\207G\334%r\216"
- 1049      F90F2421 
- 1049      D7EC9CEC 
- 1049      8747DC25 
- 1049      728E
- 1050 035f B772CCC3 		.ascii	"\267r\314\303\223X\245\006\351\345V\247z\331\215\313"
- 1050      9358A506 
- 1050      E9E556A7 
- 1050      7AD98DCB 
- 1051 036f EAF57534 		.ascii	"\352\365u4S\257\231\276g\376\236o[\363\375\003\242Z"
- 1051      53AF99BE 
- 1051      67FE9E6F 
- 1051      5BF3FD03 
- 1051      A25A
- 1052 0381 5A4D0F08 		.ascii	"ZM\017\010\270\311d\251\226\343\317f\363\037$\323l\376"
- 1052      B8C964A9 
- 1052      96E3CF66 
- 1052      F31F24D3 
- 1052      6CFE
- 1053 0393 83CC26BD 		.ascii	"\203\314&\275=\224\271\202M\233}\265E\263\031\224\377"
- 1053      3D94B982 
- 1053      4D9B7DB5 
- 1053      45B31994 
- 1053      FF
- 1054 03a4 93C11F99 		.ascii	"\223\301\037\231A\356\333\241\225\014J\012\304\014\332"
- 1054      41EEDBA1 
- 1054      950C4A0A 
- 1054      C40CDA
- 1055 03b3 88C69E9B 		.ascii	"\210\306\236\233J ]./\241r?X\034\0138\012\242VvVx\001"
- 1055      4A205D2E 
- 1055      2FA1723F 
- 1055      581C0B38 
- 1055      0AA25676 
- 1056 03ca E89A1CB9 		.ascii	"\350\232\034\2719\020\201\324+%\010\267\226&\311\263"
- 1056      391081D4 
- 1056      2B2508B7 
- 1056      9626C9B3 
- 1057 03da 2490BAC5 		.ascii	"$\220\272\305\321\247y\226`\370\333\311\325$\342\011"
- 1057      D1A77996 
- 1057      60F8DBC9 
- 1057      D524E209 
- 1058 03ea 1AF72EEC 		.ascii	"\032\367.\354\3575\311\030_\247\377m\276\215,\235o\037"
- 1058      EF35C918 
-ARM GAS  /tmp/ccQv33l2.s 			page 32
+ 1044      61832719 
+ 1044      B0687150 
+ 1044      5BE4
+ 1045 0312 12946516 		.ascii	"\022\224e\026\\\222\\n\031\353\351\302\302\202\\\354"
+ 1045      5C925C6E 
+ 1045      19EBE9C2 
+ 1045      C2825CEC 
+ 1046 0322 1976E64A 		.ascii	"\031v\346J\311\254fi:\363\026+\367b\312\257\221\235"
+ 1046      C9AC6669 
+ 1046      3AF3162B 
+ 1046      F762CAAF 
+ 1046      919D
+ 1047 0334 F53F966D 		.ascii	"\365?\226m\220\313f\020\3537\261l\367\240n,9\012\332"
+ 1047      90CB6610 
+ 1047      EB37B16C 
+ 1047      F7A06E2C 
+ 1047      390ADA
+ 1048 0347 17051554 		.ascii	"\027\005\025T-\013\233E\216\374\374\007\222\220kvN\366"
+ 1048      2D0B9B45 
+ 1048      8EFCFC07 
+ 1048      92906B76 
+ 1048      4EF6
+ 1049 0359 C363EE12 		.ascii	"\303c\356\0229\307[9\346\241I\254R\203\364r\253S\275"
+ 1049      39C75B39 
+ 1049      E6A149AC 
+ 1049      5283F472 
+ 1049      AB53BD
+ 1050 036c ECC665F5 		.ascii	"\354\306e\365\3726\232\251\327L\337s\177\317\267\255"
+ 1050      FA369AA9 
+ 1050      D74CDF73 
+ 1050      7FCFB7AD 
+ 1051 037c F9BE85A8 		.ascii	"\371\276\205\250\226V\323\003\002n3Y\252\345\330\363"
+ 1051      9656D303 
+ 1051      026E3359 
+ 1051      AAE5D8F3 
+ 1052 038c D9FC07C9 		.ascii	"\331\374\007\3114\233\377 \263Io\017e\256`\323f_m\321"
+ 1052      349BFF20 
+ 1052      B3496F0F 
+ 1052      65AE60D3 
+ 1052      665F6DD1 
+ 1053 03a0 6C06E5FF 		.ascii	"l\006\345\377d\360\007f\220\373vh%\203\222\0021\203"
+ 1053      64F00766 
+ 1053      90FB7668 
+ 1053      25839202 
+ 1053      3183
+ 1054 03b2 36A2B1E7 		.ascii	"6\242\261\347\246\022H\227\313K\250\334\017\027\307"
+ 1054      A6124897 
+ 1054      CB4BA8DC 
+ 1054      0F17C7
+ 1055 03c1 028E82A8 		.ascii	"\002\216\202\250\225\235\025^\000\272&\207o\017D \365"
+ 1055      959D155E 
+ 1055      00BA2687 
+ 1055      6F0F4420 
+ 1055      F5
+ 1056 03d2 4A09C28F 		.ascii	"J\011\302\217K\223\344Y\022H\335\342\350\263<K0\374"
+ 1056      4B93E459 
+ 1056      1248DDE2 
+ARM GAS  /tmp/ccFOstLS.s 			page 32
 
 
- 1058      5FA7FF6D 
- 1058      BE8D2C9D 
- 1058      6F1F
- 1059 03fc 0FFC72C6 		.ascii	"\017\374r\306\273\356\004%\213s\023\231\200\333\230"
- 1059      BBEE0425 
- 1059      8B731399 
- 1059      80DB98
- 1060 040b 2E0CA7DE 		.ascii	".\014\247\336\001\250\260g\370\362X\346\016\267\000"
- 1060      01A8B067 
- 1060      F8F258E6 
- 1060      0EB700
- 1061 041a CDA95158 		.ascii	"\315\251QX\207\\\214\245\346\037\215e_r\272\265\230"
- 1061      875C8CA5 
- 1061      E61F8D65 
- 1061      5F72BAB5 
- 1061      98
- 1062 042b DBC2D39E 		.ascii	"\333\302\323\236\036\312\277\342|\230\214\362$\326Z"
- 1062      1ECABFE2 
- 1062      7C988CF2 
- 1062      24D65A
- 1063 043a D09E1EDE 		.ascii	"\320\236\036\336B\274TX\030\302o\331{\345o\227WT\277"
- 1063      42BC5458 
- 1063      18C26FD9 
- 1063      7BE56F97 
- 1063      5754BF
- 1064 044d 15AEDABE 		.ascii	"\025\256\332\276\355\375PEu\250\254b\353\326\212m\241"
- 1064      EDFD5045 
- 1064      75A8AC62 
- 1064      EBD68A6D 
- 1064      A1
- 1065 045e EAF096AA 		.ascii	"\352\360\226\252\360\366\312\320\306\3276\227n\376\220"
- 1065      F0F6CAD0 
- 1065      C6D73697 
- 1065      6EFE90
- 1066 046d 762BCB3F 		.ascii	"v+\313?x\247\252:\364Jii\250\254*\\\\X&d\325\226\312"
- 1066      78A7AA3A 
- 1066      F44A6969 
- 1066      A8AC2A5C 
- 1066      5C582664 
- 1067 0484 604A2E2C 		.ascii	"`J.,\336\360\302\273eE\3537\010\2504\302\225\177\002"
- 1067      DEF0C2BB 
- 1067      6545EB37 
- 1067      08A834C2 
- 1067      957F02
- 1068 0497 0C2198FB 		.ascii	"\014!\230\373"
- 1069              		.text
- 1070              		.section	.gnu.lto_ram_areas.c40960afb88821e2,"e",%progbits
- 1071 0000 789C75D0 		.ascii	"x\234u\320IOSa\024\306\361\367\364\245e\020\020q\204"
- 1071      494F5361 
- 1071      14C6F1F7 
- 1071      F4A56510 
- 1071      107184
- 1072 0013 027E83DE 		.ascii	"\002~\203\336\340\256;\261&\256\210\211_\300`cb\303"
- 1072      E0AE3BB1 
- 1072      26AE8889 
- 1072      5FC06063 
- 1072      62C3
-ARM GAS  /tmp/ccQv33l2.s 			page 33
+ 1056      E8B33C4B 
+ 1056      30FC
+ 1057 03e4 9DE46A12 		.ascii	"\235\344j\022\361\004\215{\027\366\365\232d\214\257"
+ 1057      F1048D7B 
+ 1057      17F6F59A 
+ 1057      648CAF
+ 1058 03f3 D3FF36DF 		.ascii	"\323\3776\337F\226\316\267O\007~9\355]\177\234\222\305"
+ 1058      4696CEB7 
+ 1058      4F077E39 
+ 1058      ED5D7F9C 
+ 1058      92C5
+ 1059 0405 B9894CC0 		.ascii	"\271\211L\300\035L\027\206S\357\000T\330=|y,s\207[\200"
+ 1059      1D4C1786 
+ 1059      53EF0054 
+ 1059      D83D7C79 
+ 1059      2C73875B 
+ 1060 041a E6D428AC 		.ascii	"\346\324(\254G.\306R\363\217\306\262/9\335\272\216\333"
+ 1060      472EC652 
+ 1060      F38FC6B2 
+ 1060      2F39DDBA 
+ 1060      8EDB
+ 1061 042c C2D39E1E 		.ascii	"\302\323\236\036\312\277\342|\230\214\362$\326Z\320"
+ 1061      CABFE27C 
+ 1061      988CF224 
+ 1061      D65AD0
+ 1062 043b 9E1EDE42 		.ascii	"\236\036\336B\274RX\030\302o\331\007\345\357\226WT\277"
+ 1062      BC525818 
+ 1062      C26FD907 
+ 1062      E5EF9657 
+ 1062      54BF
+ 1063 044d 13AEDAB6 		.ascii	"\023\256\332\266\365\303PEu\250\254b\313\226\212\255"
+ 1063      F5C35045 
+ 1063      75A8AC62 
+ 1063      CB968AAD 
+ 1064 045d A1EA7069 		.ascii	"\241\352piUx[eh\343\033\233K6\177L\273\225\345\037\275"
+ 1064      55785B65 
+ 1064      68E31B9B 
+ 1064      4B367F4C 
+ 1064      BB95E51F 
+ 1065 0472 57551D7A 		.ascii	"WU\035z\255\244$TV\025^WX&dUie0%\027\276\264\241\364"
+ 1065      ADA42454 
+ 1065      56155E57 
+ 1065      58266455 
+ 1065      69653025 
+ 1066 048b FD0D45C5 		.ascii	"\375\015E\305E\002*\215p\345\237\014h\230\370"
+ 1066      45022A8D 
+ 1066      70E59F0C 
+ 1066      6898F8
+ 1067              		.text
+ 1068              		.section	.gnu.lto_ram_areas.45572236c120b9a4,"e",%progbits
+ 1069 0000 789C75D0 		.ascii	"x\234u\320IOSa\024\306\361\367\364\245e\020\020q\204"
+ 1069      494F5361 
+ 1069      14C6F1F7 
+ 1069      F4A56510 
+ 1069      107184
+ 1070 0013 027E83DE 		.ascii	"\002~\203\336\340\256;\261&\256\210\211_\300`cb\303"
+ 1070      E0AE3BB1 
+ARM GAS  /tmp/ccFOstLS.s 			page 33
 
 
- 1073 0025 50D29684 		.ascii	"P\322\226\204\260\2724\304\020\214\304\225\320\005i"
- 1073      B0BA34C4 
- 1073      108CC495 
- 1073      D00569
- 1074 0034 93BA6041 		.ascii	"\223\272`A\302\262\306*\2122\011(\363<X\034\012a\353"
- 1074      C2B2C62A 
- 1074      8A320928 
- 1074      F33C581C 
- 1074      0A61EB
- 1075 0047 C6C4051E 		.ascii	"\306\304\005\036\356}6^8M\323\177r\237\334\223_Z\244"
- 1075      EE7D365E 
- 1075      384DD37F 
- 1075      729FDC93 
- 1075      5F5AA4
- 1076 005a 4875BB95 		.ascii	"Hu\273\225\272\253\354\317\200\246\241\341\371\223\342"
- 1076      BAABECCF 
- 1076      80A6A1E1 
- 1076      F993E2
- 1077 0069 1E8A77F7 		.ascii	"\036\212w\367\232f\356\331\261\356Jj\225\326g\267T\336"
- 1077      9A66EED9 
- 1077      B1EE4A6A 
- 1077      95D667B7 
- 1077      54DE
- 1078 007b 652D74CE 		.ascii	"e-t\316B\326\342:\273TZ\203\266\206\203\327c\367\375"
- 1078      42D6E23A 
- 1078      BB545A83 
- 1078      B68683D7 
- 1078      63F7FD
- 1079 008e 19B33765 		.ascii	"\031\2637e\336Nj\032\324\212\336Q\017\227\350\255U\027"
- 1079      DE4E6A1A 
- 1079      D48ADE51 
- 1079      0F97E8AD 
- 1079      5517
- 1080 00a0 65AD6A7A 		.ascii	"e\255jz\303=}#\227x\365\322\323\257\223<\025:/\237\364"
- 1080      C33D7D23 
- 1080      9778F5D2 
- 1080      D3AF933C 
- 1080      153A2F9F 
- 1081 00b5 DBD00211 		.ascii	"\333\320\002\021\352\026\241\036\011Z(@?\001\372\021"
- 1081      EA16A11E 
- 1081      095A2840 
- 1081      3F01FA11 
- 1082 00c5 D071403F 		.ascii	"\320q@?\000\232YH\014\000\352q^\376\015h\221\010-\026"
- 1082      009A5948 
- 1082      0C00EA71 
- 1082      5EFE0D68 
- 1082      91082D16 
- 1083 00d9 A12512F4 		.ascii	"\241%\022\364\202\000\375\014\350\014\240\323\200N\001"
- 1083      8200FD0C 
- 1083      E80CA0D3 
- 1083      804E01
- 1084 00e8 BABE974E 		.ascii	"\272\276\227N\221\015u;/\037\002Z*B\313Dh\271\004\275"
- 1084      910D753B 
- 1084      2F1F025A 
- 1084      2A42CB44 
- 1084      68B904BD 
- 1085 00fc 28401700 		.ascii	"(@\027\000\375\012\350\027@\347\001\335\217\017\375"
-ARM GAS  /tmp/ccQv33l2.s 			page 34
+ 1070      26AE8889 
+ 1070      5FC06063 
+ 1070      62C3
+ 1071 0025 50D29684 		.ascii	"P\322\226\204\260\2724\304\020\214\304\225\320\005i"
+ 1071      B0BA34C4 
+ 1071      108CC495 
+ 1071      D00569
+ 1072 0034 93BA6041 		.ascii	"\223\272`A\302\262\306*\2122\011(\363<X\034\012a\353"
+ 1072      C2B2C62A 
+ 1072      8A320928 
+ 1072      F33C581C 
+ 1072      0A61EB
+ 1073 0047 C6C4051E 		.ascii	"\306\304\005\036\356}6^8M\323\177r\237\334\223_Z\244"
+ 1073      EE7D365E 
+ 1073      384DD37F 
+ 1073      729FDC93 
+ 1073      5F5AA4
+ 1074 005a 4875BB95 		.ascii	"Hu\273\225\272\253\354\317\200\246\241\341\371\223\342"
+ 1074      BAABECCF 
+ 1074      80A6A1E1 
+ 1074      F993E2
+ 1075 0069 1E8A77F7 		.ascii	"\036\212w\367\232f\356\331\261\356Jj\225\326g\267T\336"
+ 1075      9A66EED9 
+ 1075      B1EE4A6A 
+ 1075      95D667B7 
+ 1075      54DE
+ 1076 007b 652D74CE 		.ascii	"e-t\316B\326\342:\273TZ\203\266\206\203\327c\367\375"
+ 1076      42D6E23A 
+ 1076      BB545A83 
+ 1076      B68683D7 
+ 1076      63F7FD
+ 1077 008e 19B33765 		.ascii	"\031\2637e\336Nj\032\324\212\336Q\017\227\350\255U\027"
+ 1077      DE4E6A1A 
+ 1077      D48ADE51 
+ 1077      0F97E8AD 
+ 1077      5517
+ 1078 00a0 65AD6A7A 		.ascii	"e\255jz\303=}#\227x\365\322\323\257\223<\025:/\237\364"
+ 1078      C33D7D23 
+ 1078      9778F5D2 
+ 1078      D3AF933C 
+ 1078      153A2F9F 
+ 1079 00b5 DBD00211 		.ascii	"\333\320\002\021\352\026\241\036\011Z(@?\001\372\021"
+ 1079      EA16A11E 
+ 1079      095A2840 
+ 1079      3F01FA11 
+ 1080 00c5 D071403F 		.ascii	"\320q@?\000\232YH\014\000\352q^\376\015h\221\010-\026"
+ 1080      009A5948 
+ 1080      0C00EA71 
+ 1080      5EFE0D68 
+ 1080      91082D16 
+ 1081 00d9 A12512F4 		.ascii	"\241%\022\364\202\000\375\014\350\014\240\323\200N\001"
+ 1081      8200FD0C 
+ 1081      E80CA0D3 
+ 1081      804E01
+ 1082 00e8 BABE974E 		.ascii	"\272\276\227N\221\015u;/\037\002Z*B\313Dh\271\004\275"
+ 1082      910D753B 
+ 1082      2F1F025A 
+ARM GAS  /tmp/ccFOstLS.s 			page 34
 
 
- 1085      FD0AE817 
- 1085      40E701DD 
- 1085      8F0FFD
- 1086 010b 29B5A105 		.ascii	")\265\241\005\316\313Y@+D\350%\021Z)A/\013\3205@W\001"
- 1086      CECB5940 
- 1086      2B44E825 
- 1086      115A2941 
- 1086      2F0BD035 
- 1087 0122 5D017419 		.ascii	"]\001t\031\320\370\332H\246\334\206j\347\345Q@\257\210"
- 1087      D0F8DA48 
- 1087      A6DC866A 
- 1087      E7E55140 
- 1087      AF88
- 1088 0134 D0AB22F4 		.ascii	"\320\253\"\364\232\004\275.@w\000\335\006t\013\320M"
- 1088      9A04BD2E 
- 1088      407700DD 
- 1088      06740BD0 
- 1088      4D
- 1089 0145 409F4EBE 		.ascii	"@\237N\276\310\226\331P\227\363r\032\320\033\"\264J"
- 1089      C896D950 
- 1089      97F3721A 
- 1089      D01B22B4 
- 1089      4A
- 1090 0156 84564B50 		.ascii	"\204VKP\257\000=\0004\007\3507@\367\001\375\357\324"
- 1090      AF003D00 
- 1090      3407E837 
- 1090      40F701FD 
- 1090      EFD4
- 1091 0168 DFE7B6AC 		.ascii	"\337\347\266\254F\224\325\212\262:IvS\220\345!\373\005"
- 1091      4694D58A 
- 1091      B23A4976 
- 1091      5390E521 
- 1091      FB05
- 1092 017a D94FC87E 		.ascii	"\331O\310~@6\332\227X,\261_1\371\217\324T\357\245C\362"
- 1092      4036DA97 
- 1092      582CB15F 
- 1092      31F98FD4 
- 1092      54EFA543 
- 1093 018f D32D2F7D 		.ascii	"\323-/}\347\354\221\227v\271\033\334u\356\022w\221;"
- 1093      E7EC9197 
- 1093      76B91BDC 
- 1093      75EE1277 
- 1093      913B
- 1094 01a1 C79DE54E 		.ascii	"\307\235\345Nr'\270\357\271c\344Wt\304?w|>\203\277\301"
- 1094      7227B8EF 
- 1094      B963E457 
- 1094      74C43F77 
- 1094      7C3E83BF 
- 1095 01b6 27A147A1 		.ascii	"'\241G\241p\364a,\322\321\326l\204\243F0\334\332\032"
- 1095      70F4612C 
- 1095      D2D1D66C 
- 1095      84A34630 
- 1095      DCDA1A
- 1096 01c9 6E33A2B1 		.ascii	"n3\242\261\246H\254\243\335hx\320\030h\354<}\332\036"
- 1096      A648ACA3 
- 1096      DD6878D0 
- 1096      1868EC3C 
-ARM GAS  /tmp/ccQv33l2.s 			page 35
+ 1082      2A42CB44 
+ 1082      68B904BD 
+ 1083 00fc 28401700 		.ascii	"(@\027\000\375\012\350\027@\347\001\335\217\017\375"
+ 1083      FD0AE817 
+ 1083      40E701DD 
+ 1083      8F0FFD
+ 1084 010b 29B5A105 		.ascii	")\265\241\005\316\313Y@+D\350%\021Z)A/\013\3205@W\001"
+ 1084      CECB5940 
+ 1084      2B44E825 
+ 1084      115A2941 
+ 1084      2F0BD035 
+ 1085 0122 5D017419 		.ascii	"]\001t\031\320\370\332H\246\334\206j\347\345Q@\257\210"
+ 1085      D0F8DA48 
+ 1085      A6DC866A 
+ 1085      E7E55140 
+ 1085      AF88
+ 1086 0134 D0AB22F4 		.ascii	"\320\253\"\364\232\004\275.@w\000\335\006t\013\320M"
+ 1086      9A04BD2E 
+ 1086      407700DD 
+ 1086      06740BD0 
+ 1086      4D
+ 1087 0145 409F4EBE 		.ascii	"@\237N\276\310\226\331P\227\363r\032\320\033\"\264J"
+ 1087      C896D950 
+ 1087      97F3721A 
+ 1087      D01B22B4 
+ 1087      4A
+ 1088 0156 84564B50 		.ascii	"\204VKP\257\000=\0004\007\3507@\367\001\375\357\324"
+ 1088      AF003D00 
+ 1088      3407E837 
+ 1088      40F701FD 
+ 1088      EFD4
+ 1089 0168 DFE7B6AC 		.ascii	"\337\347\266\254F\224\325\212\262:IvS\220\345!\373\005"
+ 1089      4694D58A 
+ 1089      B23A4976 
+ 1089      5390E521 
+ 1089      FB05
+ 1090 017a D94FC87E 		.ascii	"\331O\310~@6\332\227X,\261_1\371\217\324T\357\245C\362"
+ 1090      4036DA97 
+ 1090      582CB15F 
+ 1090      31F98FD4 
+ 1090      54EFA543 
+ 1091 018f D32D2F7D 		.ascii	"\323-/}\347\354\221\227v\271\033\334u\356\022w\221;"
+ 1091      E7EC9197 
+ 1091      76B91BDC 
+ 1091      75EE1277 
+ 1091      913B
+ 1092 01a1 C79DE54E 		.ascii	"\307\235\345Nr'\270\357\271c\344Wt\304?w|>\203\277\301"
+ 1092      7227B8EF 
+ 1092      B963E457 
+ 1092      74C43F77 
+ 1092      7C3E83BF 
+ 1093 01b6 27A147A1 		.ascii	"'\241G\241p\364a,\322\321\326l\204\243F0\334\332\032"
+ 1093      70F4612C 
+ 1093      D2D1D66C 
+ 1093      84A34630 
+ 1093      DCDA1A
+ 1094 01c9 6E33A2B1 		.ascii	"n3\242\261\246H\254\243\335hx\320\030h\354<}\332\036"
+ARM GAS  /tmp/ccFOstLS.s 			page 35
 
 
- 1096      7DDA1E
- 1097 01dc 6A791C89 		.ascii	"jy\034\211\032\367\002\001#\030\211\325\373\202\352"
- 1097      1AF70201 
- 1097      231889D5 
- 1097      FB82EA
- 1098 01eb 1FA743F9 		.ascii	"\037\247C\3711"
- 1098      31
- 1099              		.text
- 1100              		.section	.gnu.lto_.symbol_nodes.c40960afb88821e2,"e",%progbits
- 1101 0000 789C75CB 		.ascii	"x\234u\313GRBQ\020F\341s_\000L\210`\302@\332\211+\273"
- 1101      47524251 
- 1101      1046E173 
- 1101      5F004C88 
- 1101      60C240DA 
- 1102 0017 6FC21836 		.ascii	"o\302\0306\342\006\234\031@\224\214`D\021\011C\326 "
- 1102      E2069C19 
- 1102      40948C60 
- 1102      44110943 
- 1102      D620
- 1103 0029 EF2FAB1C 		.ascii	"\357/\253\034P\364\344\353\352S\035\303P2\200s\203%"
- 1103      50F4E4EB 
- 1103      EA531DC3 
- 1103      50328073 
- 1103      8325
- 1104 003b 588E67CA 		.ascii	"X\216g\312-\226;W\301\005a\301\271\305\2325\351\016"
- 1104      2D963B57 
- 1104      C10561C1 
- 1104      B9C59A35 
- 1104      E90E
- 1105 004d EBAC4915 		.ascii	"\353\254I\025\254\273\250F\376C\376/T\261\336e\251\030"
- 1105      ACBBA846 
- 1105      FE43FE2F 
- 1105      54B1DE65 
- 1105      A918
- 1106 005f 5D79F1AF 		.ascii	"]y\361\257!(\200\353\337cr\341\241\206#\037p\345#\236"
- 1106      212880EB 
- 1106      DF6372E1 
- 1106      A186231F 
- 1106      70E5239E 
- 1107 0073 ACE3CB06 		.ascii	"\254\343\313\006\021\331$*[\304d\233\015\331aSv\331"
- 1107      11D9242A 
- 1107      5BC4649B 
- 1107      0DD96153 
- 1107      76D9
- 1108 0085 923DB6E5 		.ascii	"\222=\266\345\023;\262O\\\016\330\225\317$\344\013{"
- 1108      133BB24F 
- 1108      5C0ED895 
- 1108      CF24E40B 
- 1108      7B
- 1109 0096 F295A47C 		.ascii	"\362\225\244|#%\337\331\227\037\034\310!\207\362\223"
- 1109      2325DFD9 
- 1109      971F1CC8 
- 1109      2187F293 
- 1110 00a6 23F9C5B1 		.ascii	"#\371\305\261\034\221\226\337\234\3101\247\362\2073"
- 1110      1C9196DF 
- 1110      9CC831A7 
- 1110      F28733
-ARM GAS  /tmp/ccQv33l2.s 			page 36
+ 1094      A648ACA3 
+ 1094      DD6878D0 
+ 1094      1868EC3C 
+ 1094      7DDA1E
+ 1095 01dc 6A791C89 		.ascii	"jy\034\211\032\367\002\001#\030\211\325\373\202\352"
+ 1095      1AF70201 
+ 1095      231889D5 
+ 1095      FB82EA
+ 1096 01eb 1FA743F9 		.ascii	"\037\247C\3711"
+ 1096      31
+ 1097              		.text
+ 1098              		.section	.gnu.lto_.symbol_nodes.45572236c120b9a4,"e",%progbits
+ 1099 0000 789C75CB 		.ascii	"x\234u\313GRBQ\020F\341s_\000L\210`\302@\332\211+\273"
+ 1099      47524251 
+ 1099      1046E173 
+ 1099      5F004C88 
+ 1099      60C240DA 
+ 1100 0017 6FC21836 		.ascii	"o\302\0306\342\006\234\031@\224\214`D\021\011C\326 "
+ 1100      E2069C19 
+ 1100      40948C60 
+ 1100      44110943 
+ 1100      D620
+ 1101 0029 EF2FAB1C 		.ascii	"\357/\253\034P\364\344\353\352S\035\303P2\200s\203%"
+ 1101      50F4E4EB 
+ 1101      EA531DC3 
+ 1101      50328073 
+ 1101      8325
+ 1102 003b 588E67CA 		.ascii	"X\216g\312-\226;W\301\005a\301\271\305\2325\351\016"
+ 1102      2D963B57 
+ 1102      C10561C1 
+ 1102      B9C59A35 
+ 1102      E90E
+ 1103 004d EBAC4915 		.ascii	"\353\254I\025\254\273\250F\376C\376/T\261\336e\251\030"
+ 1103      ACBBA846 
+ 1103      FE43FE2F 
+ 1103      54B1DE65 
+ 1103      A918
+ 1104 005f 5D79F1AF 		.ascii	"]y\361\257!(\200\353\337cr\341\241\206#\037p\345#\236"
+ 1104      212880EB 
+ 1104      DF6372E1 
+ 1104      A186231F 
+ 1104      70E5239E 
+ 1105 0073 ACE3CB06 		.ascii	"\254\343\313\006\021\331$*[\304d\233\015\331aSv\331"
+ 1105      11D9242A 
+ 1105      5BC4649B 
+ 1105      0DD96153 
+ 1105      76D9
+ 1106 0085 923DB6E5 		.ascii	"\222=\266\345\023;\262O\\\016\330\225\317$\344\013{"
+ 1106      133BB24F 
+ 1106      5C0ED895 
+ 1106      CF24E40B 
+ 1106      7B
+ 1107 0096 F295A47C 		.ascii	"\362\225\244|#%\337\331\227\037\034\310!\207\362\223"
+ 1107      2325DFD9 
+ 1107      971F1CC8 
+ 1107      2187F293 
+ 1108 00a6 23F9C5B1 		.ascii	"#\371\305\261\034\221\226\337\234\3101\247\362\2073"
+ARM GAS  /tmp/ccFOstLS.s 			page 36
 
 
- 1111 00b5 39E15C4E 		.ascii	"9\341\\N\311\310\031Y9'\027\312/\246\003D\030"
- 1111      C9C81959 
- 1111      392717CA 
- 1111      2FA60344 
- 1111      18
- 1112              		.text
- 1113              		.section	.gnu.lto_.refs.c40960afb88821e2,"e",%progbits
- 1114 0000 789C05C1 		.ascii	"x\234\005\301[\002\201P\024\000\300\323\344\022\362"
- 1114      5B028150 
- 1114      1400C0D3 
- 1114      E412F2
- 1115 000f 2AE45149 		.ascii	"*\344QI\362\325R\354\177?f\212\310\342\027\021\026R"
- 1115      F2D552EC 
- 1115      7F3F668A 
- 1115      C8E21711 
- 1115      1652
- 1116 0021 2ECD43B2 		.ascii	".\315C\262\264RX\333\330*\355\354\035\034\235Tjg\027"
- 1116      B45258DB 
- 1116      D82AEDEC 
- 1116      1D1C9D54 
- 1116      6A6717
- 1117 0034 578D9BBB 		.ascii	"W\215\233\273\207\247V\247\3672x\033}L\276\361\007\201"
- 1117      87A756A7 
- 1117      F732781B 
- 1117      7D4CBEF1 
- 1117      0781
- 1118 0046 C903AC   		.ascii	"\311\003\254"
- 1119              		.text
- 1120              		.section	.gnu.lto_.decls.c40960afb88821e2,"e",%progbits
- 1121 0000 789CA596 		.ascii	"x\234\245\226kP\024\331\025\307\373\316\035\346\015"
- 1121      6B5014D9 
- 1121      15C7FBCE 
- 1121      1DE60D
- 1122 000f B8A8311B 		.ascii	"\270\2501\033cE7\030k\313\322\021P\310\247\324\032?"
- 1122      63453718 
- 1122      6BCBD211 
- 1122      50C8A7D4 
- 1122      1A3F
- 1123 0021 EC7ED9A4 		.ascii	"\354~\331\244*U\371\222\017\231\"\204-\311\012l\341"
- 1123      2A55F992 
- 1123      0F992284 
- 1123      2DC90A6C 
- 1123      E1
- 1124 0032 40CCB7E6 		.ascii	"@\314\267\346!\012\212\216\017\344\251\014\210\310["
- 1124      210A8A8E 
- 1124      0FE4A90C 
- 1124      88C85B
- 1125 0041 8DB23E40 		.ascii	"\215\262>@\345!\"\010:(\310\212\002\243 \2128\240\274"
- 1125      E5212208 
- 1125      3A28C88A 
- 1125      02A3208A 
- 1125      38A0BC
- 1126 0054 451E39F7 		.ascii	"E\0369\367\336\236a\232\013\251J\245\345?\335\367\336"
- 1126      DE9E619A 
- 1126      0BA94AA5 
- 1126      E53FDDF7 
- 1126      DE
-ARM GAS  /tmp/ccQv33l2.s 			page 37
+ 1108      1C9196DF 
+ 1108      9CC831A7 
+ 1108      F28733
+ 1109 00b5 39E15C4E 		.ascii	"9\341\\N\311\310\031Y9'\027\312/\246\003D\030"
+ 1109      C9C81959 
+ 1109      392717CA 
+ 1109      2FA60344 
+ 1109      18
+ 1110              		.text
+ 1111              		.section	.gnu.lto_.refs.45572236c120b9a4,"e",%progbits
+ 1112 0000 789C05C1 		.ascii	"x\234\005\301[\002\201P\024\000\300\323\344\022\362"
+ 1112      5B028150 
+ 1112      1400C0D3 
+ 1112      E412F2
+ 1113 000f 2AE45149 		.ascii	"*\344QI\362\325R\354\177?f\212\310\342\027\021\026R"
+ 1113      F2D552EC 
+ 1113      7F3F668A 
+ 1113      C8E21711 
+ 1113      1652
+ 1114 0021 2ECD43B2 		.ascii	".\315C\262\264RX\333\330*\355\354\035\034\235Tjg\027"
+ 1114      B45258DB 
+ 1114      D82AEDEC 
+ 1114      1D1C9D54 
+ 1114      6A6717
+ 1115 0034 578D9BBB 		.ascii	"W\215\233\273\207\247V\247\3672x\033}L\276\361\007\201"
+ 1115      87A756A7 
+ 1115      F732781B 
+ 1115      7D4CBEF1 
+ 1115      0781
+ 1116 0046 C903AC   		.ascii	"\311\003\254"
+ 1117              		.text
+ 1118              		.section	.gnu.lto_.decls.45572236c120b9a4,"e",%progbits
+ 1119 0000 789CA596 		.ascii	"x\234\245\226kP\024\331\025\307\373\316\035\346\015"
+ 1119      6B5014D9 
+ 1119      15C7FBCE 
+ 1119      1DE60D
+ 1120 000f B8A8311B 		.ascii	"\270\2501\033cEw1\326\226\245# \262\237Rk\374\260\373"
+ 1120      63457731 
+ 1120      D696A523 
+ 1120      20B29F52 
+ 1120      6BFCB0FB 
+ 1121 0023 6593AAAD 		.ascii	"e\223\252\255\312\227|\310\024!lIV`\013\007b\2765\017"
+ 1121      CA977CC8 
+ 1121      14216C49 
+ 1121      56600B07 
+ 1121      62BE350F 
+ 1122 0037 5150747C 		.ascii	"QPt| Oe@D\236>VY\037\240\362\020\021\004\035\024dE\201"
+ 1122      204F6540 
+ 1122      449E3E56 
+ 1122      591FA0F2 
+ 1122      1011041D 
+ 1123 004f 5110451C 		.ascii	"Q\020E\034P\336\"\217\234{o\3170\315\205T\245\322\362"
+ 1123      50DE228F 
+ 1123      9C7B6FCF 
+ 1123      30CD8554 
+ 1123      A5D2F2
+ 1124 0062 9FEE7BEF 		.ascii	"\237\356{\3579\277s\372\334\323mk\004$l_&\010&,\010"
+ARM GAS  /tmp/ccFOstLS.s 			page 37
 
 
- 1127 0065 737EE7F4 		.ascii	"s~\347\364\271\247\333\326\010H\330\271B\020LX\020\022"
- 1127      B9A7DBD6 
- 1127      0848D8B9 
- 1127      42104C58 
- 1127      1012
- 1128 0077 1482300F 		.ascii	"\024\2020\017\207Z\020\204Va\341\360\000\335\0015\200"
- 1128      875A1084 
- 1128      5661E1F0 
- 1128      00DD0135 
- 1128      80
- 1129 0088 9A400FA5 		.ascii	"\232@\017\245\365\015\240a\320\007\320(h\0344\011\372"
- 1129      F50DA061 
- 1129      D007D028 
- 1129      681C3409 
- 1129      FA
- 1130 0099 08FA049A 		.ascii	"\010\372\004\232\005\315\203\020\022\004\014\362\000"
- 1130      05CD8310 
- 1130      12040CF2 
- 1130      00
- 1131 00a6 A9415A90 		.ascii	"\251AZ\220\036\344\011\362\006}\006Z\011Z\015Z\003\372"
- 1131      1EE409F2 
- 1131      067D065A 
- 1131      095A0D5A 
- 1131      03FA
- 1132 00b8 1CB416B4 		.ascii	"\034\264\026\264\016\364+\320\006\320\257A\033A\233"
- 1132      0EF42BD0 
- 1132      06D0AF41 
- 1132      1B419B
- 1133 00c7 405F8236 		.ascii	"@_\2026\203\266\200\214H\220\035I0&S\273\2451\222r_"
- 1133      83B6808C 
- 1133      48901D49 
- 1133      302653BB 
- 1133      A5319272 
- 1134 00dc 7C1C5DC2 		.ascii	"|\034]\302\256a\011\273\324%\354\232\226\260\313Y\302"
- 1134      AE6109BB 
- 1134      D425EC9A 
- 1134      96B0CB59 
- 1134      C2
- 1135 00ed EEE11276 		.ascii	"\356\341\022vga\301 \331\371\200V\201\266\301\\\017"
- 1135      6761C120 
- 1135      D9F98056 
- 1135      81B6C15C 
- 1135      0F
- 1136 00fe 9C3781FC 		.ascii	"\2347\201\374\340z\010\316\016\220?\\w\303\371/ %\350"
- 1136      E07A08CE 
- 1136      0E903F5C 
- 1136      77C3F92F 
- 1136      2025E8
- 1137 0111 156800D4 		.ascii	"\025h\000\324\017z#\305h\225\316\303\213\342\364 \346"
- 1137      0F7A23C5 
- 1137      6895CEC3 
- 1137      8BE2F420 
- 1137      E6
- 1138 0122 D323B148 		.ascii	"\323#\261H\234\241e8\344X/\260Zn\221j\373\245T\353\215"
- 1138      9CA16538 
- 1138      E4582FB0 
- 1138      5A6E916A 
-ARM GAS  /tmp/ccQv33l2.s 			page 38
+ 1124      39BF73FA 
+ 1124      DCD36D6B 
+ 1124      04246C5F 
+ 1124      2608262C 
+ 1125 0077 090A4198 		.ascii	"\011\012A\230\203C-\010B\2130\177x\200n\203\352A\215"
+ 1125      83432D08 
+ 1125      428B307F 
+ 1125      78806E83 
+ 1125      EA418D
+ 1126 008a A007D2FA 		.ascii	"\240\007\322\372:\320\020\350=h\0044\006\232\000}\000"
+ 1126      3AD010E8 
+ 1126      3D680434 
+ 1126      069A007D 
+ 1126      00
+ 1127 009b 7D04CD80 		.ascii	"}\004\315\200\346@\010\011\002\006y\200\324 -H\017\362"
+ 1127      E6400809 
+ 1127      02067980 
+ 1127      D4202D48 
+ 1127      0FF2
+ 1128 00ad 0479833E 		.ascii	"\004y\203>\001-\007\255\004\255\002}\012Z\015Z\003\372"
+ 1128      012D07AD 
+ 1128      04AD027D 
+ 1128      0A5A0D5A 
+ 1128      03FA
+ 1129 00bf 1D681DE8 		.ascii	"\035h\035\350s\320z\320\006\320\027\240\215\240M #\022"
+ 1129      73D07AD0 
+ 1129      06D017A0 
+ 1129      8DA04D20 
+ 1129      2312
+ 1130 00d1 6447128C 		.ascii	"dG\022\214\311\324Ni\214\244\334\027\036\207\027\261"
+ 1130      C9D44E69 
+ 1130      8CA4DC17 
+ 1130      1E8717B1 
+ 1131 00e1 AB5FC42E 		.ascii	"\253_\304.u\021\273\306E\354r\026\261{\260\210\335i"
+ 1131      7511BBC6 
+ 1131      45EC7216 
+ 1131      B17BB088 
+ 1131      DD69
+ 1132 00f3 58304876 		.ascii	"X0Hv>\240\025\240-0\327\015\347\015 ?\270\036\204\263"
+ 1132      3EA015A0 
+ 1132      2D30D70D 
+ 1132      E70D203F 
+ 1132      B81E84B3 
+ 1133 0107 03E40FD7 		.ascii	"\003\344\017\327]p\376+H\011z\011\352\007\365\201^K"
+ 1133      5D70FE2B 
+ 1133      48097A09 
+ 1133      EA07F581 
+ 1133      5E4B
+ 1134 0119 315AA4F3 		.ascii	"1Z\244\363\320\2028\335\210\371tK,\022gp\011\0169\326"
+ 1134      D08238DD 
+ 1134      88F9744B 
+ 1134      2C126770 
+ 1134      090E39D6 
+ 1135 012d 0AAC969B 		.ascii	"\012\254\226\233\244\332~!\325z\275T\373u\322^\254\221"
+ 1135      A4DA7E21 
+ 1135      D57ABD54 
+ 1135      FB75D25E 
+ARM GAS  /tmp/ccFOstLS.s 			page 38
 
 
- 1138      FBA554EB 
- 1139 0137 52ED3748 		.ascii	"R\3557H{\261N\332\233\317\245\275Z-\355\335g\322^zJ"
- 1139      7BB14EDA 
- 1139      9BCFA5BD 
- 1139      5A2DEDDD 
- 1139      67D25E7A 
- 1140 014c 7BAB95F6 		.ascii	"{\253\225\366\332C\332{\322\003\244\027HO\220\336 ="
- 1140      DA43DA7B 
- 1140      D203A417 
- 1140      484F90DE 
- 1140      203D
- 1141 015e 427A85F4 		.ascii	"Bz\205\364\014\351\235\017\213\362O\303\250\274\257"
- 1141      0CE99D0F 
- 1141      8BF24FC3 
- 1141      A8BCAF
- 1142 016d E21F2F50 		.ascii	"\342\037/P\017R\220[D\012$\220\177\344\007\261\002#"
- 1142      0F52905B 
- 1142      440A2490 
- 1142      7FE407B1 
- 1142      0223
- 1143 017f F2E7443B 		.ascii	"\362\347D;\017D\016j\247\220\314\211\001\233c'\347\017"
- 1143      0F440E6A 
- 1143      A790CC89 
- 1143      019B6327 
- 1143      E70F
- 1144 0191 9B534814 		.ascii	"\233SH\024\205s\337\230\017\243\323\241\033\232\255"
- 1144      8573DF98 
- 1144      0FA3D3A1 
- 1144      1B9AAD
- 1145 01a0 2369DD09 		.ascii	"#i\335\011a\016,\253\005GiJ!\205s\367@\\\306\013@\301"
- 1145      610E2CAB 
- 1145      0547694A 
- 1145      218573F7 
- 1145      405CC60B 
- 1146 01b6 05959211 		.ascii	"\005\225\222\021\220\253 gfSr\274^\"{\254(\212\366\337"
- 1146      90AB2067 
- 1146      665372BC 
- 1146      5E227BAC 
- 1146      288AF6DF 
- 1147 01ca A1D596F5 		.ascii	"\241\325\226\365\260\010\363W;\2176\250\360/\350u\313"
- 1147      B008F357 
- 1147      3B8F36A8 
- 1147      F02FE875 
- 1147      CB
- 1148 01db 7347A907 		.ascii	"sG\251\007\376\015\275\276\230=\323\252Q*\004t\023a"
- 1148      FE0DBDBE 
- 1148      983DD3AA 
- 1148      512A0474 
- 1148      1361
- 1149 01ed 46B8EDC8 		.ascii	"F\270\355\310\356S\343\315t\265\263\373\310\244\306"
- 1149      EE53E3CD 
- 1149      74B5B3FB 
- 1149      C8A4C6
- 1150 01fc 5826B243 		.ascii	"X&\262C\323\205\005t\233\332\011B\214\236\030$\326["
- 1150      D3850574 
- 1150      9BDA0942 
- 1150      8C9E1824 
-ARM GAS  /tmp/ccQv33l2.s 			page 39
+ 1135      AC91
+ 1136 013f F6E65369 		.ascii	"\366\346Si\257VJ{\367\211\264\227\236\322\336j\245\275"
+ 1136      AF564A7B 
+ 1136      F789B497 
+ 1136      9ED2DE6A 
+ 1136      A5BD
+ 1137 0151 F690F69E 		.ascii	"\366\220\366\236\364\000\351\005\322\023\2447H\217\220"
+ 1137      F400E905 
+ 1137      D213A437 
+ 1137      488F90
+ 1138 0160 5E213D43 		.ascii	"^!=Cz\347\375\202\374\3230:\327[\376\317\347\250\033"
+ 1138      7AE7FD82 
+ 1138      FCD3303A 
+ 1138      D75BFECF 
+ 1138      E7A81B
+ 1139 0173 29C82D22 		.ascii	")\310-\"\005\022\310?\362\203X\201\021\371s\242\235"
+ 1139      0512C83F 
+ 1139      F2835881 
+ 1139      11F973A2 
+ 1139      9D
+ 1140 0184 072207B5 		.ascii	"\007\"\007\265SH\346\304\200\315\261\223\363\207\315"
+ 1140      5348E6C4 
+ 1140      80CDB193 
+ 1140      F387CD
+ 1141 0193 29248AC2 		.ascii	")$\212\302\271o\314\207\321\351\320\015\315\326\221"
+ 1141      B96FCC87 
+ 1141      D1E9D00D 
+ 1141      CDD691
+ 1142 01a2 B4EE8430 		.ascii	"\264\356\2040\007\226\325\274\2434\245\220\302\271{"
+ 1142      0796D5BC 
+ 1142      A334A590 
+ 1142      C2B97B
+ 1143 01b1 202EE379 		.ascii	" .\343y\240\340\202J\311\010\310U\220S3)9^/\220=V\024"
+ 1143      A0E0824A 
+ 1143      C908C855 
+ 1143      90533329 
+ 1143      395E2F90 
+ 1144 01c8 45FB1FD0 		.ascii	"E\373\037\320J\313ZX\204\371+\035\207\353U\3707\364"
+ 1144      4ACB5A58 
+ 1144      84F92B1D 
+ 1144      87EB55F8 
+ 1144      37F4
+ 1145 01da BAF999A3 		.ascii	"\272\371\231\243\324\003\377\236^_\310\236n\321(\025"
+ 1145      D403FF9E 
+ 1145      5E5FC89E 
+ 1145      6ED12815 
+ 1146 01ea 02BA8130 		.ascii	"\002\272\2010#\334rd\367\252\361F\272\332\321uhBc,\023"
+ 1146      23DC7264 
+ 1146      F7AAF146 
+ 1146      BADAD175 
+ 1146      6842632C 
+ 1147 01ff D9A1E9C4 		.ascii	"\331\241\351\304\002\272E\355\004!FO\014\022\353,\025"
+ 1147      02BA45ED 
+ 1147      0421464F 
+ 1147      0C12EB2C 
+ 1147      15
+ 1148 0210 9E8730F2 		.ascii	"\236\2070\362\321!\005\014s\333lq\010\206+th\031\014"
+ARM GAS  /tmp/ccFOstLS.s 			page 39
 
 
- 1150      D65B
- 1151 020e 2A3D8F60 		.ascii	"*=\217`\344\243C\012\030\346\266\333\342\020\014W\351"
- 1151      E4A3430A 
- 1151      18E6B6DB 
- 1151      E2100C57 
- 1151      E9
- 1152 021f D00A18A6 		.ascii	"\320\012\030\246\346\335i\323\256I%\276\226xq\205\002"
- 1152      E6DD69D3 
- 1152      AE4925BE 
- 1152      96787185 
- 1152      02
- 1153 0230 EDFE19AA 		.ascii	"\355\376\031\252EkQ\015Z\0139\327\2415\002\212V\262"
- 1153      456B510D 
- 1153      5A0B39D7 
- 1153      A135028A 
- 1153      56B2
- 1154 0242 A896F892 		.ascii	"\250\226\370\222b\257/\254\242\275Z\254\236/\364-jN"
- 1154      62AF2FAC 
- 1154      A2BD5AAC 
- 1154      9E2FF42D 
- 1154      6A4E
- 1155 0254 146D5651 		.ascii	"\024mVQ\374\212\232\241*\204Q52\202\323-\244\024\310"
- 1155      FC8A9AA1 
- 1155      2A845135 
- 1155      3282D32D 
- 1155      A414C8
- 1156 0267 504095E8 		.ascii	"P@\225\350%B7\320\013\024\323\246\022\320\035\364\005"
- 1156      254237D0 
- 1156      0B14D3A6 
- 1156      12D01DF4 
- 1156      05
- 1157 0278 503E388E 		.ascii	"P>8\216>\360\306Mh\231[\273V\\\226\244\223\202\274\334"
- 1157      3EF0C64D 
- 1157      68995BBB 
- 1157      565C96A4 
- 1157      9382BCDC 
- 1158 028c 9C2956C7 		.ascii	"\234)V\307A\231\0244B\275+\302]\022\241^\036\241\031"
- 1158      41991434 
- 1158      42BD2BC2 
- 1158      5D12A15E 
- 1158      1EA119
- 1159 029f 2234D008 		.ascii	"\"4\320\010\303m\357\2731\356X.B\374\314\363.\347m<"
- 1159      C36DEFBB 
- 1159      31EE582E 
- 1159      42FCCCF3 
- 1159      2EE76D3C 
- 1160 02b3 DA228B70 		.ascii	"\332\"\213p\317\025\241\221D\270'\217p\007\"4\321\010"
- 1160      CF15A191 
- 1160      44B8278F 
- 1160      70072234 
- 1160      D108
- 1161 02c5 454FC76B 		.ascii	"EO\307k\365\270\227E\310i|\231k\300#l0\360\246\355\231"
- 1161      F5B89745 
- 1161      C8697C99 
- 1161      6BC0236C 
- 1161      30F0A6ED 
- 1162 02da 3709D7EC 		.ascii	"7\011\327\354\014\327\233\324Z\245u&\200Z\200\013\223"
-ARM GAS  /tmp/ccQv33l2.s 			page 40
+ 1148      D121050C 
+ 1148      73DB6C71 
+ 1148      08862B74 
+ 1148      68190C
+ 1149 0223 53F36EB7 		.ascii	"S\363n\267jW\245\022_K\274\270L\201v\376\012\325\240"
+ 1149      6A57A512 
+ 1149      5F4BBCB8 
+ 1149      4C8176FE 
+ 1149      0AD5A0
+ 1150 0236 D5A81AAD 		.ascii	"\325\250\032\255\206\234k\321*\001E+YTK|I\261\327gV"
+ 1150      869C6BD1 
+ 1150      2A01452B 
+ 1150      59544B7C 
+ 1150      49B1D767 
+ 1151 024b D15E2556 		.ascii	"\321^%V\315\025\372\0265%\2126\253(~E\315P%\302\250"
+ 1151      CD15FA16 
+ 1151      35258A36 
+ 1151      AB287E45 
+ 1151      CD5025C2 
+ 1152 0260 0A19C1E9 		.ascii	"\012\031\301\351&R\012d(\240\012\364\002\241\353\350"
+ 1152      26520A64 
+ 1152      28A00AF4 
+ 1152      02A1EBE8 
+ 1153 0270 398A6955 		.ascii	"9\212iU\011\3506\372\014(\357\035\207\357{\343F\264"
+ 1153      09E836FA 
+ 1153      0C28EF1D 
+ 1153      87EF7BE3 
+ 1153      46B4
+ 1154 0282 C4AD5D2D 		.ascii	"\304\255]-.K\322IA^l\314\024\253\342\240L\012\032\241"
+ 1154      2E4BD249 
+ 1154      415E6CCC 
+ 1154      14ABE2A0 
+ 1154      4C0A1AA1 
+ 1155 0296 CE15E10E 		.ascii	"\316\025\341\016\211P'\217\320\004\021\352i\204\241"
+ 1155      8950278F 
+ 1155      D00411EA 
+ 1155      6984A1
+ 1156 02a5 D6775D18 		.ascii	"\326w]\030\267/\025!~\372Y\247\3636\036n\222E\270\353"
+ 1156      B72F1521 
+ 1156      7EFA59A7 
+ 1156      F3361E6E 
+ 1156      9245B8EB 
+ 1157 02b9 8AD04022 		.ascii	"\212\320@\"\334\225G\270\015\021\032i\204\242'c5z\334"
+ 1157      DC9547B8 
+ 1157      0D111A69 
+ 1157      84A22763 
+ 1157      357ADC
+ 1158 02cc C322E434 		.ascii	"\303\"\3444\274\3105\340a6\350\177\335\372\324\233\204"
+ 1158      BCC835E0 
+ 1158      6136E87F 
+ 1158      DDFAD49B 
+ 1158      84
+ 1159 02dd 6B7286EB 		.ascii	"kr\206\353Ij\251\324:\023@\315\300\205\311\354\366\233"
+ 1159      496AA9D4 
+ 1159      3A1340CD 
+ 1159      C085C9EC 
+ 1159      F69B
+ARM GAS  /tmp/ccFOstLS.s 			page 40
 
 
- 1162      0CD79BD4 
- 1162      5AA57526 
- 1162      805A800B 
- 1162      93
- 1163 02eb D91DB75E 		.ascii	"\331\035\267^\031H\0165b\365\364VY\016\367]9< 9\334"
- 1163      19480E35 
- 1163      62F5F456 
- 1163      590EF75D 
- 1163      393C2039 
- 1164 0300 97E75005 		.ascii	"\227\347P\0059<\2449\330\322\017%\"\374\211\205\255"
- 1164      393CA439 
- 1164      D8D20F25 
- 1164      22FC8985 
- 1164      AD
- 1165 0311 AD2DA9A6 		.ascii	"\255-\251\246\367d\027\253\233~Kx\242\223gs\362\200"
- 1165      F76417AB 
- 1165      9B7E4B78 
- 1165      A2936773 
- 1165      F280
- 1166 0323 6893C312 		.ascii	"h\223\303\022\001\326Ja\327\037\234\250\363\302\207"
- 1166      01D64A61 
- 1166      D71F9CA8 
- 1166      F3C287
- 1167 0332 15145636 		.ascii	"\025\024V6\377:\313\2335\214\210`l-\355l\322\261\216"
- 1167      FF3ACB9B 
- 1167      358C8860 
- 1167      6C2DED6C 
- 1167      D2B18E
- 1168 0345 113530B6 		.ascii	"\02150\266g\344\237R\261u5\014\273\343NO\031\330P\011"
- 1168      67E49F52 
- 1168      B175350C 
- 1168      BBE34E4F 
- 1168      19D85009 
- 1169 0359 C3934D57 		.ascii	"\303\223MW\032%\353\3650\2747\223\236\252\320\035$\375"
- 1169      1A25EBF5 
- 1169      30BC3793 
- 1169      9EAAD01D 
- 1169      24FD
- 1170 036b 658D17B5 		.ascii	"e\215\027\265\337\020\263\016\350\257'\264\277~B:\001"
- 1170      DF10B30E 
- 1170      E8AF27B4 
- 1170      BF7E423A 
- 1170      01
- 1171 037c 19D7A276 		.ascii	"\031\327\242v\030\221\276\236?u[\311P$\320\201\321;"
- 1171      1891BE9E 
- 1171      3F755BC9 
- 1171      5024D081 
- 1171      D13B
- 1172 038e 714A7C8A 		.ascii	"qJ|\212eU\2258{K\015k\233t\210<n\3360\3250\354hCl\212"
- 1172      65559538 
- 1172      7B4B0D6B 
- 1172      9B74883C 
- 1172      6EDE30D5 
- 1173 03a8 5814E51F 		.ascii	"X\024\345\037\313S\341\\f\236i/\3115\220\270q,\256\340"
- 1173      CB53E15C 
- 1173      669E692F 
- 1173      C93590B8 
-ARM GAS  /tmp/ccQv33l2.s 			page 41
+ 1160 02ef 2F0D2487 		.ascii	"/\015$\207j\261jj\263,\207{\256\034\356\223\034\356"
+ 1160      6AB16A6A 
+ 1160      B32C877B 
+ 1160      AE1CEE93 
+ 1160      1CEE
+ 1161 0301 C973A884 		.ascii	"\311s\250\204\034\036\320\034l\351\007\022\021\376\310"
+ 1161      1C1ED01C 
+ 1161      6CE90712 
+ 1161      11FEC8
+ 1162 0310 C2D6D494 		.ascii	"\302\326\324\224T\321{\262\213U\215_\022\236\350\344"
+ 1162      54D17BB2 
+ 1162      8B558D5F 
+ 1162      129EE8E4 
+ 1163 0320 D99C3C20 		.ascii	"\331\234< \332\344\260D\200\265P\330\265\373\307j\275"
+ 1163      DAE4B044 
+ 1163      80B550D8 
+ 1163      B5FBC76A 
+ 1163      BD
+ 1164 0331 F0410585 		.ascii	"\360A\005\205\225\315\275\312\362f\015#\"\030[K;\032"
+ 1164      95CDBDCA 
+ 1164      F2660D23 
+ 1164      22185B4B 
+ 1164      3B1A
+ 1165 0343 75AC6344 		.ascii	"u\254cD\015\214\355\031\371'Tl]\015\303\256\270\223"
+ 1165      0D8CED19 
+ 1165      F927546C 
+ 1165      5D0DC3AE 
+ 1165      B893
+ 1166 0355 93063654 		.ascii	"\223\0066T\302\360x\343\345\006\311z-\014\357N\247\247"
+ 1166      C2F078E3 
+ 1166      E506C97A 
+ 1166      2D0CEF4E 
+ 1166      A7A7
+ 1167 0367 2A74FB49 		.ascii	"*t\373I\177Y\343E\3557\304\254\035\372\3531\355\257"
+ 1167      7F59E345 
+ 1167      ED37C4AC 
+ 1167      1DFAEB31 
+ 1167      EDAF
+ 1168 0379 5F904E40 		.ascii	"_\220N@\306\325\250\015F\244\257\347N\334R2\024\011"
+ 1168      C6D5A80D 
+ 1168      46A4AFE7 
+ 1168      4EDC5232 
+ 1168      1409
+ 1169 038b B46FE476 		.ascii	"\264o\344v\234\022\237`YU&\316\334T\303\332\006\035"
+ 1169      9C129F60 
+ 1169      595526CE 
+ 1169      DC54C3DA 
+ 1169      061D
+ 1170 039d 228F9B37 		.ascii	"\"\217\2337L\325\0179Z\021\233\"\026E\371G\362T8\227"
+ 1170      4CD50F39 
+ 1170      5A119B22 
+ 1170      1645F947 
+ 1170      F2543897 
+ 1171 03b1 9967DA4B 		.ascii	"\231g\332Kr\015$n\034\213+\270\242\242ND]\240(\350\031"
+ 1171      720D246E 
+ 1171      1C8B2BB8 
+ 1171      A2A24E44 
+ARM GAS  /tmp/ccFOstLS.s 			page 41
 
 
- 1173      712CAEE0 
- 1174 03bc 8A8ABA10 		.ascii	"\212\212\272\020u\201\242\240\3470\367\214\305N\234"
- 1174      7581A2A0 
- 1174      E730F78C 
- 1174      C54E9C
- 1175 03cb 6CF03124 		.ascii	"l\3601$\273\354Q7rO\264\007\031\330v\336oN\271\245\306"
- 1175      BBEC5137 
- 1175      724FB407 
- 1175      19D876DE 
- 1175      6F4EB9A5 
- 1176 03e0 C52C8865 		.ascii	"\305,\210e(\373\246\036_a\003\347\203\345\303\036,g"
- 1176      28FBA61E 
- 1176      5F6103E7 
- 1176      83E5C31E 
- 1176      2C67
- 1177 03f2 15574955 		.ascii	"\025WIU|\370n\362\232\016\327Q[\217\341\233\205o\014"
- 1177      7CF86EF2 
- 1177      9A0ED751 
- 1177      5B8FE19B 
- 1177      856F0C
- 1178 0405 C8D777A5 		.ascii	"\310\327w\245\257o\036\011Y=Q\240\206]KP\221@\2605\030"
- 1178      AF6F1E09 
- 1178      593D51A0 
- 1178      865D4B50 
- 1178      9140B035 
- 1179 041a BD462BDD 		.ascii	"\275F+\335\302\033\311\217\037\3740\353\332\363X\314"
- 1179      C21BC98F 
- 1179      1FFC30EB 
- 1179      DAF358CC 
- 1180 042a DF466D3B 		.ascii	"\337Fm;9\333\247\310i|\214>\325 \322H\275`\360\222."
- 1180      39DBA7C8 
- 1180      697C8C3E 
- 1180      D520D248 
- 1180      BD60F092 
- 1181 043f 117372F3 		.ascii	"\021sr\363\257\220/\032\000\365\203\336 _\322!\014\337"
- 1181      AF902F1A 
- 1181      00F583DE 
- 1181      205FD221 
- 1181      0CDF
- 1182 0451 B480EF5B 		.ascii	"\264\200\357[\006\337\201\\\311L\027\270\254\355K'N"
- 1182      06DF815C 
- 1182      C94C17B8 
- 1182      ACED4B27 
- 1182      4E
- 1183 0462 8DA1044F 		.ascii	"\215\241\004O~j\275\253\3056V\256\236g\365\005\352\225"
- 1183      7E6ABDAB 
- 1183      C53656AE 
- 1183      9E67F505 
- 1183      EA95
- 1184 0474 4BA688DE 		.ascii	"K\246\210\336J\234e\262$\255\321\222\034o\360\261H\336"
- 1184      4A9C65B2 
- 1184      24ADD192 
- 1184      1C6FF0B1 
- 1184      48DE
- 1185 0486 5F29D120 		.ascii	"_)\321 \230\267\201\377c\032\366\035\362a\315E\215\257"
- 1185      98B781FF 
- 1185      631AF61D 
-ARM GAS  /tmp/ccQv33l2.s 			page 42
+ 1171      5DA028E8 
+ 1172 03c6 CC3D65B1 		.ascii	"\314=e\261\023'\352}\014\311.{\324\205\334\023\355F"
+ 1172      1327EA7D 
+ 1172      0CC92E7B 
+ 1172      D485DC13 
+ 1172      ED46
+ 1173 03d8 06B69DF7 		.ascii	"\006\266\235\367\232Rn\252q1\013b\031\314\276\241\307"
+ 1173      9A526EAA 
+ 1173      71310B62 
+ 1173      19CCBEA1 
+ 1173      C7
+ 1174 03e9 97D9C0F9 		.ascii	"\227\331\300\371`\371\260\007\313Y\305\025R\025\037"
+ 1174      60F9B007 
+ 1174      CB59C515 
+ 1174      52151F
+ 1175 03f8 BC9DB8AA 		.ascii	"\274\235\270\252\303\265\324\326c\350F\341k\003\362"
+ 1175      C3B5D4D6 
+ 1175      63E846E1 
+ 1175      6B03F2
+ 1176 0407 F55DEEEB 		.ascii	"\365]\356\353\233GBV\215\027\250a\327\022T$\020l\015"
+ 1176      9B474256 
+ 1176      8D17A861 
+ 1176      D7125424 
+ 1176      106C0D
+ 1177 041a 46AFD072 		.ascii	"F\257\320r\267\360F\362\343\007?\314\272\346,\026\363"
+ 1177      B7F046F2 
+ 1177      E3073FCC 
+ 1177      BAE62C16 
+ 1177      F3
+ 1178 042b B750DB0E 		.ascii	"\267P\333\016\316\366\011r\032\037\241O5\2104R\017\030"
+ 1178      CEF60972 
+ 1178      1A1FA14F 
+ 1178      35883452 
+ 1178      0F18
+ 1179 043d BCA04BC4 		.ascii	"\274\240K\304\234\334\374K\344\213\372A}\240\327\310"
+ 1179      9CDCFC4B 
+ 1179      E48BFA41 
+ 1179      7DA0D7C8 
+ 1180 044d 977408C3 		.ascii	"\227t\010\3037\316\343{\227\300\267#W2S\005.k\373\342"
+ 1180      37CEE37B 
+ 1180      97C0B723 
+ 1180      57325305 
+ 1180      2E6BFBE2 
+ 1181 0461 89536328 		.ascii	"\211Sc(\301\343_Z\356h\261\215\225\253\373i]\201z\371"
+ 1181      C1E35F5A 
+ 1181      EE68B18D 
+ 1181      95ABFB69 
+ 1181      5D817AF9 
+ 1182 0475 A229A237 		.ascii	"\242)\2427\022g\211,Ik4'\307\033|,\222\367WJ4\000\346"
+ 1182      1267892C 
+ 1182      496B3427 
+ 1182      C71B7C2C 
+ 1182      92F7574A 
+ 1183 048c ADE0FF88 		.ascii	"\255\340\377\210\206}\213|XsQ\343k\317\373\372\274\234"
+ 1183      867D8B7C 
+ 1183      587351E3 
+ 1183      6BCFFBFA 
+ARM GAS  /tmp/ccFOstLS.s 			page 42
 
 
- 1185      F261CD45 
- 1185      8DAF
- 1186 0498 BFE8EFF7 		.ascii	"\277\350\357\367r\206J\370_C]hm\234P\272\207r\374\227"
- 1186      72864AF8 
- 1186      5F435D68 
- 1186      6D9C50BA 
- 1186      8772FC97 
- 1187 04ac 50567B49 		.ascii	"PV{I\203j\343Y\321\006/\227\241\254_\236\020\305o\320"
- 1187      836AE359 
- 1187      D1062F97 
- 1187      A1AC5F9E 
- 1187      10C56FD0 
- 1188 04c0 10F2418F 		.ascii	"\020\362A\217\330S\350\346Gf\376\252\210\231\366\020"
- 1188      D853E8E6 
- 1188      4766FEAA 
- 1188      8899F610 
- 1189 04d0 D030DA08 		.ascii	"\3200\332\010\256#c)W\274\261\235U'\245\263\351\200"
- 1189      AE236329 
- 1189      57BCB19D 
- 1189      5527A5B3 
- 1189      E980
- 1190 04e2 1E387628 		.ascii	"\0368v(\360\203t\237\274x+\353\310\367\022g\241\302"
- 1190      F083749F 
- 1190      BC782BEB 
- 1190      C8F71267 
- 1190      A1C2
- 1191 04f4 3023C4BC 		.ascii	"0#\304\274\202\367\313\007Jy\233\322>\357\215G\031\345"
- 1191      82F7CB07 
- 1191      4A799BD2 
- 1191      3EEF8D47 
- 1191      19E5
- 1192 0506 78F5EB8B 		.ascii	"x\365\353\213H\242\274\313\307\026_\312\030\341\030"
- 1192      48A2BCCB 
- 1192      C7165FCA 
- 1192      18E118
- 1193 0515 2384F101 		.ascii	"#\204\361\001\030\243\224Q0\327\366\243\012\307b\312"
- 1193      18A39451 
- 1193      30D7F6A3 
- 1193      0AC762CA 
- 1194 0525 184CA919 		.ascii	"\030L\251\031\363\224\030}\005N\306\030\307\030#\214"
- 1194      F394187D 
- 1194      054EC618 
- 1194      C718238C 
- 1195 0535 59608C53 		.ascii	"Y`\214SFF\261#C\207-\2141\360\264lD\353d\374<S\254U"
- 1195      4646B123 
- 1195      43872D8C 
- 1195      31F0B46C 
- 1195      44EB64FC 
- 1196 054d 52C80407 		.ascii	"R\310\004\007\231 \220$xIMR\310\253\272{/4\330\312 "
- 1196      99209024 
- 1196      78494D52 
- 1196      C8ABBA7B 
- 1196      2F34D8CA 
- 1197 0562 9D13A522 		.ascii	"\235\023\245\"\226 \375n%\231\342(S\204\222\012\224"
- 1197      9620FD6E 
- 1197      2599E228 
- 1197      5384920A 
-ARM GAS  /tmp/ccQv33l2.s 			page 43
+ 1183      BC9C
+ 1184 049e A112FED7 		.ascii	"\241\022\376\327P\347[\032\306\225\356\241\034\377%"
+ 1184      50E75B1A 
+ 1184      C695EEA1 
+ 1184      1CFF25
+ 1185 04ad 94D55E52 		.ascii	"\224\325^R\257Z\177Z\264\301\313e0\353\267\307D\361"
+ 1185      AF5A7F5A 
+ 1185      B4C1CB65 
+ 1185      30EBB7C7 
+ 1185      44F1
+ 1186 04bf 1B34887C 		.ascii	"\0334\210|\320C\366\024\272\371\221\231\277)b\246<\004"
+ 1186      D043F614 
+ 1186      BAF99199 
+ 1186      BF2962A6 
+ 1186      3C04
+ 1187 04d1 3484D683 		.ascii	"4\204\326\203\353\360h\312eolg\325I\351h\334\247\007"
+ 1187      EBF068CA 
+ 1187      656F6C67 
+ 1187      D549E968 
+ 1187      DCA707
+ 1188 04e4 8E1D0A7C 		.ascii	"\216\035\012|?\335'/\336\312:\362\235\304\231\2570\314"
+ 1188      3FDD272F 
+ 1188      DECA3AF2 
+ 1188      9DC499AF 
+ 1188      30CC
+ 1189 04f6 08312FE1 		.ascii	"\0101/\341\375\362\236R\336\244\264\315y\343\021F9Z"
+ 1189      FDF29E52 
+ 1189      DEA4B4CD 
+ 1189      79E31146 
+ 1189      395A
+ 1190 0508 F5EA0292 		.ascii	"\365\352\002\222(o\363\261\305\2272\2069\3060a\274\007"
+ 1190      286FF3B1 
+ 1190      C5973286 
+ 1190      39C63061 
+ 1190      BC07
+ 1191 051a C6086514 		.ascii	"\306\010e\024\314\266\376\254\302\261\2302\006R\252"
+ 1191      CCB6FEAC 
+ 1191      C2B19832 
+ 1191      0652AA
+ 1192 0529 473D2546 		.ascii	"G=%Fo\201\2231\3121F\011c\006\030c\224\221Q\354\310"
+ 1192      6F819331 
+ 1192      CA314609 
+ 1192      63061863 
+ 1192      949151EC 
+ 1193 053e D0610B63 		.ascii	"\320a\013c\364?)\033\326:\031\277\316\024k\224\0242"
+ 1193      F43F291B 
+ 1193      D63A19BF 
+ 1193      CE146B94 
+ 1193      1432
+ 1194 0550 CE41C609 		.ascii	"\316A\306\011$\011^R\023\024\362\262\366\356s\015\266"
+ 1194      24095E52 
+ 1194      1314F2B2 
+ 1194      F6EE730D 
+ 1194      B6
+ 1195 0561 3248C778 		.ascii	"2H\307x\251\210%H\237[I&9\312$\241\244\002\345\003\245"
+ 1195      A9882548 
+ 1195      9F5B4926 
+ARM GAS  /tmp/ccFOstLS.s 			page 43
 
 
- 1197      94
- 1198 0573 8F9412F7 		.ascii	"\217\224\022\367>\355\222\036_f\224\242\216\242q/\256"
- 1198      3EED921E 
- 1198      5F6694A2 
- 1198      8EA2712F 
- 1198      AE
- 1199 0584 24D31C63 		.ascii	"$\323\034c\2320r\201\361\2112Z\253+\212\325\270\206"
- 1199      9A307281 
- 1199      F189325A 
- 1199      AB2B8AD5 
- 1199      B886
- 1200 0596 313A1C75 		.ascii	"1:\034u6\015W\222\031\2161C\030e\300\230\245\214\376"
- 1200      360D5792 
- 1200      198E3143 
- 1200      1865C098 
- 1200      A58CFE
- 1201 05a9 DEC39754 		.ascii	"\336\303\227T\330\306\030m\351\327j\025|I\3468\310\034"
- 1201      D8C6186D 
- 1201      E9D76A15 
- 1201      7C49E638 
- 1201      C81C
- 1202 05bb 815C07C8 		.ascii	"\201\\\007\310<\205<\3179\377\321\200\355\0142;\227"
- 1202      3C853CCF 
- 1202      39FFD180 
- 1202      ED0C323B 
- 1202      97
- 1203 05cc D5E6ACEB 		.ascii	"\325\346\254\353\234[ID\305b\012\314\0101\365@\211U"
- 1203      9C5B4944 
- 1203      C5620ACC 
- 1203      0831F540 
- 1203      8955
- 1204 05de 104ADA8D 		.ascii	"\020J\332\215\346\253j<\312(\217\317\225\014\362%\211"
- 1204      E6AB6A3C 
- 1204      CA288FCF 
- 1204      950CF225 
- 1204      89
- 1205 05ef E3187184 		.ascii	"\343\030q\204\321\012\214x\312\230\177\220\323\242\300"
- 1205      D10A8C78 
- 1205      CA987F90 
- 1205      D3A2C0
- 1206 05fe B14ACAB8 		.ascii	"\261J\312\270\233Xd\347\273$\201c$\020\006\371F\331"
- 1206      9B5864E7 
- 1206      BB248163 
- 1206      241006F9 
- 1206      46D9
- 1207 0610 4F194D55 		.ascii	"O\031MU\307+\241K\030#\256\276\241\312\300\227$\221"
- 1207      C72BA14B 
- 1207      1823AEBE 
- 1207      A1CAC097 
- 1207      2491
- 1208 0622 832412C8 		.ascii	"\203$\022\310\000@\016PH\372\341\244u\330\312\030E3"
- 1208      00400E50 
- 1208      48FAE1A4 
- 1208      75D8CA18 
- 1208      4533
- 1209 0634 35CDCE8E 		.ascii	"5\315\316\216\177\222\261P\221\203\034\344 \201\214"
- 1209      7F92B150 
-ARM GAS  /tmp/ccQv33l2.s 			page 44
+ 1195      39CA24A1 
+ 1195      A402E503 
+ 1196 0576 C4BD4BBB 		.ascii	"\304\275K\273\250\307\227\030\245\250\275h\314\213+"
+ 1196      A8C79718 
+ 1196      A5A8BD68 
+ 1196      CC8B2B
+ 1197 0585 C914C798 		.ascii	"\311\024\307\230\"\214\\`|\244\214\226\252\362b5\256"
+ 1197      228C5C60 
+ 1197      7CA48C96 
+ 1197      AAF26235 
+ 1197      AE
+ 1198 0596 668C7647 		.ascii	"f\214vG\255M\303\225d\232cL\023F\0310f(\243\257\347"
+ 1198      AD4DC395 
+ 1198      649A634C 
+ 1198      13461930 
+ 1198      6628A3AF 
+ 1199 05ab E04515B6 		.ascii	"\340E\025\2661Fk\372\325\032\005_\222Y\0162K \327\000"
+ 1199      31466BFA 
+ 1199      D51A055F 
+ 1199      92590E32 
+ 1199      4B20D700 
+ 1200 05bf 324721CF 		.ascii	"2G!\317r\316~0`;\203\314\314f\265:\353:\353V\022Q\261"
+ 1200      72CE7E30 
+ 1200      603B83CC 
+ 1200      CC66B53A 
+ 1200      EB3AEB56 
+ 1201 05d6 90023342 		.ascii	"\220\0023BL\035Pb\025\204\222v\275\351\212\032\2170"
+ 1201      4C1D5062 
+ 1201      15849276 
+ 1201      BDE98A1A 
+ 1201      8F30
+ 1202 05e8 CAA33325 		.ascii	"\312\2433%\003|I\3428F\034a\264\000#\2362\346\356\347"
+ 1202      037C49E2 
+ 1202      38461C61 
+ 1202      B400239E 
+ 1202      32E6EEE7 
+ 1203 05fc 342B70AC 		.ascii	"4+p\254\2222\356$\026\331\371.I\340\030\011\204A\276"
+ 1203      9232EE24 
+ 1203      16D9F92E 
+ 1203      49E01809 
+ 1203      8441BE
+ 1204 060f 51F65246 		.ascii	"Q\366RFc\345\321\012\350\022\306\210\253\253\2574\360"
+ 1204      63E5D10A 
+ 1204      E812C688 
+ 1204      ABABAF34 
+ 1204      F0
+ 1205 0620 2549E420 		.ascii	"%I\344 \211\004\322\017\220}\024\222~0i\015\2662F\321"
+ 1205      8904D20F 
+ 1205      907D1492 
+ 1205      7E30690D 
+ 1205      B63246D1 
+ 1206 0634 747593B3 		.ascii	"tu\223\263\343\037g\314Wd?\007\331O c\000I\242\2207"
+ 1206      E31F67CC 
+ 1206      57643F07 
+ 1206      D94F2063 
+ 1206      0049A290 
+ 1207 0649 E7AE956B 		.ascii	"\347\256\225k\361%Fy\034\237\361\326\223\253H2\307H"
+ARM GAS  /tmp/ccFOstLS.s 			page 44
 
 
- 1209      91831CE4 
- 1209      20818C
- 1210 0643 03248942 		.ascii	"\003$\211B\336\226_\257\320\342\313\214\362$>\343\235"
- 1210      DE965FAF 
- 1210      D0E2CB8C 
- 1210      F2243EE3 
- 1210      9D
- 1211 0654 27579164 		.ascii	"'W\221d\216\221L\030\261\360:9D\031\237r?\026+q\015"
- 1211      8E914C18 
- 1211      B1F03A39 
- 1211      44199F72 
- 1211      3F162B71 
- 1212 0669 635C6F4B 		.ascii	"c\\oKJ0p\0259\3141\016\023F\0120R(#+\373L\245\001\333"
- 1212      4A307015 
- 1212      39CC310E 
- 1212      13460A30 
- 1212      5228232B 
- 1213 0682 18637F61 		.ascii	"\030c\177a\355#O\276\"G8\310\021\002\311\000\310Q\012"
- 1213      ED234FBE 
- 1213      224738C8 
- 1213      1102C900 
- 1213      C8510A
- 1214 0695 29BFD575 		.ascii	")\277\325uC\213\355\014r\265\367\365i\265\004\031r+"
- 1214      438BED0C 
- 1214      72B5F7F5 
- 1214      69B50419 
- 1214      722B
- 1215 06a7 8985A358 		.ascii	"\211\205\243X\010\345\034P\216Q\312\376\251\304,\015"
- 1215      08E51C50 
- 1215      8E51CAFE 
- 1215      A9C42C0D 
- 1216 06b7 1E950ADB 		.ascii	"\036\225\012\333\225\332\345\301\225\3448\3078N\030"
- 1216      95DAE5C1 
- 1216      95E438C7 
- 1216      384E18
- 1217 06c6 97807182 		.ascii	"\227\200q\2022\356\246\245\\\321\343X\017\312\230\357"
- 1217      32EEA6A5 
- 1217      5CD1E358 
- 1217      0FCA98EF 
- 1218 06d6 2F2ED473 		.ascii	"/.\324s%9\3111N\022\306M`\244R\306\2711K\243\022[\030"
- 1218      2539C931 
- 1218      4E12C64D 
- 1218      60A452C6 
- 1218      B9314BA3 
- 1219 06ed A3F259FE 		.ascii	"\243\362Y\376\210\236/\311)\016r\212@\032\001\222F!"
- 1219      889E2FC9 
- 1219      290E728A 
- 1219      401A0192 
- 1219      4621
- 1220 06ff 49350545 		.ascii	"I5\005E:le\220T\261\357\217\022\343n\346BE\3229H:\201"
- 1220      3A6C6590 
- 1220      54B1EF8F 
- 1220      12E36EE6 
- 1220      4245D239 
- 1221 0716 B4032483 		.ascii	"\264\003$\203Bn\024^\030\2017\011\203\\\033\357\256"
- 1221      426E145E 
- 1221      18813709 
-ARM GAS  /tmp/ccQv33l2.s 			page 45
+ 1207      F1254679 
+ 1207      1C9FF1D6 
+ 1207      93AB4832 
+ 1207      C748
+ 1208 065b 268C5878 		.ascii	"&\214Xx\235\034\240\214\217\271\037\212\225\270\232"
+ 1208      9D1CA08C 
+ 1208      8FB91F8A 
+ 1208      95B89A
+ 1209 066a 31AEB526 		.ascii	"1\256\265&%\030\270\212\034\344\030\007\011#\005\030"
+ 1209      2518B88A 
+ 1209      1CE41807 
+ 1209      09230518 
+ 1210 067a 29949195 		.ascii	")\224\221\225}\252\302\200m\214\261\267\260\346\241"
+ 1210      7DAAC280 
+ 1210      6D8CB1B7 
+ 1210      B0E6A1
+ 1211 0689 275F9143 		.ascii	"'_\221C\034\344\020\201d\000\3440\205\234\273\331y]"
+ 1211      1CE41081 
+ 1211      6400E430 
+ 1211      859CBBD9 
+ 1211      795D
+ 1212 069b 8BED0C72 		.ascii	"\213\355\014r\245\347\325I\265\004\031t+\211\205\243"
+ 1212      A5E7D549 
+ 1212      B5041974 
+ 1212      2B8985A3 
+ 1213 06ab 5808E50C 		.ascii	"X\010\345\014P\216P\312\336\311\304,\015\036\221\012"
+ 1213      508E50CA 
+ 1213      DEC9C42C 
+ 1213      0D1E910A 
+ 1214 06bb DB99DAE9 		.ascii	"\333\231\332\351\301\225\344(\3078J\030\027\201q\214"
+ 1214      C195E428 
+ 1214      C7384A18 
+ 1214      1781718C 
+ 1215 06cb 32EEA4A5 		.ascii	"2\356\244\245\\\326\343X\017\312\230\353+.\324s%9\316"
+ 1215      5CD6E358 
+ 1215      0FCA98EB 
+ 1215      2B2ED473 
+ 1215      2539CE
+ 1216 06de 318E13C6 		.ascii	"1\216\023\306\015`\244R\306\231QK\203\022[\030\243\342"
+ 1216      0D60A452 
+ 1216      C699514B 
+ 1216      83125B18 
+ 1216      A3E2
+ 1217 06f0 69FEB09E 		.ascii	"i\376\260\236/\311\011\016r\202@\032\000\222F!I\325"
+ 1217      2FC9090E 
+ 1217      7282401A 
+ 1217      00924621 
+ 1217      49D5
+ 1218 0702 05453A6C 		.ascii	"\005E:le\220T\261\367\317\022\343N\346|E\3229H:\201"
+ 1218      659054B1 
+ 1218      F7CF12E3 
+ 1218      4EE67C45 
+ 1218      D239483A 
+ 1219 0717 B4012483 		.ascii	"\264\001$\203B\256\027\236\037\2067\011\203\\\035\353"
+ 1219      42AE179E 
+ 1219      1F863709 
+ 1219      835C1DEB 
+ARM GAS  /tmp/ccFOstLS.s 			page 45
 
 
- 1221      835C1BEF 
- 1221      AE
- 1222 0727 307015C9 		.ascii	"0p\025\311\344\030\231\204\361\002\030Y\224q\315\321"
- 1222      E4189984 
- 1222      F1021859 
- 1222      9471CDD1 
- 1223 0737 39A5C235 		.ascii	"9\245\3025\214q\273$w\212\177l\2629F6a8\200q\2322F\357"
- 1223      8C71BB24 
- 1223      778A7F6C 
- 1223      B2394636 
- 1223      61388071 
- 1224 074f 5BE0B1B1 		.ascii	"[\340\261\2611Fn\213\275y\211&9\303A\316\020\310G\200"
- 1224      31466E8B 
- 1224      BD798926 
- 1224      39C341CE 
- 1224      10C84780 
- 1225 0763 E4504865 		.ascii	"\344PHe\325\247u\330\316\030\323\317_w9{\244\333\255"
- 1225      D5A775D8 
- 1225      CE18D3CF 
- 1225      5F77397B 
- 1225      A4DBAD
- 1226 0776 22560E62 		.ascii	"\"V\016b%\220\375\360\237V.\205X.\344\316@\2170\312"
- 1226      2590FDF0 
- 1226      9F562E85 
- 1226      582EE4CE 
- 1226      408F30CA 
- 1227 078a 5C7FCB21 		.ascii	"\\\177\313!%W\221<\216\221G\030\307\200q\226\335\315"
- 1227      2557913C 
- 1227      8E914718 
- 1227      C7807196 
- 1227      DDCD
- 1228 079c E3D20E4F 		.ascii	"\343\322\016O\034\253b[\0237s\023q\025\311\347\030\371"
- 1228      1CAB625B 
- 1228      13377313 
- 1228      7115C9E7 
- 1228      18F9
- 1229 07ae 84711A18 		.ascii	"\204q\032\030\347(\303^\361\343\005/la\014\373\314`"
- 1229      E728C35E 
- 1229      F1E3052F 
- 1229      6C610CFB 
- 1229      CC60
- 1230 07c0 BB8AAF48 		.ascii	"\273\212\257H\001\007) \220\"\200\234\247\2202K"
- 1230      01072920 
- 1230      9022809C 
- 1230      A790324B 
- 1231 07d0 6F9A1A5B 		.ascii	"o\232\032[\031\344x~K\237\0232\341V\222B\216RH(\025"
- 1231      19E4787E 
- 1231      4B9F1332 
- 1231      E1569242 
- 1231      8E524828 
- 1232 07e5 4029A294 		.ascii	"@)\242\224\314\307'+\021\276\314(\223u\003G\3707I1\307"
- 1232      CCC7272B 
- 1232      11BECC28 
- 1232      93750347 
- 1232      F8374931 
- 1233 07fa 28268C1A 		.ascii	"(&\214\032`\224P\306\273\003=\335\320$\214\221<1\177"
- 1233      609450C6 
-ARM GAS  /tmp/ccQv33l2.s 			page 46
+ 1220 0727 2A377015 		.ascii	"*7p\025\311\344\030\231\204\361\034\030Y\224q\325\321"
+ 1220      C9E41899 
+ 1220      84F11C18 
+ 1220      599471D5 
+ 1220      D1
+ 1221 0738 31A9C2D5 		.ascii	"1\251\302\325\214q\253$w\222\177l\2629F6a8\200q\222"
+ 1221      8C71AB24 
+ 1221      77927F6C 
+ 1221      B2394636 
+ 1221      61388071 
+ 1222 074d 3246EE59 		.ascii	"2F\356Y\340\261\2611Fn\263\275i\221&9\305AN\021\310"
+ 1222      E0B1B131 
+ 1222      466EB3BD 
+ 1222      69912639 
+ 1222      C5414E11 
+ 1223 0762 0780E450 		.ascii	"\007\200\344PHE\345\3075\330\316\030S\317^u:{\244\313"
+ 1223      4845E5C7 
+ 1223      35D8CE18 
+ 1223      53CF5E75 
+ 1223      3A7BA4CB 
+ 1224 0776 AD22560E 		.ascii	"\255\"V\016b%\220\275\360\237V.\205X\316\347NC\2170"
+ 1224      622590BD 
+ 1224      F09F562E 
+ 1224      8558CEE7 
+ 1224      4E438F30 
+ 1225 078a CA6C5FF3 		.ascii	"\312l_\363\001%W\221<\216\221G\030G\200q\232\335\315"
+ 1225      01255791 
+ 1225      3C8E9147 
+ 1225      18478071 
+ 1225      9ADDCD
+ 1226 079d A3D2764F 		.ascii	"\243\322vO\034\253b[\0237}\003q\025\311\347\030\371"
+ 1226      1CAB625B 
+ 1226      13377D03 
+ 1226      7115C9E7 
+ 1226      18F9
+ 1227 07af 84711218 		.ascii	"\204q\022\030g(\303^\376\363y/la\014\373\364@\233\212"
+ 1227      6728C35E 
+ 1227      FEF3792F 
+ 1227      6C610CFB 
+ 1227      F4409B8A 
+ 1228 07c3 AF480107 		.ascii	"\257H\001\007) \220\"\200\234\245\2202"
+ 1228      29209022 
+ 1228      809CA590 
+ 1228      32
+ 1229 07d0 4B4F9A1A 		.ascii	"KO\232\032[\031\344h~s\257\0232\356V\222B\216RH(\345"
+ 1229      5B19E468 
+ 1229      7E73AF13 
+ 1229      32EE5692 
+ 1229      428E5248 
+ 1230 07e6 4029A294 		.ascii	"@)\242\224\314G\307+\020\276\304(\023\265\375\207\370"
+ 1230      CC47C72B 
+ 1230      10BEC428 
+ 1230      13B5FD87 
+ 1230      F8
+ 1231 07f7 374931C7 		.ascii	"7I1\307(&\214j`\224P\306\333}\335]\320$\214\221<>wY"
+ 1231      28268C6A 
+ 1231      609450C6 
+ARM GAS  /tmp/ccFOstLS.s 			page 46
 
 
- 1233      BB033DDD 
- 1233      D0248C91 
- 1233      3C317F
- 1234 080d 45CB95A4 		.ascii	"E\313\225\244\224c\224\022F\0130\312\330;~t:\036\232"
- 1234      94639412 
- 1234      460B30CA 
- 1234      D83B7E74 
- 1234      3A1E9A
- 1235 0820 8431062B 		.ascii	"\2041\006+o\244\"\276$\345\034\244\234@\236\002\344"
- 1235      6FA422BE 
- 1235      24E51CA4 
- 1235      9C409E02 
- 1235      E4
- 1236 0831 02850C26 		.ascii	"\002\205\014&\327N\353\335?\213\035\262\317\273\213"
- 1236      D74EEBDD 
- 1236      3F8B1DB2 
- 1236      CFBB8B
- 1237 0840 0AF2594C 		.ascii	"\012\362YLN`;>\326\330\256p\267%\037>\013\266\227\230"
- 1237      4E603B3E 
- 1237      D6D8AE70 
- 1237      B7251F3E 
- 1237      0BB69798 
- 1238 0854 ED256A7B 		.ascii	"\355%j{\354\300\321\203.\333\204e>\267\321\277\301\005"
- 1238      ECC0D183 
- 1238      2EDB8465 
- 1238      3EB7D1BF 
- 1238      C105
- 1239 0866 FB050A9A 		.ascii	"\373\005\012\232\340\250\360\230\240-\341\202.$2\312"
- 1239      E0A8F098 
- 1239      A02DE182 
- 1239      2E2432CA 
- 1240 0876 1CBA6F4B 		.ascii	"\034\272oKx\200\2407\231`\020j\012\213\0103+\377\031"
- 1240      7880A037 
- 1240      9960106A 
- 1240      0A8B0833 
- 1240      2BFF19
- 1241 0889 1AFCFDCE 		.ascii	"\032\374\375\316\255[\215\360\027\262;\354oa\221{M\346"
- 1241      AD5B8DF0 
- 1241      17B23BEC 
- 1241      6F61917B 
- 1241      4DE6
- 1242 089b A8E888EF 		.ascii	"\250\350\210\357\215\221{\215!\221\341\341\221\021\306"
- 1242      8D917B8D 
- 1242      2191E1E1 
- 1242      9111C6
- 1243 08aa BDE6E028 		.ascii	"\275\346\340(s\364\017\306\235\177\372v\327\267\373"
- 1243      73F40FC6 
- 1243      9D7FFA76 
- 1243      D7B7FB
- 1244 08b9 C8EC0F61 		.ascii	"\310\354\017a{B\243\366\032\277\336\265\313\030\022"
- 1244      7B42A3F6 
- 1244      1ABFDEB5 
- 1244      CB1812
- 1245 08c8 65F6DB1A 		.ascii	"e\366\333\032\242\371\372\017\177^\277\313/HX\301\306"
- 1245      A2F9FA0F 
- 1245      7F5EBFCB 
- 1245      2F4858C1 
-ARM GAS  /tmp/ccQv33l2.s 			page 47
+ 1231      DB7DDD5D 
+ 1231      D0248C91 
+ 1232 080f CB95A494 		.ascii	"\313\225\244\224c\224\022F30\312\330;~d*\036\232\204"
+ 1232      63941246 
+ 1232      3330CAD8 
+ 1232      3B7E642A 
+ 1232      1E9A84
+ 1233 0822 31062AAE 		.ascii	"1\006*\256\247\"\276$\3478\3109\002y\002\220\363\024"
+ 1233      A722BE24 
+ 1233      E738C839 
+ 1233      02790290 
+ 1233      F314
+ 1234 0834 32905C33 		.ascii	"2\220\\3\245w\377,v\310>\357.(\310g19\201\355\330hC"
+ 1234      A577FF2C 
+ 1234      76C83EEF 
+ 1234      2E28C867 
+ 1234      313981ED 
+ 1235 084b 9BC2DD96 		.ascii	"\233\302\335\226|\370\314\333^d\266\027\251\355\221"
+ 1235      7CF8CCDB 
+ 1235      5E64B617 
+ 1235      A9ED91
+ 1236 085a 7D87F7BB 		.ascii	"}\207\367\273l\023\226\370\334F?\201\013\366\333&h\202"
+ 1236      6C1396F8 
+ 1236      DC463F81 
+ 1236      0BF6DB26 
+ 1236      6882
+ 1237 086c A3C26382 		.ascii	"\243\302c\2026\205\013\272\220\310(s\350\236M\341\001"
+ 1237      36850BBA 
+ 1237      90C82873 
+ 1237      E89E4DE1 
+ 1237      01
+ 1238 087d 82DE6482 		.ascii	"\202\336d\202A\250),\"\314\254\374Wh\360\017\3337o6"
+ 1238      41A8292C 
+ 1238      22CCACFC 
+ 1238      5768F00F 
+ 1238      DB376F36 
+ 1239 0891 C25FC8CE 		.ascii	"\302_\310\316\260\277\207E\3566\231\243\242#~0F\356"
+ 1239      B0BF8745 
+ 1239      EE3699A3 
+ 1239      A2237E30 
+ 1239      46EE
+ 1240 08a3 36864486 		.ascii	"6\206D\206\207GF\030w\233\203\243\314\321?\032\267\177"
+ 1240      87474618 
+ 1240      779B83A3 
+ 1240      CCD13F1A 
+ 1240      B77F
+ 1241 08b5 F7ED8E6F 		.ascii	"\367\355\216o\367\220\331\037\303v\205F\3556~\275c\207"
+ 1241      F790D91F 
+ 1241      C3768546 
+ 1241      ED367EBD 
+ 1241      6387
+ 1242 08c7 3124CAEC 		.ascii	"1$\312\354\2679D\363\365\237\376\262v\207_\220\260\214"
+ 1242      B73944F3 
+ 1242      F59FFEB2 
+ 1242      76875F90 
+ 1242      B08C
+ 1243 08d9 8D376F0D 		.ascii	"\2157o\015\014\376>p\313\227[\204?\376\337l\301`2\205"
+ARM GAS  /tmp/ccFOstLS.s 			page 47
 
 
- 1245      C6
- 1246 08d9 5BFD0283 		.ascii	"[\375\002\203\276\013\331\026\020(\374\376\377f\013"
- 1246      BE0BD916 
- 1246      1028FCFE 
- 1246      FF660B
- 1247 08e8 06932934 		.ascii	"\006\223)48j\317\277h\302\220\374\236`3K\336\313d\372"
- 1247      386ACFBF 
- 1247      68C290FC 
- 1247      9E60334B 
- 1247      DECB64FA 
- 1248 08fc 7BE877C1 		.ascii	"{\350w\301\321{\314\246\320}afM\004\334\2259:*b\205"
- 1248      D17BCCA6 
- 1248      D07D6166 
- 1248      4D04DC95 
- 1248      393A2A62 
- 1249 0911 892E9BA2 		.ascii	"\211.\233\242\202\303M\301Q\241\301{\265\256+]\310\036"
- 1249      82C34DC1 
- 1249      51A1C17B 
- 1249      B5AE2B5D 
- 1249      C81E
- 1250 0923 60D16B4D 		.ascii	"`\321kMtX\2049\300\337d\326Rc2\345E\257\240Llh\210\210"
- 1250      74588439 
- 1250      C0DF64D6 
- 1250      526332E5 
- 1250      45AFA04C 
- 1251 093b 34B9D6BC 		.ascii	"4\271\326\274\011\30352\231}L\204\277\315\264\340b\362"
- 1251      09C33532 
- 1251      997D4C84 
- 1251      BFCDB4E0 
- 1251      62F2
- 1252 094d 749F3279 		.ascii	"t\2372yI#\026\321\344-\015#\"\3312\363\367\343\375\375"
- 1252      492316D1 
- 1252      E42D0D23 
- 1252      22D932F3 
- 1252      F7E3FDFD 
- 1253 0961 64FE7E72 		.ascii	"d\376~r\177\277E\376\376\274\277\277\314\337_\356\357"
- 1253      7FBF45FE 
- 1253      FEBCBFBF 
- 1253      CCDF5FEE 
- 1253      EF
- 1254 0972 BFC83F80 		.ascii	"\277\310?\200\367\017\220\371\007\310\375\003\026\371"
- 1254      F70F90F9 
- 1254      07C8FD03 
- 1254      16F9
- 1255 0980 6FE7FDB7 		.ascii	"o\347\375\267\313\374\267\313\375\267/\362\337\301\373"
- 1255      CBFCB7CB 
- 1255      FDB72FF2 
- 1255      DFC1FB
- 1256 098f EF90F9EF 		.ascii	"\357\220\371\357\220\373\357X\344\037\310\373\007\312"
- 1256      90FBEF58 
- 1256      E41FC8FB 
- 1256      07CA
- 1257 099d FC03E5FE 		.ascii	"\374\003\345\376\201\213\374\203x\377 \231\177\220\334"
- 1257      818BFC83 
- 1257      78FF2099 
- 1257      7F90DC
- 1258 09ac 3FC8E5FF 		.ascii	"?\310\345\377\037\340nL\353"
-ARM GAS  /tmp/ccQv33l2.s 			page 48
+ 1243      0CFE3E70 
+ 1243      CB975B84 
+ 1243      3FFEDF6C 
+ 1243      C1603285 
+ 1244 08ed 0647EDFA 		.ascii	"\006G\355\3727M\030\222\337\025lf\311{\231L\377\010"
+ 1244      374D1892 
+ 1244      DF156C66 
+ 1244      C97B994C 
+ 1244      FF08
+ 1245 08ff FD3E387A 		.ascii	"\375>8z\227\331\024\272'\314\254\211\200\2732GGE,3\321"
+ 1245      97D914BA 
+ 1245      27CCAC89 
+ 1245      80BB3247 
+ 1245      47452C33 
+ 1246 0914 65535470 		.ascii	"eSTp\270)8*4x\267\326u\245\013\331\005,z\255\211\016"
+ 1246      B829382A 
+ 1246      3478B7D6 
+ 1246      75A50BD9 
+ 1246      052C7AAD 
+ 1247 092a 8B3007F8 		.ascii	"\2130\007\370\233\314ZjL\246\274\350\025\224\211\015"
+ 1247      9BCC5A6A 
+ 1247      4CA6BCE8 
+ 1247      1594890D 
+ 1248 093a 0D119126 		.ascii	"\015\021\221&\327\2327a\270F&\263\217\211\360\267\230"
+ 1248      D79A3761 
+ 1248      B84626B3 
+ 1248      8F89F0B7 
+ 1248      98
+ 1249 094b E65D4C9E 		.ascii	"\346]L\236\356S&/i\304\"\232\274\245aD$[f\376~\274\277"
+ 1249      EE53262F 
+ 1249      69C4229A 
+ 1249      BCA56144 
+ 1249      245B66FE 
+ 1250 0962 9FCCDF4F 		.ascii	"\237\314\337O\356\357\267\300\337\237\367\367\227\371"
+ 1250      EEEFB7C0 
+ 1250      DF9FF7F7 
+ 1250      97F9
+ 1251 0970 FBCBFDFD 		.ascii	"\373\313\375\375\027\370\007\360\376\0012\377\000\271"
+ 1251      17F807F0 
+ 1251      FE0132FF 
+ 1251      00B9
+ 1252 097e 7FC002FF 		.ascii	"\177\300\002\377\255\274\377V\231\377V\271\377\326\005"
+ 1252      ADBCFF56 
+ 1252      99FF56B9 
+ 1252      FFD605
+ 1253 098d FE81BC7F 		.ascii	"\376\201\274\177\240\314?P\356\037\270\300\177\033\357"
+ 1253      A0CC3F50 
+ 1253      EE1FB8C0 
+ 1253      7F1BEF
+ 1254 099c BF4DE6BF 		.ascii	"\277M\346\277M\356\277m\201\177\020\357\037$\363\017"
+ 1254      4DEEBF6D 
+ 1254      817F10EF 
+ 1254      1F24F30F 
+ 1255 09ac 92FB07B9 		.ascii	"\222\373\007\271\374\377\003\3309L\350"
+ 1255      FCFF03D8 
+ 1255      394CE8
+ 1256              		.text
+ARM GAS  /tmp/ccFOstLS.s 			page 48
 
 
- 1258      1FE06E4C 
- 1258      EB
- 1259              		.text
- 1260              		.section	.gnu.lto_.symtab.c40960afb88821e2,"e",%progbits
- 1261 0000 5F5F636F 		.ascii	"__core_init\000"
- 1261      72655F69 
- 1261      6E697400 
- 1262 000c 00       		.ascii	"\000"
- 1263 000d 01       		.ascii	"\001"
- 1264 000e 00       		.ascii	"\000"
- 1265 000f 00000000 		.ascii	"\000\000\000\000\000\000\000\000"
- 1265      00000000 
- 1266 0017 C4000000 		.ascii	"\304\000\000\000"
- 1267 001b 5F5F6561 		.ascii	"__early_init\000"
- 1267      726C795F 
- 1267      696E6974 
- 1267      00
- 1268 0028 00       		.ascii	"\000"
- 1269 0029 01       		.ascii	"\001"
- 1270 002a 00       		.ascii	"\000"
- 1271 002b 00000000 		.ascii	"\000\000\000\000\000\000\000\000"
- 1271      00000000 
- 1272 0033 C7000000 		.ascii	"\307\000\000\000"
- 1273 0037 5F5F6C61 		.ascii	"__late_init\000"
- 1273      74655F69 
- 1273      6E697400 
- 1274 0043 00       		.ascii	"\000"
- 1275 0044 01       		.ascii	"\001"
- 1276 0045 00       		.ascii	"\000"
- 1277 0046 00000000 		.ascii	"\000\000\000\000\000\000\000\000"
- 1277      00000000 
- 1278 004e CA000000 		.ascii	"\312\000\000\000"
- 1279 0052 5F5F6465 		.ascii	"__default_exit\000"
- 1279      6661756C 
- 1279      745F6578 
- 1279      697400
- 1280 0061 00       		.ascii	"\000"
- 1281 0062 01       		.ascii	"\001"
- 1282 0063 00       		.ascii	"\000"
- 1283 0064 00000000 		.ascii	"\000\000\000\000\000\000\000\000"
- 1283      00000000 
- 1284 006c CF000000 		.ascii	"\317\000\000\000"
- 1285 0070 5F5F696E 		.ascii	"__init_ram_areas\000"
- 1285      69745F72 
- 1285      616D5F61 
- 1285      72656173 
- 1285      00
- 1286 0081 00       		.ascii	"\000"
- 1287 0082 00       		.ascii	"\000"
- 1288 0083 00       		.ascii	"\000"
- 1289 0084 00000000 		.ascii	"\000\000\000\000\000\000\000\000"
- 1289      00000000 
- 1290 008c D1000000 		.ascii	"\321\000\000\000"
- 1291 0090 5F5F7261 		.ascii	"__ram0_init_text__\000"
- 1291      6D305F69 
- 1291      6E69745F 
- 1291      74657874 
-ARM GAS  /tmp/ccQv33l2.s 			page 49
+ 1257              		.section	.gnu.lto_.symtab.45572236c120b9a4,"e",%progbits
+ 1258 0000 5F5F636F 		.ascii	"__core_init\000"
+ 1258      72655F69 
+ 1258      6E697400 
+ 1259 000c 00       		.ascii	"\000"
+ 1260 000d 01       		.ascii	"\001"
+ 1261 000e 00       		.ascii	"\000"
+ 1262 000f 00000000 		.ascii	"\000\000\000\000\000\000\000\000"
+ 1262      00000000 
+ 1263 0017 C4000000 		.ascii	"\304\000\000\000"
+ 1264 001b 5F5F6561 		.ascii	"__early_init\000"
+ 1264      726C795F 
+ 1264      696E6974 
+ 1264      00
+ 1265 0028 00       		.ascii	"\000"
+ 1266 0029 01       		.ascii	"\001"
+ 1267 002a 00       		.ascii	"\000"
+ 1268 002b 00000000 		.ascii	"\000\000\000\000\000\000\000\000"
+ 1268      00000000 
+ 1269 0033 C7000000 		.ascii	"\307\000\000\000"
+ 1270 0037 5F5F6C61 		.ascii	"__late_init\000"
+ 1270      74655F69 
+ 1270      6E697400 
+ 1271 0043 00       		.ascii	"\000"
+ 1272 0044 01       		.ascii	"\001"
+ 1273 0045 00       		.ascii	"\000"
+ 1274 0046 00000000 		.ascii	"\000\000\000\000\000\000\000\000"
+ 1274      00000000 
+ 1275 004e CA000000 		.ascii	"\312\000\000\000"
+ 1276 0052 5F5F6465 		.ascii	"__default_exit\000"
+ 1276      6661756C 
+ 1276      745F6578 
+ 1276      697400
+ 1277 0061 00       		.ascii	"\000"
+ 1278 0062 01       		.ascii	"\001"
+ 1279 0063 00       		.ascii	"\000"
+ 1280 0064 00000000 		.ascii	"\000\000\000\000\000\000\000\000"
+ 1280      00000000 
+ 1281 006c CF000000 		.ascii	"\317\000\000\000"
+ 1282 0070 5F5F696E 		.ascii	"__init_ram_areas\000"
+ 1282      69745F72 
+ 1282      616D5F61 
+ 1282      72656173 
+ 1282      00
+ 1283 0081 00       		.ascii	"\000"
+ 1284 0082 00       		.ascii	"\000"
+ 1285 0083 00       		.ascii	"\000"
+ 1286 0084 00000000 		.ascii	"\000\000\000\000\000\000\000\000"
+ 1286      00000000 
+ 1287 008c D1000000 		.ascii	"\321\000\000\000"
+ 1288 0090 5F5F7261 		.ascii	"__ram0_init_text__\000"
+ 1288      6D305F69 
+ 1288      6E69745F 
+ 1288      74657874 
+ 1288      5F5F00
+ 1289 00a3 00       		.ascii	"\000"
+ 1290 00a4 02       		.ascii	"\002"
+ARM GAS  /tmp/ccFOstLS.s 			page 49
 
 
- 1291      5F5F00
- 1292 00a3 00       		.ascii	"\000"
- 1293 00a4 02       		.ascii	"\002"
- 1294 00a5 00       		.ascii	"\000"
- 1295 00a6 00000000 		.ascii	"\000\000\000\000\000\000\000\000"
- 1295      00000000 
- 1296 00ae F1000000 		.ascii	"\361\000\000\000"
- 1297 00b2 5F5F7261 		.ascii	"__ram0_init__\000"
- 1297      6D305F69 
- 1297      6E69745F 
- 1297      5F00
- 1298 00c0 00       		.ascii	"\000"
- 1299 00c1 02       		.ascii	"\002"
- 1300 00c2 00       		.ascii	"\000"
- 1301 00c3 00000000 		.ascii	"\000\000\000\000\000\000\000\000"
- 1301      00000000 
- 1302 00cb F3000000 		.ascii	"\363\000\000\000"
- 1303 00cf 5F5F7261 		.ascii	"__ram0_clear__\000"
- 1303      6D305F63 
- 1303      6C656172 
- 1303      5F5F00
- 1304 00de 00       		.ascii	"\000"
- 1305 00df 02       		.ascii	"\002"
- 1306 00e0 00       		.ascii	"\000"
- 1307 00e1 00000000 		.ascii	"\000\000\000\000\000\000\000\000"
- 1307      00000000 
- 1308 00e9 F5000000 		.ascii	"\365\000\000\000"
- 1309 00ed 5F5F7261 		.ascii	"__ram0_noinit__\000"
- 1309      6D305F6E 
- 1309      6F696E69 
- 1309      745F5F00 
- 1310 00fd 00       		.ascii	"\000"
- 1311 00fe 02       		.ascii	"\002"
- 1312 00ff 00       		.ascii	"\000"
- 1313 0100 00000000 		.ascii	"\000\000\000\000\000\000\000\000"
- 1313      00000000 
- 1314 0108 F7000000 		.ascii	"\367\000\000\000"
- 1315 010c 5F5F7261 		.ascii	"__ram1_init_text__\000"
- 1315      6D315F69 
- 1315      6E69745F 
- 1315      74657874 
- 1315      5F5F00
- 1316 011f 00       		.ascii	"\000"
- 1317 0120 02       		.ascii	"\002"
- 1318 0121 00       		.ascii	"\000"
- 1319 0122 00000000 		.ascii	"\000\000\000\000\000\000\000\000"
- 1319      00000000 
- 1320 012a F9000000 		.ascii	"\371\000\000\000"
- 1321 012e 5F5F7261 		.ascii	"__ram1_init__\000"
- 1321      6D315F69 
- 1321      6E69745F 
- 1321      5F00
- 1322 013c 00       		.ascii	"\000"
- 1323 013d 02       		.ascii	"\002"
- 1324 013e 00       		.ascii	"\000"
- 1325 013f 00000000 		.ascii	"\000\000\000\000\000\000\000\000"
- 1325      00000000 
-ARM GAS  /tmp/ccQv33l2.s 			page 50
+ 1291 00a5 00       		.ascii	"\000"
+ 1292 00a6 00000000 		.ascii	"\000\000\000\000\000\000\000\000"
+ 1292      00000000 
+ 1293 00ae F1000000 		.ascii	"\361\000\000\000"
+ 1294 00b2 5F5F7261 		.ascii	"__ram0_init__\000"
+ 1294      6D305F69 
+ 1294      6E69745F 
+ 1294      5F00
+ 1295 00c0 00       		.ascii	"\000"
+ 1296 00c1 02       		.ascii	"\002"
+ 1297 00c2 00       		.ascii	"\000"
+ 1298 00c3 00000000 		.ascii	"\000\000\000\000\000\000\000\000"
+ 1298      00000000 
+ 1299 00cb F3000000 		.ascii	"\363\000\000\000"
+ 1300 00cf 5F5F7261 		.ascii	"__ram0_clear__\000"
+ 1300      6D305F63 
+ 1300      6C656172 
+ 1300      5F5F00
+ 1301 00de 00       		.ascii	"\000"
+ 1302 00df 02       		.ascii	"\002"
+ 1303 00e0 00       		.ascii	"\000"
+ 1304 00e1 00000000 		.ascii	"\000\000\000\000\000\000\000\000"
+ 1304      00000000 
+ 1305 00e9 F5000000 		.ascii	"\365\000\000\000"
+ 1306 00ed 5F5F7261 		.ascii	"__ram0_noinit__\000"
+ 1306      6D305F6E 
+ 1306      6F696E69 
+ 1306      745F5F00 
+ 1307 00fd 00       		.ascii	"\000"
+ 1308 00fe 02       		.ascii	"\002"
+ 1309 00ff 00       		.ascii	"\000"
+ 1310 0100 00000000 		.ascii	"\000\000\000\000\000\000\000\000"
+ 1310      00000000 
+ 1311 0108 F7000000 		.ascii	"\367\000\000\000"
+ 1312 010c 5F5F7261 		.ascii	"__ram1_init_text__\000"
+ 1312      6D315F69 
+ 1312      6E69745F 
+ 1312      74657874 
+ 1312      5F5F00
+ 1313 011f 00       		.ascii	"\000"
+ 1314 0120 02       		.ascii	"\002"
+ 1315 0121 00       		.ascii	"\000"
+ 1316 0122 00000000 		.ascii	"\000\000\000\000\000\000\000\000"
+ 1316      00000000 
+ 1317 012a F9000000 		.ascii	"\371\000\000\000"
+ 1318 012e 5F5F7261 		.ascii	"__ram1_init__\000"
+ 1318      6D315F69 
+ 1318      6E69745F 
+ 1318      5F00
+ 1319 013c 00       		.ascii	"\000"
+ 1320 013d 02       		.ascii	"\002"
+ 1321 013e 00       		.ascii	"\000"
+ 1322 013f 00000000 		.ascii	"\000\000\000\000\000\000\000\000"
+ 1322      00000000 
+ 1323 0147 FB000000 		.ascii	"\373\000\000\000"
+ 1324 014b 5F5F7261 		.ascii	"__ram1_clear__\000"
+ 1324      6D315F63 
+ARM GAS  /tmp/ccFOstLS.s 			page 50
 
 
- 1326 0147 FB000000 		.ascii	"\373\000\000\000"
- 1327 014b 5F5F7261 		.ascii	"__ram1_clear__\000"
- 1327      6D315F63 
- 1327      6C656172 
- 1327      5F5F00
- 1328 015a 00       		.ascii	"\000"
- 1329 015b 02       		.ascii	"\002"
- 1330 015c 00       		.ascii	"\000"
- 1331 015d 00000000 		.ascii	"\000\000\000\000\000\000\000\000"
- 1331      00000000 
- 1332 0165 FD000000 		.ascii	"\375\000\000\000"
- 1333 0169 5F5F7261 		.ascii	"__ram1_noinit__\000"
- 1333      6D315F6E 
- 1333      6F696E69 
- 1333      745F5F00 
- 1334 0179 00       		.ascii	"\000"
- 1335 017a 02       		.ascii	"\002"
- 1336 017b 00       		.ascii	"\000"
- 1337 017c 00000000 		.ascii	"\000\000\000\000\000\000\000\000"
- 1337      00000000 
- 1338 0184 FF000000 		.ascii	"\377\000\000\000"
- 1339 0188 5F5F7261 		.ascii	"__ram2_init_text__\000"
- 1339      6D325F69 
- 1339      6E69745F 
- 1339      74657874 
- 1339      5F5F00
- 1340 019b 00       		.ascii	"\000"
- 1341 019c 02       		.ascii	"\002"
- 1342 019d 00       		.ascii	"\000"
- 1343 019e 00000000 		.ascii	"\000\000\000\000\000\000\000\000"
- 1343      00000000 
- 1344 01a6 01010000 		.ascii	"\001\001\000\000"
- 1345 01aa 5F5F7261 		.ascii	"__ram2_init__\000"
- 1345      6D325F69 
- 1345      6E69745F 
- 1345      5F00
- 1346 01b8 00       		.ascii	"\000"
- 1347 01b9 02       		.ascii	"\002"
- 1348 01ba 00       		.ascii	"\000"
- 1349 01bb 00000000 		.ascii	"\000\000\000\000\000\000\000\000"
- 1349      00000000 
- 1350 01c3 03010000 		.ascii	"\003\001\000\000"
- 1351 01c7 5F5F7261 		.ascii	"__ram2_clear__\000"
- 1351      6D325F63 
- 1351      6C656172 
- 1351      5F5F00
- 1352 01d6 00       		.ascii	"\000"
- 1353 01d7 02       		.ascii	"\002"
- 1354 01d8 00       		.ascii	"\000"
- 1355 01d9 00000000 		.ascii	"\000\000\000\000\000\000\000\000"
- 1355      00000000 
- 1356 01e1 05010000 		.ascii	"\005\001\000\000"
- 1357 01e5 5F5F7261 		.ascii	"__ram2_noinit__\000"
- 1357      6D325F6E 
- 1357      6F696E69 
- 1357      745F5F00 
- 1358 01f5 00       		.ascii	"\000"
-ARM GAS  /tmp/ccQv33l2.s 			page 51
+ 1324      6C656172 
+ 1324      5F5F00
+ 1325 015a 00       		.ascii	"\000"
+ 1326 015b 02       		.ascii	"\002"
+ 1327 015c 00       		.ascii	"\000"
+ 1328 015d 00000000 		.ascii	"\000\000\000\000\000\000\000\000"
+ 1328      00000000 
+ 1329 0165 FD000000 		.ascii	"\375\000\000\000"
+ 1330 0169 5F5F7261 		.ascii	"__ram1_noinit__\000"
+ 1330      6D315F6E 
+ 1330      6F696E69 
+ 1330      745F5F00 
+ 1331 0179 00       		.ascii	"\000"
+ 1332 017a 02       		.ascii	"\002"
+ 1333 017b 00       		.ascii	"\000"
+ 1334 017c 00000000 		.ascii	"\000\000\000\000\000\000\000\000"
+ 1334      00000000 
+ 1335 0184 FF000000 		.ascii	"\377\000\000\000"
+ 1336 0188 5F5F7261 		.ascii	"__ram2_init_text__\000"
+ 1336      6D325F69 
+ 1336      6E69745F 
+ 1336      74657874 
+ 1336      5F5F00
+ 1337 019b 00       		.ascii	"\000"
+ 1338 019c 02       		.ascii	"\002"
+ 1339 019d 00       		.ascii	"\000"
+ 1340 019e 00000000 		.ascii	"\000\000\000\000\000\000\000\000"
+ 1340      00000000 
+ 1341 01a6 01010000 		.ascii	"\001\001\000\000"
+ 1342 01aa 5F5F7261 		.ascii	"__ram2_init__\000"
+ 1342      6D325F69 
+ 1342      6E69745F 
+ 1342      5F00
+ 1343 01b8 00       		.ascii	"\000"
+ 1344 01b9 02       		.ascii	"\002"
+ 1345 01ba 00       		.ascii	"\000"
+ 1346 01bb 00000000 		.ascii	"\000\000\000\000\000\000\000\000"
+ 1346      00000000 
+ 1347 01c3 03010000 		.ascii	"\003\001\000\000"
+ 1348 01c7 5F5F7261 		.ascii	"__ram2_clear__\000"
+ 1348      6D325F63 
+ 1348      6C656172 
+ 1348      5F5F00
+ 1349 01d6 00       		.ascii	"\000"
+ 1350 01d7 02       		.ascii	"\002"
+ 1351 01d8 00       		.ascii	"\000"
+ 1352 01d9 00000000 		.ascii	"\000\000\000\000\000\000\000\000"
+ 1352      00000000 
+ 1353 01e1 05010000 		.ascii	"\005\001\000\000"
+ 1354 01e5 5F5F7261 		.ascii	"__ram2_noinit__\000"
+ 1354      6D325F6E 
+ 1354      6F696E69 
+ 1354      745F5F00 
+ 1355 01f5 00       		.ascii	"\000"
+ 1356 01f6 02       		.ascii	"\002"
+ 1357 01f7 00       		.ascii	"\000"
+ 1358 01f8 00000000 		.ascii	"\000\000\000\000\000\000\000\000"
+ARM GAS  /tmp/ccFOstLS.s 			page 51
 
 
- 1359 01f6 02       		.ascii	"\002"
- 1360 01f7 00       		.ascii	"\000"
- 1361 01f8 00000000 		.ascii	"\000\000\000\000\000\000\000\000"
- 1361      00000000 
- 1362 0200 07010000 		.ascii	"\007\001\000\000"
- 1363 0204 5F5F7261 		.ascii	"__ram3_init_text__\000"
- 1363      6D335F69 
- 1363      6E69745F 
- 1363      74657874 
- 1363      5F5F00
- 1364 0217 00       		.ascii	"\000"
- 1365 0218 02       		.ascii	"\002"
- 1366 0219 00       		.ascii	"\000"
- 1367 021a 00000000 		.ascii	"\000\000\000\000\000\000\000\000"
- 1367      00000000 
- 1368 0222 09010000 		.ascii	"\011\001\000\000"
- 1369 0226 5F5F7261 		.ascii	"__ram3_init__\000"
- 1369      6D335F69 
- 1369      6E69745F 
- 1369      5F00
- 1370 0234 00       		.ascii	"\000"
- 1371 0235 02       		.ascii	"\002"
- 1372 0236 00       		.ascii	"\000"
- 1373 0237 00000000 		.ascii	"\000\000\000\000\000\000\000\000"
- 1373      00000000 
- 1374 023f 0B010000 		.ascii	"\013\001\000\000"
- 1375 0243 5F5F7261 		.ascii	"__ram3_clear__\000"
- 1375      6D335F63 
- 1375      6C656172 
- 1375      5F5F00
- 1376 0252 00       		.ascii	"\000"
- 1377 0253 02       		.ascii	"\002"
- 1378 0254 00       		.ascii	"\000"
- 1379 0255 00000000 		.ascii	"\000\000\000\000\000\000\000\000"
- 1379      00000000 
- 1380 025d 0D010000 		.ascii	"\015\001\000\000"
- 1381 0261 5F5F7261 		.ascii	"__ram3_noinit__\000"
- 1381      6D335F6E 
- 1381      6F696E69 
- 1381      745F5F00 
- 1382 0271 00       		.ascii	"\000"
- 1383 0272 02       		.ascii	"\002"
- 1384 0273 00       		.ascii	"\000"
- 1385 0274 00000000 		.ascii	"\000\000\000\000\000\000\000\000"
- 1385      00000000 
- 1386 027c 0F010000 		.ascii	"\017\001\000\000"
- 1387 0280 5F5F7261 		.ascii	"__ram4_init_text__\000"
- 1387      6D345F69 
- 1387      6E69745F 
- 1387      74657874 
- 1387      5F5F00
- 1388 0293 00       		.ascii	"\000"
- 1389 0294 02       		.ascii	"\002"
- 1390 0295 00       		.ascii	"\000"
- 1391 0296 00000000 		.ascii	"\000\000\000\000\000\000\000\000"
- 1391      00000000 
- 1392 029e 11010000 		.ascii	"\021\001\000\000"
-ARM GAS  /tmp/ccQv33l2.s 			page 52
+ 1358      00000000 
+ 1359 0200 07010000 		.ascii	"\007\001\000\000"
+ 1360 0204 5F5F7261 		.ascii	"__ram3_init_text__\000"
+ 1360      6D335F69 
+ 1360      6E69745F 
+ 1360      74657874 
+ 1360      5F5F00
+ 1361 0217 00       		.ascii	"\000"
+ 1362 0218 02       		.ascii	"\002"
+ 1363 0219 00       		.ascii	"\000"
+ 1364 021a 00000000 		.ascii	"\000\000\000\000\000\000\000\000"
+ 1364      00000000 
+ 1365 0222 09010000 		.ascii	"\011\001\000\000"
+ 1366 0226 5F5F7261 		.ascii	"__ram3_init__\000"
+ 1366      6D335F69 
+ 1366      6E69745F 
+ 1366      5F00
+ 1367 0234 00       		.ascii	"\000"
+ 1368 0235 02       		.ascii	"\002"
+ 1369 0236 00       		.ascii	"\000"
+ 1370 0237 00000000 		.ascii	"\000\000\000\000\000\000\000\000"
+ 1370      00000000 
+ 1371 023f 0B010000 		.ascii	"\013\001\000\000"
+ 1372 0243 5F5F7261 		.ascii	"__ram3_clear__\000"
+ 1372      6D335F63 
+ 1372      6C656172 
+ 1372      5F5F00
+ 1373 0252 00       		.ascii	"\000"
+ 1374 0253 02       		.ascii	"\002"
+ 1375 0254 00       		.ascii	"\000"
+ 1376 0255 00000000 		.ascii	"\000\000\000\000\000\000\000\000"
+ 1376      00000000 
+ 1377 025d 0D010000 		.ascii	"\015\001\000\000"
+ 1378 0261 5F5F7261 		.ascii	"__ram3_noinit__\000"
+ 1378      6D335F6E 
+ 1378      6F696E69 
+ 1378      745F5F00 
+ 1379 0271 00       		.ascii	"\000"
+ 1380 0272 02       		.ascii	"\002"
+ 1381 0273 00       		.ascii	"\000"
+ 1382 0274 00000000 		.ascii	"\000\000\000\000\000\000\000\000"
+ 1382      00000000 
+ 1383 027c 0F010000 		.ascii	"\017\001\000\000"
+ 1384 0280 5F5F7261 		.ascii	"__ram4_init_text__\000"
+ 1384      6D345F69 
+ 1384      6E69745F 
+ 1384      74657874 
+ 1384      5F5F00
+ 1385 0293 00       		.ascii	"\000"
+ 1386 0294 02       		.ascii	"\002"
+ 1387 0295 00       		.ascii	"\000"
+ 1388 0296 00000000 		.ascii	"\000\000\000\000\000\000\000\000"
+ 1388      00000000 
+ 1389 029e 11010000 		.ascii	"\021\001\000\000"
+ 1390 02a2 5F5F7261 		.ascii	"__ram4_init__\000"
+ 1390      6D345F69 
+ 1390      6E69745F 
+ARM GAS  /tmp/ccFOstLS.s 			page 52
 
 
- 1393 02a2 5F5F7261 		.ascii	"__ram4_init__\000"
- 1393      6D345F69 
- 1393      6E69745F 
- 1393      5F00
- 1394 02b0 00       		.ascii	"\000"
- 1395 02b1 02       		.ascii	"\002"
- 1396 02b2 00       		.ascii	"\000"
- 1397 02b3 00000000 		.ascii	"\000\000\000\000\000\000\000\000"
- 1397      00000000 
- 1398 02bb 13010000 		.ascii	"\023\001\000\000"
- 1399 02bf 5F5F7261 		.ascii	"__ram4_clear__\000"
- 1399      6D345F63 
- 1399      6C656172 
- 1399      5F5F00
- 1400 02ce 00       		.ascii	"\000"
- 1401 02cf 02       		.ascii	"\002"
- 1402 02d0 00       		.ascii	"\000"
- 1403 02d1 00000000 		.ascii	"\000\000\000\000\000\000\000\000"
- 1403      00000000 
- 1404 02d9 15010000 		.ascii	"\025\001\000\000"
- 1405 02dd 5F5F7261 		.ascii	"__ram4_noinit__\000"
- 1405      6D345F6E 
- 1405      6F696E69 
- 1405      745F5F00 
- 1406 02ed 00       		.ascii	"\000"
- 1407 02ee 02       		.ascii	"\002"
- 1408 02ef 00       		.ascii	"\000"
- 1409 02f0 00000000 		.ascii	"\000\000\000\000\000\000\000\000"
- 1409      00000000 
- 1410 02f8 17010000 		.ascii	"\027\001\000\000"
- 1411 02fc 5F5F7261 		.ascii	"__ram5_init_text__\000"
- 1411      6D355F69 
- 1411      6E69745F 
- 1411      74657874 
- 1411      5F5F00
- 1412 030f 00       		.ascii	"\000"
- 1413 0310 02       		.ascii	"\002"
- 1414 0311 00       		.ascii	"\000"
- 1415 0312 00000000 		.ascii	"\000\000\000\000\000\000\000\000"
- 1415      00000000 
- 1416 031a 19010000 		.ascii	"\031\001\000\000"
- 1417 031e 5F5F7261 		.ascii	"__ram5_init__\000"
- 1417      6D355F69 
- 1417      6E69745F 
- 1417      5F00
- 1418 032c 00       		.ascii	"\000"
- 1419 032d 02       		.ascii	"\002"
- 1420 032e 00       		.ascii	"\000"
- 1421 032f 00000000 		.ascii	"\000\000\000\000\000\000\000\000"
- 1421      00000000 
- 1422 0337 1B010000 		.ascii	"\033\001\000\000"
- 1423 033b 5F5F7261 		.ascii	"__ram5_clear__\000"
- 1423      6D355F63 
- 1423      6C656172 
- 1423      5F5F00
- 1424 034a 00       		.ascii	"\000"
- 1425 034b 02       		.ascii	"\002"
-ARM GAS  /tmp/ccQv33l2.s 			page 53
+ 1390      5F00
+ 1391 02b0 00       		.ascii	"\000"
+ 1392 02b1 02       		.ascii	"\002"
+ 1393 02b2 00       		.ascii	"\000"
+ 1394 02b3 00000000 		.ascii	"\000\000\000\000\000\000\000\000"
+ 1394      00000000 
+ 1395 02bb 13010000 		.ascii	"\023\001\000\000"
+ 1396 02bf 5F5F7261 		.ascii	"__ram4_clear__\000"
+ 1396      6D345F63 
+ 1396      6C656172 
+ 1396      5F5F00
+ 1397 02ce 00       		.ascii	"\000"
+ 1398 02cf 02       		.ascii	"\002"
+ 1399 02d0 00       		.ascii	"\000"
+ 1400 02d1 00000000 		.ascii	"\000\000\000\000\000\000\000\000"
+ 1400      00000000 
+ 1401 02d9 15010000 		.ascii	"\025\001\000\000"
+ 1402 02dd 5F5F7261 		.ascii	"__ram4_noinit__\000"
+ 1402      6D345F6E 
+ 1402      6F696E69 
+ 1402      745F5F00 
+ 1403 02ed 00       		.ascii	"\000"
+ 1404 02ee 02       		.ascii	"\002"
+ 1405 02ef 00       		.ascii	"\000"
+ 1406 02f0 00000000 		.ascii	"\000\000\000\000\000\000\000\000"
+ 1406      00000000 
+ 1407 02f8 17010000 		.ascii	"\027\001\000\000"
+ 1408 02fc 5F5F7261 		.ascii	"__ram5_init_text__\000"
+ 1408      6D355F69 
+ 1408      6E69745F 
+ 1408      74657874 
+ 1408      5F5F00
+ 1409 030f 00       		.ascii	"\000"
+ 1410 0310 02       		.ascii	"\002"
+ 1411 0311 00       		.ascii	"\000"
+ 1412 0312 00000000 		.ascii	"\000\000\000\000\000\000\000\000"
+ 1412      00000000 
+ 1413 031a 19010000 		.ascii	"\031\001\000\000"
+ 1414 031e 5F5F7261 		.ascii	"__ram5_init__\000"
+ 1414      6D355F69 
+ 1414      6E69745F 
+ 1414      5F00
+ 1415 032c 00       		.ascii	"\000"
+ 1416 032d 02       		.ascii	"\002"
+ 1417 032e 00       		.ascii	"\000"
+ 1418 032f 00000000 		.ascii	"\000\000\000\000\000\000\000\000"
+ 1418      00000000 
+ 1419 0337 1B010000 		.ascii	"\033\001\000\000"
+ 1420 033b 5F5F7261 		.ascii	"__ram5_clear__\000"
+ 1420      6D355F63 
+ 1420      6C656172 
+ 1420      5F5F00
+ 1421 034a 00       		.ascii	"\000"
+ 1422 034b 02       		.ascii	"\002"
+ 1423 034c 00       		.ascii	"\000"
+ 1424 034d 00000000 		.ascii	"\000\000\000\000\000\000\000\000"
+ 1424      00000000 
+ARM GAS  /tmp/ccFOstLS.s 			page 53
 
 
- 1426 034c 00       		.ascii	"\000"
- 1427 034d 00000000 		.ascii	"\000\000\000\000\000\000\000\000"
- 1427      00000000 
- 1428 0355 1D010000 		.ascii	"\035\001\000\000"
- 1429 0359 5F5F7261 		.ascii	"__ram5_noinit__\000"
- 1429      6D355F6E 
- 1429      6F696E69 
- 1429      745F5F00 
- 1430 0369 00       		.ascii	"\000"
- 1431 036a 02       		.ascii	"\002"
- 1432 036b 00       		.ascii	"\000"
- 1433 036c 00000000 		.ascii	"\000\000\000\000\000\000\000\000"
- 1433      00000000 
- 1434 0374 1F010000 		.ascii	"\037\001\000\000"
- 1435 0378 5F5F7261 		.ascii	"__ram6_init_text__\000"
- 1435      6D365F69 
- 1435      6E69745F 
- 1435      74657874 
- 1435      5F5F00
- 1436 038b 00       		.ascii	"\000"
- 1437 038c 02       		.ascii	"\002"
- 1438 038d 00       		.ascii	"\000"
- 1439 038e 00000000 		.ascii	"\000\000\000\000\000\000\000\000"
- 1439      00000000 
- 1440 0396 21010000 		.ascii	"!\001\000\000"
- 1441 039a 5F5F7261 		.ascii	"__ram6_init__\000"
- 1441      6D365F69 
- 1441      6E69745F 
- 1441      5F00
- 1442 03a8 00       		.ascii	"\000"
- 1443 03a9 02       		.ascii	"\002"
- 1444 03aa 00       		.ascii	"\000"
- 1445 03ab 00000000 		.ascii	"\000\000\000\000\000\000\000\000"
- 1445      00000000 
- 1446 03b3 23010000 		.ascii	"#\001\000\000"
- 1447 03b7 5F5F7261 		.ascii	"__ram6_clear__\000"
- 1447      6D365F63 
- 1447      6C656172 
- 1447      5F5F00
- 1448 03c6 00       		.ascii	"\000"
- 1449 03c7 02       		.ascii	"\002"
- 1450 03c8 00       		.ascii	"\000"
- 1451 03c9 00000000 		.ascii	"\000\000\000\000\000\000\000\000"
- 1451      00000000 
- 1452 03d1 25010000 		.ascii	"%\001\000\000"
- 1453 03d5 5F5F7261 		.ascii	"__ram6_noinit__\000"
- 1453      6D365F6E 
- 1453      6F696E69 
- 1453      745F5F00 
- 1454 03e5 00       		.ascii	"\000"
- 1455 03e6 02       		.ascii	"\002"
- 1456 03e7 00       		.ascii	"\000"
- 1457 03e8 00000000 		.ascii	"\000\000\000\000\000\000\000\000"
- 1457      00000000 
- 1458 03f0 27010000 		.ascii	"'\001\000\000"
- 1459 03f4 5F5F7261 		.ascii	"__ram7_init_text__\000"
- 1459      6D375F69 
-ARM GAS  /tmp/ccQv33l2.s 			page 54
+ 1425 0355 1D010000 		.ascii	"\035\001\000\000"
+ 1426 0359 5F5F7261 		.ascii	"__ram5_noinit__\000"
+ 1426      6D355F6E 
+ 1426      6F696E69 
+ 1426      745F5F00 
+ 1427 0369 00       		.ascii	"\000"
+ 1428 036a 02       		.ascii	"\002"
+ 1429 036b 00       		.ascii	"\000"
+ 1430 036c 00000000 		.ascii	"\000\000\000\000\000\000\000\000"
+ 1430      00000000 
+ 1431 0374 1F010000 		.ascii	"\037\001\000\000"
+ 1432 0378 5F5F7261 		.ascii	"__ram6_init_text__\000"
+ 1432      6D365F69 
+ 1432      6E69745F 
+ 1432      74657874 
+ 1432      5F5F00
+ 1433 038b 00       		.ascii	"\000"
+ 1434 038c 02       		.ascii	"\002"
+ 1435 038d 00       		.ascii	"\000"
+ 1436 038e 00000000 		.ascii	"\000\000\000\000\000\000\000\000"
+ 1436      00000000 
+ 1437 0396 21010000 		.ascii	"!\001\000\000"
+ 1438 039a 5F5F7261 		.ascii	"__ram6_init__\000"
+ 1438      6D365F69 
+ 1438      6E69745F 
+ 1438      5F00
+ 1439 03a8 00       		.ascii	"\000"
+ 1440 03a9 02       		.ascii	"\002"
+ 1441 03aa 00       		.ascii	"\000"
+ 1442 03ab 00000000 		.ascii	"\000\000\000\000\000\000\000\000"
+ 1442      00000000 
+ 1443 03b3 23010000 		.ascii	"#\001\000\000"
+ 1444 03b7 5F5F7261 		.ascii	"__ram6_clear__\000"
+ 1444      6D365F63 
+ 1444      6C656172 
+ 1444      5F5F00
+ 1445 03c6 00       		.ascii	"\000"
+ 1446 03c7 02       		.ascii	"\002"
+ 1447 03c8 00       		.ascii	"\000"
+ 1448 03c9 00000000 		.ascii	"\000\000\000\000\000\000\000\000"
+ 1448      00000000 
+ 1449 03d1 25010000 		.ascii	"%\001\000\000"
+ 1450 03d5 5F5F7261 		.ascii	"__ram6_noinit__\000"
+ 1450      6D365F6E 
+ 1450      6F696E69 
+ 1450      745F5F00 
+ 1451 03e5 00       		.ascii	"\000"
+ 1452 03e6 02       		.ascii	"\002"
+ 1453 03e7 00       		.ascii	"\000"
+ 1454 03e8 00000000 		.ascii	"\000\000\000\000\000\000\000\000"
+ 1454      00000000 
+ 1455 03f0 27010000 		.ascii	"'\001\000\000"
+ 1456 03f4 5F5F7261 		.ascii	"__ram7_init_text__\000"
+ 1456      6D375F69 
+ 1456      6E69745F 
+ 1456      74657874 
+ 1456      5F5F00
+ARM GAS  /tmp/ccFOstLS.s 			page 54
 
 
- 1459      6E69745F 
- 1459      74657874 
- 1459      5F5F00
- 1460 0407 00       		.ascii	"\000"
- 1461 0408 02       		.ascii	"\002"
- 1462 0409 00       		.ascii	"\000"
- 1463 040a 00000000 		.ascii	"\000\000\000\000\000\000\000\000"
- 1463      00000000 
- 1464 0412 29010000 		.ascii	")\001\000\000"
- 1465 0416 5F5F7261 		.ascii	"__ram7_init__\000"
- 1465      6D375F69 
- 1465      6E69745F 
- 1465      5F00
- 1466 0424 00       		.ascii	"\000"
- 1467 0425 02       		.ascii	"\002"
- 1468 0426 00       		.ascii	"\000"
- 1469 0427 00000000 		.ascii	"\000\000\000\000\000\000\000\000"
- 1469      00000000 
- 1470 042f 2B010000 		.ascii	"+\001\000\000"
- 1471 0433 5F5F7261 		.ascii	"__ram7_clear__\000"
- 1471      6D375F63 
- 1471      6C656172 
- 1471      5F5F00
- 1472 0442 00       		.ascii	"\000"
- 1473 0443 02       		.ascii	"\002"
- 1474 0444 00       		.ascii	"\000"
- 1475 0445 00000000 		.ascii	"\000\000\000\000\000\000\000\000"
- 1475      00000000 
- 1476 044d 2D010000 		.ascii	"-\001\000\000"
- 1477 0451 5F5F7261 		.ascii	"__ram7_noinit__\000"
- 1477      6D375F6E 
- 1477      6F696E69 
- 1477      745F5F00 
- 1478 0461 00       		.ascii	"\000"
- 1479 0462 02       		.ascii	"\002"
- 1480 0463 00       		.ascii	"\000"
- 1481 0464 00000000 		.ascii	"\000\000\000\000\000\000\000\000"
- 1481      00000000 
- 1482 046c 2F010000 		.ascii	"/\001\000\000"
- 1483              		.text
- 1484              		.section	.gnu.lto_.opts,"e",%progbits
- 1485 0000 272D666E 		.ascii	"'-fno-openmp' '-fno-openacc' '-fno-pie' '-mcpu=cort"
- 1485      6F2D6F70 
- 1485      656E6D70 
- 1485      2720272D 
- 1485      666E6F2D 
- 1486 0033 65782D6D 		.ascii	"ex-m3' '-mthumb' '-mfloat-abi=soft' '-march=armv7-m"
- 1486      33272027 
- 1486      2D6D7468 
- 1486      756D6227 
- 1486      20272D6D 
- 1487 0066 2720272D 		.ascii	"' '-O2' '-fomit-frame-pointer' '-falign-functions=1"
- 1487      4F322720 
- 1487      272D666F 
- 1487      6D69742D 
- 1487      6672616D 
- 1488 0099 36272027 		.ascii	"6' '-ffunction-sections' '-fdata-sections' '-fno-co"
-ARM GAS  /tmp/ccQv33l2.s 			page 55
+ 1457 0407 00       		.ascii	"\000"
+ 1458 0408 02       		.ascii	"\002"
+ 1459 0409 00       		.ascii	"\000"
+ 1460 040a 00000000 		.ascii	"\000\000\000\000\000\000\000\000"
+ 1460      00000000 
+ 1461 0412 29010000 		.ascii	")\001\000\000"
+ 1462 0416 5F5F7261 		.ascii	"__ram7_init__\000"
+ 1462      6D375F69 
+ 1462      6E69745F 
+ 1462      5F00
+ 1463 0424 00       		.ascii	"\000"
+ 1464 0425 02       		.ascii	"\002"
+ 1465 0426 00       		.ascii	"\000"
+ 1466 0427 00000000 		.ascii	"\000\000\000\000\000\000\000\000"
+ 1466      00000000 
+ 1467 042f 2B010000 		.ascii	"+\001\000\000"
+ 1468 0433 5F5F7261 		.ascii	"__ram7_clear__\000"
+ 1468      6D375F63 
+ 1468      6C656172 
+ 1468      5F5F00
+ 1469 0442 00       		.ascii	"\000"
+ 1470 0443 02       		.ascii	"\002"
+ 1471 0444 00       		.ascii	"\000"
+ 1472 0445 00000000 		.ascii	"\000\000\000\000\000\000\000\000"
+ 1472      00000000 
+ 1473 044d 2D010000 		.ascii	"-\001\000\000"
+ 1474 0451 5F5F7261 		.ascii	"__ram7_noinit__\000"
+ 1474      6D375F6E 
+ 1474      6F696E69 
+ 1474      745F5F00 
+ 1475 0461 00       		.ascii	"\000"
+ 1476 0462 02       		.ascii	"\002"
+ 1477 0463 00       		.ascii	"\000"
+ 1478 0464 00000000 		.ascii	"\000\000\000\000\000\000\000\000"
+ 1478      00000000 
+ 1479 046c 2F010000 		.ascii	"/\001\000\000"
+ 1480              		.text
+ 1481              		.section	.gnu.lto_.opts,"e",%progbits
+ 1482 0000 272D666E 		.ascii	"'-fno-openmp' '-fno-openacc' '-fno-pie' '-mcpu=cort"
+ 1482      6F2D6F70 
+ 1482      656E6D70 
+ 1482      2720272D 
+ 1482      666E6F2D 
+ 1483 0033 65782D6D 		.ascii	"ex-m3' '-mthumb' '-mfloat-abi=soft' '-march=armv7-m"
+ 1483      33272027 
+ 1483      2D6D7468 
+ 1483      756D6227 
+ 1483      20272D6D 
+ 1484 0066 2720272D 		.ascii	"' '-O2' '-fomit-frame-pointer' '-falign-functions=1"
+ 1484      4F322720 
+ 1484      272D666F 
+ 1484      6D69742D 
+ 1484      6672616D 
+ 1485 0099 36272027 		.ascii	"6' '-ffunction-sections' '-fdata-sections' '-fno-co"
+ 1485      2D666675 
+ 1485      6E637469 
+ 1485      6F6E2D73 
+ARM GAS  /tmp/ccFOstLS.s 			page 55
 
 
- 1488      2D666675 
- 1488      6E637469 
- 1488      6F6E2D73 
- 1488      65637469 
- 1489 00cc 6D6D6F6E 		.ascii	"mmon' '-flto'\000"
- 1489      2720272D 
- 1489      666C746F 
- 1489      2700
- 1490              		.text
- 1491              		.comm	__gnu_lto_v1,1,1
- 1492              		.comm	__gnu_lto_slim,1,1
- 1493              		.ident	"GCC: (GNU Tools for Arm Embedded Processors 9-2019-q4-major) 9.2.1 20191025 (release) [ARM
-ARM GAS  /tmp/ccQv33l2.s 			page 56
+ 1485      65637469 
+ 1486 00cc 6D6D6F6E 		.ascii	"mmon' '-flto'\000"
+ 1486      2720272D 
+ 1486      666C746F 
+ 1486      2700
+ 1487              		.text
+ 1488              		.comm	__gnu_lto_v1,1,1
+ 1489              		.comm	__gnu_lto_slim,1,1
+ 1490              		.ident	"GCC: (GNU Tools for Arm Embedded Processors 9-2019-q4-major) 9.2.1 20191025 (release) [ARM
+ARM GAS  /tmp/ccFOstLS.s 			page 56
 
 
 DEFINED SYMBOLS
                             *ABS*:0000000000000000 crt1.c
-     /tmp/ccQv33l2.s:21     .gnu.debuglto_.debug_info:0000000000000000 crt1.c.167fc036
+     /tmp/ccFOstLS.s:21     .gnu.debuglto_.debug_info:0000000000000000 crt1.c.45af5080
                             *COM*:0000000000000001 __gnu_lto_v1
                             *COM*:0000000000000001 __gnu_lto_slim
 
