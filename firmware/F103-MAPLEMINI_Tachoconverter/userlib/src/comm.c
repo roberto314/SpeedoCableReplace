@@ -29,6 +29,7 @@ extern configunion_t cudata;
 extern I2CEepromFileStream eeFile;
 extern EepromFileStream *eeFS;
 extern uint16_t real_freq, f_enable;
+extern uint32_t pwm_in;
 extern icucnt_t last_period;
 
 void update_values(uint16_t * v){
@@ -412,15 +413,18 @@ void cmd_ch_pwm(BaseSequentialStream *chp, int argc, char *argv[]){
 	(void)argv;
 	  if (argc != 1) {
 	    chprintf(chp, "Changes Freq. of PWM Output to Speedometer \r\n");
+	    chprintf(chp, "PWM Freq. is now: %d\r\n", pwm_in);
 	    return;
 	  }
-	  ch_PWM_Freq(atoi(argv[0]));
+	  pwm_in = atoi(argv[0]);
+	  ch_PWM_Freq(pwm_in);
+	  chprintf(chp, "PWM Freq. changed to: %d\r\n", pwm_in);
 }
 void cmd_ch_speed(BaseSequentialStream *chp, int argc, char *argv[]){
 	(void)argv;
 	  if (argc != 1) {
 	    chprintf(chp, "Changes Speed on Speedometer \r\n");
-	    chprintf(chp, "Speed is now: %d", speed);
+	    chprintf(chp, "Speed is now: %d\r\n", speed);
 	    return;
 	  }
 	  speed = atoi(argv[0]);
@@ -613,7 +617,7 @@ void cmd_dir(BaseSequentialStream *chp, int argc, char *argv[]) {
   (void )* argv;
   uint16_t dir;
   chprintf(chp, "Changes direction of Motor\r\n");
-  chprintf(chp, "Usage: dir[0,1] where 0 == CW and 1 == CW\r\n");
+  chprintf(chp, "Usage: dir[0,1] where 0 == CCW and 1 == CW\r\n");
   dir = atoi(argv[0]);
   if (dir == 0){
       chprintf(chp, "Direction changed to: %d\r\n", dir);

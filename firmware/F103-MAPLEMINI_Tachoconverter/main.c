@@ -27,8 +27,9 @@
 #include "hc05.h"
 //################################################################################################
 //                                  Static Variables
-#define ICPCLKFREQ 18000000
-uint16_t real_freq, f_enable = 1;
+#define ICPCLKFREQ 36000000
+uint16_t real_freq, f_enable = 0;
+uint32_t pwm_in;
 float speed_in;
 uint16_t cnt;
 //icucnt_t last_width;
@@ -202,13 +203,14 @@ void PWM_Off(void){
     pwmDisableChannel(&PWMD4, 3);
 }
 void ch_PWM_Freq(uint32_t freq){
+    pwm_in = freq;
     pwmChangePeriod(&PWMD4, freq);
-    pwmEnableChannel(&PWMD4, 3, PWM_PERCENTAGE_TO_WIDTH(&PWMD4, 5000));
+    pwmEnableChannel(&PWMD4, 2, PWM_PERCENTAGE_TO_WIDTH(&PWMD4, 5000));
+    //pwmEnableChannelNotification(&PWMD4, 2);
 }
 void ch_Speed(uint16_t speed){
     //table lookup here!
-    pwmEnableChannel(&PWMD4, 2, PWM_PERCENTAGE_TO_WIDTH(&PWMD4, read_table_u16(&(cudata.configstruct.table0), speed)));
-    pwmEnableChannelNotification(&PWMD4, 2);
+  ch_PWM_Freq(read_table_u16(&(cudata.configstruct.table0), speed));
 }
 void ch_fSpeed(uint16_t speed){ // fspeed is Fake speed. It uses a correction factor (corr)
                                 // to show (usually) more speed as in reality.
@@ -242,8 +244,8 @@ int main(void) {
   /*
    * Starts the PWM channel 1 using 30% duty cycle.
    */
-  pwmEnableChannel(&PWMD4, 2, PWM_PERCENTAGE_TO_WIDTH(&PWMD4, 3000));
-  pwmEnableChannelNotification(&PWMD4, 2);
+//  pwmEnableChannel(&PWMD4, 2, PWM_PERCENTAGE_TO_WIDTH(&PWMD4, 3000));
+//  pwmEnableChannelNotification(&PWMD4, 2);
   //ch_PWM_Freq(600000);
 
   icuStart(&ICUD2, &icucfg);
@@ -257,7 +259,7 @@ int main(void) {
   sdStart(&SD2, NULL);
   palSetPadMode(GPIOA, 2, PAL_MODE_STM32_ALTERNATE_PUSHPULL); //UART TX
   palSetPadMode(GPIOB, 4, PAL_MODE_OUTPUT_PUSHPULL); //CW/CCW
-  palClearPad(GPIOB, 4);
+  palClearPad(GPIOB, 4); // set to counterclockwise
   palClearPad(GPIOC, 13); // Set EPROM to Write Protect Off
   palSetPadMode(GPIOC, 13, PAL_MODE_OUTPUT_PUSHPULL); // EPROM WP
 

@@ -1,7 +1,7 @@
-ARM GAS  /tmp/ccWuMc0k.s 			page 1
+ARM GAS  /tmp/ccI4hdED.s 			page 1
 
 
-   1              	# 1 "../../chibios_trunk/os/common/startup/ARMCMx/compilers/GCC/vectors.S"
+   1              	# 1 "/home/rob/Projects/ChibiStudio/ChibiStudio_20/chibios_trunk/os/common/startup/ARMCMx/compilers
    1              	/*
    1              	...
    0              	
@@ -58,7 +58,7 @@ ARM GAS  /tmp/ccWuMc0k.s 			page 1
   25              	 * @{
   26              	 */
   27              	
-ARM GAS  /tmp/ccWuMc0k.s 			page 2
+ARM GAS  /tmp/ccI4hdED.s 			page 2
 
 
   28              	#ifndef CMPARAMS_H
@@ -118,7 +118,7 @@ ARM GAS  /tmp/ccWuMc0k.s 			page 1
   50              	        .syntax unified
   51              	        .cpu    cortex-m0
   52              	        .thumb
-ARM GAS  /tmp/ccWuMc0k.s 			page 3
+ARM GAS  /tmp/ccI4hdED.s 			page 3
 
 
   53              	
@@ -178,7 +178,7 @@ ARM GAS  /tmp/ccWuMc0k.s 			page 1
   89              	#endif
   90              	#if CORTEX_NUM_VECTORS > 24
   91 00a0 00000000 	        .long       VectorA0,   VectorA4,   VectorA8,   VectorAC
-ARM GAS  /tmp/ccWuMc0k.s 			page 4
+ARM GAS  /tmp/ccI4hdED.s 			page 4
 
 
   91      00000000 
@@ -238,7 +238,7 @@ ARM GAS  /tmp/ccWuMc0k.s 			page 1
  118      00000000 
  118      00000000 
  118      00000000 
-ARM GAS  /tmp/ccWuMc0k.s 			page 5
+ARM GAS  /tmp/ccI4hdED.s 			page 5
 
 
  119              	#endif
@@ -298,7 +298,7 @@ ARM GAS  /tmp/ccWuMc0k.s 			page 1
  167              	#endif
  168              	#if CORTEX_NUM_VECTORS > 128
  169              	        .long       Vector240,  Vector244,  Vector248,  Vector24C
-ARM GAS  /tmp/ccWuMc0k.s 			page 6
+ARM GAS  /tmp/ccI4hdED.s 			page 6
 
 
  170              	#endif
@@ -358,7 +358,7 @@ ARM GAS  /tmp/ccWuMc0k.s 			page 1
  224              	#endif
  225              	#if CORTEX_NUM_VECTORS > 204
  226              	        .long       Vector370,  Vector374,  Vector378,  Vector37C
-ARM GAS  /tmp/ccWuMc0k.s 			page 7
+ARM GAS  /tmp/ccI4hdED.s 			page 7
 
 
  227              	#endif
@@ -418,7 +418,7 @@ ARM GAS  /tmp/ccWuMc0k.s 			page 1
  281              	        .weak       Vector60,   Vector64,   Vector68,   Vector6C
  282              	#endif
  283              	#if CORTEX_NUM_VECTORS > 12
-ARM GAS  /tmp/ccWuMc0k.s 			page 8
+ARM GAS  /tmp/ccI4hdED.s 			page 8
 
 
  284              	        .weak       Vector70,   Vector74,   Vector78,   Vector7C
@@ -478,7 +478,7 @@ ARM GAS  /tmp/ccWuMc0k.s 			page 1
  338              	        .weak       Vector190,  Vector194,  Vector198,  Vector19C
  339              	#endif
  340              	#if CORTEX_NUM_VECTORS > 88
-ARM GAS  /tmp/ccWuMc0k.s 			page 9
+ARM GAS  /tmp/ccI4hdED.s 			page 9
 
 
  341              	        .weak       Vector1A0,  Vector1A4,  Vector1A8,  Vector1AC
@@ -538,7 +538,7 @@ ARM GAS  /tmp/ccWuMc0k.s 			page 1
  395              	        .weak       Vector2C0,  Vector2C4,  Vector2C8,  Vector2CC
  396              	#endif
  397              	#if CORTEX_NUM_VECTORS > 164
-ARM GAS  /tmp/ccWuMc0k.s 			page 10
+ARM GAS  /tmp/ccI4hdED.s 			page 10
 
 
  398              	        .weak       Vector2D0,  Vector2D4,  Vector2D8,  Vector2DC
@@ -598,7 +598,7 @@ ARM GAS  /tmp/ccWuMc0k.s 			page 1
  452              	        .weak       Vector3F0,  Vector3F4,  Vector3F8,  Vector3FC
  453              	#endif
  454              	
-ARM GAS  /tmp/ccWuMc0k.s 			page 11
+ARM GAS  /tmp/ccI4hdED.s 			page 11
 
 
  455              	        .thumb_func
@@ -658,7 +658,7 @@ ARM GAS  /tmp/ccWuMc0k.s 			page 1
  509              	Vector70:
  510              	        .thumb_func
  511              	Vector74:
-ARM GAS  /tmp/ccWuMc0k.s 			page 12
+ARM GAS  /tmp/ccI4hdED.s 			page 12
 
 
  512              	        .thumb_func
@@ -718,7 +718,7 @@ ARM GAS  /tmp/ccWuMc0k.s 			page 1
  566              	        .thumb_func
  567              	VectorD8:
  568              	        .thumb_func
-ARM GAS  /tmp/ccWuMc0k.s 			page 13
+ARM GAS  /tmp/ccI4hdED.s 			page 13
 
 
  569              	VectorDC:
@@ -778,7 +778,7 @@ ARM GAS  /tmp/ccWuMc0k.s 			page 1
  623              	Vector13C:
  624              	#endif
  625              	#if CORTEX_NUM_VECTORS > 64
-ARM GAS  /tmp/ccWuMc0k.s 			page 14
+ARM GAS  /tmp/ccI4hdED.s 			page 14
 
 
  626              	        .thumb_func
@@ -838,7 +838,7 @@ ARM GAS  /tmp/ccWuMc0k.s 			page 1
  680              	        .thumb_func
  681              	Vector1A0:
  682              	        .thumb_func
-ARM GAS  /tmp/ccWuMc0k.s 			page 15
+ARM GAS  /tmp/ccI4hdED.s 			page 15
 
 
  683              	Vector1A4:
@@ -898,7 +898,7 @@ ARM GAS  /tmp/ccWuMc0k.s 			page 1
  737              	Vector204:
  738              	        .thumb_func
  739              	Vector208:
-ARM GAS  /tmp/ccWuMc0k.s 			page 16
+ARM GAS  /tmp/ccI4hdED.s 			page 16
 
 
  740              	        .thumb_func
@@ -958,7 +958,7 @@ ARM GAS  /tmp/ccWuMc0k.s 			page 1
  794              	        .thumb_func
  795              	Vector26C:
  796              	        .thumb_func
-ARM GAS  /tmp/ccWuMc0k.s 			page 17
+ARM GAS  /tmp/ccI4hdED.s 			page 17
 
 
  797              	Vector270:
@@ -1018,7 +1018,7 @@ ARM GAS  /tmp/ccWuMc0k.s 			page 1
  851              	Vector2D0:
  852              	        .thumb_func
  853              	Vector2D4:
-ARM GAS  /tmp/ccWuMc0k.s 			page 18
+ARM GAS  /tmp/ccI4hdED.s 			page 18
 
 
  854              	        .thumb_func
@@ -1078,7 +1078,7 @@ ARM GAS  /tmp/ccWuMc0k.s 			page 1
  908              	        .thumb_func
  909              	Vector338:
  910              	        .thumb_func
-ARM GAS  /tmp/ccWuMc0k.s 			page 19
+ARM GAS  /tmp/ccI4hdED.s 			page 19
 
 
  911              	Vector33C:
@@ -1138,7 +1138,7 @@ ARM GAS  /tmp/ccWuMc0k.s 			page 1
  965              	Vector39C:
  966              	#endif
  967              	#if CORTEX_NUM_VECTORS > 216
-ARM GAS  /tmp/ccWuMc0k.s 			page 20
+ARM GAS  /tmp/ccI4hdED.s 			page 20
 
 
  968              	        .thumb_func
@@ -1198,111 +1198,111 @@ ARM GAS  /tmp/ccWuMc0k.s 			page 1
  1022              	
  1023              	        .thumb_func
  1024              	        .weak       _unhandled_exception
-ARM GAS  /tmp/ccWuMc0k.s 			page 21
+ARM GAS  /tmp/ccI4hdED.s 			page 21
 
 
  1025              	_unhandled_exception:
  1026              	.stay:
  1027 0006 FEE7     	        b           .stay
-ARM GAS  /tmp/ccWuMc0k.s 			page 22
+ARM GAS  /tmp/ccI4hdED.s 			page 22
 
 
 DEFINED SYMBOLS
-../../chibios_trunk/os/common/startup/ARMCMx/compilers/GCC/vectors.S:57     .vectors:0000000000000000 _vectors
-../../chibios_trunk/os/common/startup/ARMCMx/compilers/GCC/vectors.S:58     .vectors:0000000000000000 $d
-../../chibios_trunk/os/common/startup/ARMCMx/compilers/GCC/vectors.S:258    .text:0000000000000000 Reset_Handler
-../../chibios_trunk/os/common/startup/ARMCMx/compilers/GCC/vectors.S:456    .text:0000000000000002 NMI_Handler
-../../chibios_trunk/os/common/startup/ARMCMx/compilers/GCC/vectors.S:458    .text:0000000000000002 HardFault_Handler
-../../chibios_trunk/os/common/startup/ARMCMx/compilers/GCC/vectors.S:460    .text:0000000000000002 MemManage_Handler
-../../chibios_trunk/os/common/startup/ARMCMx/compilers/GCC/vectors.S:462    .text:0000000000000002 BusFault_Handler
-../../chibios_trunk/os/common/startup/ARMCMx/compilers/GCC/vectors.S:464    .text:0000000000000002 UsageFault_Handler
-../../chibios_trunk/os/common/startup/ARMCMx/compilers/GCC/vectors.S:466    .text:0000000000000002 SecureFault_Handler
-../../chibios_trunk/os/common/startup/ARMCMx/compilers/GCC/vectors.S:468    .text:0000000000000002 Vector20
-../../chibios_trunk/os/common/startup/ARMCMx/compilers/GCC/vectors.S:470    .text:0000000000000002 Vector24
-../../chibios_trunk/os/common/startup/ARMCMx/compilers/GCC/vectors.S:472    .text:0000000000000002 Vector28
-../../chibios_trunk/os/common/startup/ARMCMx/compilers/GCC/vectors.S:474    .text:0000000000000002 SVC_Handler
-../../chibios_trunk/os/common/startup/ARMCMx/compilers/GCC/vectors.S:476    .text:0000000000000002 DebugMon_Handler
-../../chibios_trunk/os/common/startup/ARMCMx/compilers/GCC/vectors.S:478    .text:0000000000000002 Vector34
-../../chibios_trunk/os/common/startup/ARMCMx/compilers/GCC/vectors.S:480    .text:0000000000000002 PendSV_Handler
-../../chibios_trunk/os/common/startup/ARMCMx/compilers/GCC/vectors.S:482    .text:0000000000000002 SysTick_Handler
-../../chibios_trunk/os/common/startup/ARMCMx/compilers/GCC/vectors.S:484    .text:0000000000000002 Vector40
-../../chibios_trunk/os/common/startup/ARMCMx/compilers/GCC/vectors.S:486    .text:0000000000000002 Vector44
-../../chibios_trunk/os/common/startup/ARMCMx/compilers/GCC/vectors.S:488    .text:0000000000000002 Vector48
-../../chibios_trunk/os/common/startup/ARMCMx/compilers/GCC/vectors.S:490    .text:0000000000000002 Vector4C
-../../chibios_trunk/os/common/startup/ARMCMx/compilers/GCC/vectors.S:492    .text:0000000000000002 Vector50
-../../chibios_trunk/os/common/startup/ARMCMx/compilers/GCC/vectors.S:494    .text:0000000000000002 Vector54
-../../chibios_trunk/os/common/startup/ARMCMx/compilers/GCC/vectors.S:496    .text:0000000000000002 Vector58
-../../chibios_trunk/os/common/startup/ARMCMx/compilers/GCC/vectors.S:498    .text:0000000000000002 Vector5C
-../../chibios_trunk/os/common/startup/ARMCMx/compilers/GCC/vectors.S:501    .text:0000000000000002 Vector60
-../../chibios_trunk/os/common/startup/ARMCMx/compilers/GCC/vectors.S:503    .text:0000000000000002 Vector64
-../../chibios_trunk/os/common/startup/ARMCMx/compilers/GCC/vectors.S:505    .text:0000000000000002 Vector68
-../../chibios_trunk/os/common/startup/ARMCMx/compilers/GCC/vectors.S:507    .text:0000000000000002 Vector6C
-../../chibios_trunk/os/common/startup/ARMCMx/compilers/GCC/vectors.S:509    .text:0000000000000002 Vector70
-../../chibios_trunk/os/common/startup/ARMCMx/compilers/GCC/vectors.S:511    .text:0000000000000002 Vector74
-../../chibios_trunk/os/common/startup/ARMCMx/compilers/GCC/vectors.S:513    .text:0000000000000002 Vector78
-../../chibios_trunk/os/common/startup/ARMCMx/compilers/GCC/vectors.S:515    .text:0000000000000002 Vector7C
-../../chibios_trunk/os/common/startup/ARMCMx/compilers/GCC/vectors.S:519    .text:0000000000000002 Vector80
-../../chibios_trunk/os/common/startup/ARMCMx/compilers/GCC/vectors.S:521    .text:0000000000000002 Vector84
-../../chibios_trunk/os/common/startup/ARMCMx/compilers/GCC/vectors.S:523    .text:0000000000000002 Vector88
-../../chibios_trunk/os/common/startup/ARMCMx/compilers/GCC/vectors.S:525    .text:0000000000000002 Vector8C
-../../chibios_trunk/os/common/startup/ARMCMx/compilers/GCC/vectors.S:527    .text:0000000000000002 Vector90
-../../chibios_trunk/os/common/startup/ARMCMx/compilers/GCC/vectors.S:529    .text:0000000000000002 Vector94
-../../chibios_trunk/os/common/startup/ARMCMx/compilers/GCC/vectors.S:531    .text:0000000000000002 Vector98
-../../chibios_trunk/os/common/startup/ARMCMx/compilers/GCC/vectors.S:533    .text:0000000000000002 Vector9C
-../../chibios_trunk/os/common/startup/ARMCMx/compilers/GCC/vectors.S:537    .text:0000000000000002 VectorA0
-../../chibios_trunk/os/common/startup/ARMCMx/compilers/GCC/vectors.S:539    .text:0000000000000002 VectorA4
-../../chibios_trunk/os/common/startup/ARMCMx/compilers/GCC/vectors.S:541    .text:0000000000000002 VectorA8
-../../chibios_trunk/os/common/startup/ARMCMx/compilers/GCC/vectors.S:543    .text:0000000000000002 VectorAC
-../../chibios_trunk/os/common/startup/ARMCMx/compilers/GCC/vectors.S:545    .text:0000000000000002 VectorB0
-../../chibios_trunk/os/common/startup/ARMCMx/compilers/GCC/vectors.S:547    .text:0000000000000002 VectorB4
-../../chibios_trunk/os/common/startup/ARMCMx/compilers/GCC/vectors.S:549    .text:0000000000000002 VectorB8
-../../chibios_trunk/os/common/startup/ARMCMx/compilers/GCC/vectors.S:551    .text:0000000000000002 VectorBC
-../../chibios_trunk/os/common/startup/ARMCMx/compilers/GCC/vectors.S:555    .text:0000000000000002 VectorC0
-../../chibios_trunk/os/common/startup/ARMCMx/compilers/GCC/vectors.S:557    .text:0000000000000002 VectorC4
-../../chibios_trunk/os/common/startup/ARMCMx/compilers/GCC/vectors.S:559    .text:0000000000000002 VectorC8
-../../chibios_trunk/os/common/startup/ARMCMx/compilers/GCC/vectors.S:561    .text:0000000000000002 VectorCC
-../../chibios_trunk/os/common/startup/ARMCMx/compilers/GCC/vectors.S:563    .text:0000000000000002 VectorD0
-../../chibios_trunk/os/common/startup/ARMCMx/compilers/GCC/vectors.S:565    .text:0000000000000002 VectorD4
-../../chibios_trunk/os/common/startup/ARMCMx/compilers/GCC/vectors.S:567    .text:0000000000000002 VectorD8
-ARM GAS  /tmp/ccWuMc0k.s 			page 23
+/home/rob/Projects/ChibiStudio/ChibiStudio_20/chibios_trunk/os/common/startup/ARMCMx/compilers/GCC/vectors.S:57     .vectors:0000000000000000 _vectors
+/home/rob/Projects/ChibiStudio/ChibiStudio_20/chibios_trunk/os/common/startup/ARMCMx/compilers/GCC/vectors.S:58     .vectors:0000000000000000 $d
+/home/rob/Projects/ChibiStudio/ChibiStudio_20/chibios_trunk/os/common/startup/ARMCMx/compilers/GCC/vectors.S:258    .text:0000000000000000 Reset_Handler
+/home/rob/Projects/ChibiStudio/ChibiStudio_20/chibios_trunk/os/common/startup/ARMCMx/compilers/GCC/vectors.S:456    .text:0000000000000002 NMI_Handler
+/home/rob/Projects/ChibiStudio/ChibiStudio_20/chibios_trunk/os/common/startup/ARMCMx/compilers/GCC/vectors.S:458    .text:0000000000000002 HardFault_Handler
+/home/rob/Projects/ChibiStudio/ChibiStudio_20/chibios_trunk/os/common/startup/ARMCMx/compilers/GCC/vectors.S:460    .text:0000000000000002 MemManage_Handler
+/home/rob/Projects/ChibiStudio/ChibiStudio_20/chibios_trunk/os/common/startup/ARMCMx/compilers/GCC/vectors.S:462    .text:0000000000000002 BusFault_Handler
+/home/rob/Projects/ChibiStudio/ChibiStudio_20/chibios_trunk/os/common/startup/ARMCMx/compilers/GCC/vectors.S:464    .text:0000000000000002 UsageFault_Handler
+/home/rob/Projects/ChibiStudio/ChibiStudio_20/chibios_trunk/os/common/startup/ARMCMx/compilers/GCC/vectors.S:466    .text:0000000000000002 SecureFault_Handler
+/home/rob/Projects/ChibiStudio/ChibiStudio_20/chibios_trunk/os/common/startup/ARMCMx/compilers/GCC/vectors.S:468    .text:0000000000000002 Vector20
+/home/rob/Projects/ChibiStudio/ChibiStudio_20/chibios_trunk/os/common/startup/ARMCMx/compilers/GCC/vectors.S:470    .text:0000000000000002 Vector24
+/home/rob/Projects/ChibiStudio/ChibiStudio_20/chibios_trunk/os/common/startup/ARMCMx/compilers/GCC/vectors.S:472    .text:0000000000000002 Vector28
+/home/rob/Projects/ChibiStudio/ChibiStudio_20/chibios_trunk/os/common/startup/ARMCMx/compilers/GCC/vectors.S:474    .text:0000000000000002 SVC_Handler
+/home/rob/Projects/ChibiStudio/ChibiStudio_20/chibios_trunk/os/common/startup/ARMCMx/compilers/GCC/vectors.S:476    .text:0000000000000002 DebugMon_Handler
+/home/rob/Projects/ChibiStudio/ChibiStudio_20/chibios_trunk/os/common/startup/ARMCMx/compilers/GCC/vectors.S:478    .text:0000000000000002 Vector34
+/home/rob/Projects/ChibiStudio/ChibiStudio_20/chibios_trunk/os/common/startup/ARMCMx/compilers/GCC/vectors.S:480    .text:0000000000000002 PendSV_Handler
+/home/rob/Projects/ChibiStudio/ChibiStudio_20/chibios_trunk/os/common/startup/ARMCMx/compilers/GCC/vectors.S:482    .text:0000000000000002 SysTick_Handler
+/home/rob/Projects/ChibiStudio/ChibiStudio_20/chibios_trunk/os/common/startup/ARMCMx/compilers/GCC/vectors.S:484    .text:0000000000000002 Vector40
+/home/rob/Projects/ChibiStudio/ChibiStudio_20/chibios_trunk/os/common/startup/ARMCMx/compilers/GCC/vectors.S:486    .text:0000000000000002 Vector44
+/home/rob/Projects/ChibiStudio/ChibiStudio_20/chibios_trunk/os/common/startup/ARMCMx/compilers/GCC/vectors.S:488    .text:0000000000000002 Vector48
+/home/rob/Projects/ChibiStudio/ChibiStudio_20/chibios_trunk/os/common/startup/ARMCMx/compilers/GCC/vectors.S:490    .text:0000000000000002 Vector4C
+/home/rob/Projects/ChibiStudio/ChibiStudio_20/chibios_trunk/os/common/startup/ARMCMx/compilers/GCC/vectors.S:492    .text:0000000000000002 Vector50
+/home/rob/Projects/ChibiStudio/ChibiStudio_20/chibios_trunk/os/common/startup/ARMCMx/compilers/GCC/vectors.S:494    .text:0000000000000002 Vector54
+/home/rob/Projects/ChibiStudio/ChibiStudio_20/chibios_trunk/os/common/startup/ARMCMx/compilers/GCC/vectors.S:496    .text:0000000000000002 Vector58
+/home/rob/Projects/ChibiStudio/ChibiStudio_20/chibios_trunk/os/common/startup/ARMCMx/compilers/GCC/vectors.S:498    .text:0000000000000002 Vector5C
+/home/rob/Projects/ChibiStudio/ChibiStudio_20/chibios_trunk/os/common/startup/ARMCMx/compilers/GCC/vectors.S:501    .text:0000000000000002 Vector60
+/home/rob/Projects/ChibiStudio/ChibiStudio_20/chibios_trunk/os/common/startup/ARMCMx/compilers/GCC/vectors.S:503    .text:0000000000000002 Vector64
+/home/rob/Projects/ChibiStudio/ChibiStudio_20/chibios_trunk/os/common/startup/ARMCMx/compilers/GCC/vectors.S:505    .text:0000000000000002 Vector68
+/home/rob/Projects/ChibiStudio/ChibiStudio_20/chibios_trunk/os/common/startup/ARMCMx/compilers/GCC/vectors.S:507    .text:0000000000000002 Vector6C
+/home/rob/Projects/ChibiStudio/ChibiStudio_20/chibios_trunk/os/common/startup/ARMCMx/compilers/GCC/vectors.S:509    .text:0000000000000002 Vector70
+/home/rob/Projects/ChibiStudio/ChibiStudio_20/chibios_trunk/os/common/startup/ARMCMx/compilers/GCC/vectors.S:511    .text:0000000000000002 Vector74
+/home/rob/Projects/ChibiStudio/ChibiStudio_20/chibios_trunk/os/common/startup/ARMCMx/compilers/GCC/vectors.S:513    .text:0000000000000002 Vector78
+/home/rob/Projects/ChibiStudio/ChibiStudio_20/chibios_trunk/os/common/startup/ARMCMx/compilers/GCC/vectors.S:515    .text:0000000000000002 Vector7C
+/home/rob/Projects/ChibiStudio/ChibiStudio_20/chibios_trunk/os/common/startup/ARMCMx/compilers/GCC/vectors.S:519    .text:0000000000000002 Vector80
+/home/rob/Projects/ChibiStudio/ChibiStudio_20/chibios_trunk/os/common/startup/ARMCMx/compilers/GCC/vectors.S:521    .text:0000000000000002 Vector84
+/home/rob/Projects/ChibiStudio/ChibiStudio_20/chibios_trunk/os/common/startup/ARMCMx/compilers/GCC/vectors.S:523    .text:0000000000000002 Vector88
+/home/rob/Projects/ChibiStudio/ChibiStudio_20/chibios_trunk/os/common/startup/ARMCMx/compilers/GCC/vectors.S:525    .text:0000000000000002 Vector8C
+/home/rob/Projects/ChibiStudio/ChibiStudio_20/chibios_trunk/os/common/startup/ARMCMx/compilers/GCC/vectors.S:527    .text:0000000000000002 Vector90
+/home/rob/Projects/ChibiStudio/ChibiStudio_20/chibios_trunk/os/common/startup/ARMCMx/compilers/GCC/vectors.S:529    .text:0000000000000002 Vector94
+/home/rob/Projects/ChibiStudio/ChibiStudio_20/chibios_trunk/os/common/startup/ARMCMx/compilers/GCC/vectors.S:531    .text:0000000000000002 Vector98
+/home/rob/Projects/ChibiStudio/ChibiStudio_20/chibios_trunk/os/common/startup/ARMCMx/compilers/GCC/vectors.S:533    .text:0000000000000002 Vector9C
+/home/rob/Projects/ChibiStudio/ChibiStudio_20/chibios_trunk/os/common/startup/ARMCMx/compilers/GCC/vectors.S:537    .text:0000000000000002 VectorA0
+/home/rob/Projects/ChibiStudio/ChibiStudio_20/chibios_trunk/os/common/startup/ARMCMx/compilers/GCC/vectors.S:539    .text:0000000000000002 VectorA4
+/home/rob/Projects/ChibiStudio/ChibiStudio_20/chibios_trunk/os/common/startup/ARMCMx/compilers/GCC/vectors.S:541    .text:0000000000000002 VectorA8
+/home/rob/Projects/ChibiStudio/ChibiStudio_20/chibios_trunk/os/common/startup/ARMCMx/compilers/GCC/vectors.S:543    .text:0000000000000002 VectorAC
+/home/rob/Projects/ChibiStudio/ChibiStudio_20/chibios_trunk/os/common/startup/ARMCMx/compilers/GCC/vectors.S:545    .text:0000000000000002 VectorB0
+/home/rob/Projects/ChibiStudio/ChibiStudio_20/chibios_trunk/os/common/startup/ARMCMx/compilers/GCC/vectors.S:547    .text:0000000000000002 VectorB4
+/home/rob/Projects/ChibiStudio/ChibiStudio_20/chibios_trunk/os/common/startup/ARMCMx/compilers/GCC/vectors.S:549    .text:0000000000000002 VectorB8
+/home/rob/Projects/ChibiStudio/ChibiStudio_20/chibios_trunk/os/common/startup/ARMCMx/compilers/GCC/vectors.S:551    .text:0000000000000002 VectorBC
+/home/rob/Projects/ChibiStudio/ChibiStudio_20/chibios_trunk/os/common/startup/ARMCMx/compilers/GCC/vectors.S:555    .text:0000000000000002 VectorC0
+/home/rob/Projects/ChibiStudio/ChibiStudio_20/chibios_trunk/os/common/startup/ARMCMx/compilers/GCC/vectors.S:557    .text:0000000000000002 VectorC4
+/home/rob/Projects/ChibiStudio/ChibiStudio_20/chibios_trunk/os/common/startup/ARMCMx/compilers/GCC/vectors.S:559    .text:0000000000000002 VectorC8
+/home/rob/Projects/ChibiStudio/ChibiStudio_20/chibios_trunk/os/common/startup/ARMCMx/compilers/GCC/vectors.S:561    .text:0000000000000002 VectorCC
+/home/rob/Projects/ChibiStudio/ChibiStudio_20/chibios_trunk/os/common/startup/ARMCMx/compilers/GCC/vectors.S:563    .text:0000000000000002 VectorD0
+/home/rob/Projects/ChibiStudio/ChibiStudio_20/chibios_trunk/os/common/startup/ARMCMx/compilers/GCC/vectors.S:565    .text:0000000000000002 VectorD4
+/home/rob/Projects/ChibiStudio/ChibiStudio_20/chibios_trunk/os/common/startup/ARMCMx/compilers/GCC/vectors.S:567    .text:0000000000000002 VectorD8
+ARM GAS  /tmp/ccI4hdED.s 			page 23
 
 
-../../chibios_trunk/os/common/startup/ARMCMx/compilers/GCC/vectors.S:569    .text:0000000000000002 VectorDC
-../../chibios_trunk/os/common/startup/ARMCMx/compilers/GCC/vectors.S:573    .text:0000000000000002 VectorE0
-../../chibios_trunk/os/common/startup/ARMCMx/compilers/GCC/vectors.S:575    .text:0000000000000002 VectorE4
-../../chibios_trunk/os/common/startup/ARMCMx/compilers/GCC/vectors.S:577    .text:0000000000000002 VectorE8
-../../chibios_trunk/os/common/startup/ARMCMx/compilers/GCC/vectors.S:579    .text:0000000000000002 VectorEC
-../../chibios_trunk/os/common/startup/ARMCMx/compilers/GCC/vectors.S:581    .text:0000000000000002 VectorF0
-../../chibios_trunk/os/common/startup/ARMCMx/compilers/GCC/vectors.S:583    .text:0000000000000002 VectorF4
-../../chibios_trunk/os/common/startup/ARMCMx/compilers/GCC/vectors.S:585    .text:0000000000000002 VectorF8
-../../chibios_trunk/os/common/startup/ARMCMx/compilers/GCC/vectors.S:587    .text:0000000000000002 VectorFC
-../../chibios_trunk/os/common/startup/ARMCMx/compilers/GCC/vectors.S:591    .text:0000000000000002 Vector100
-../../chibios_trunk/os/common/startup/ARMCMx/compilers/GCC/vectors.S:593    .text:0000000000000002 Vector104
-../../chibios_trunk/os/common/startup/ARMCMx/compilers/GCC/vectors.S:595    .text:0000000000000002 Vector108
-../../chibios_trunk/os/common/startup/ARMCMx/compilers/GCC/vectors.S:597    .text:0000000000000002 Vector10C
-../../chibios_trunk/os/common/startup/ARMCMx/compilers/GCC/vectors.S:599    .text:0000000000000002 Vector110
-../../chibios_trunk/os/common/startup/ARMCMx/compilers/GCC/vectors.S:601    .text:0000000000000002 Vector114
-../../chibios_trunk/os/common/startup/ARMCMx/compilers/GCC/vectors.S:603    .text:0000000000000002 Vector118
-../../chibios_trunk/os/common/startup/ARMCMx/compilers/GCC/vectors.S:605    .text:0000000000000002 Vector11C
-../../chibios_trunk/os/common/startup/ARMCMx/compilers/GCC/vectors.S:609    .text:0000000000000002 Vector120
-../../chibios_trunk/os/common/startup/ARMCMx/compilers/GCC/vectors.S:611    .text:0000000000000002 Vector124
-../../chibios_trunk/os/common/startup/ARMCMx/compilers/GCC/vectors.S:613    .text:0000000000000002 Vector128
-../../chibios_trunk/os/common/startup/ARMCMx/compilers/GCC/vectors.S:615    .text:0000000000000002 Vector12C
-../../chibios_trunk/os/common/startup/ARMCMx/compilers/GCC/vectors.S:617    .text:0000000000000002 Vector130
-../../chibios_trunk/os/common/startup/ARMCMx/compilers/GCC/vectors.S:619    .text:0000000000000002 Vector134
-../../chibios_trunk/os/common/startup/ARMCMx/compilers/GCC/vectors.S:621    .text:0000000000000002 Vector138
-../../chibios_trunk/os/common/startup/ARMCMx/compilers/GCC/vectors.S:623    .text:0000000000000002 Vector13C
-../../chibios_trunk/os/common/startup/ARMCMx/compilers/GCC/vectors.S:627    .text:0000000000000002 Vector140
-../../chibios_trunk/os/common/startup/ARMCMx/compilers/GCC/vectors.S:629    .text:0000000000000002 Vector144
-../../chibios_trunk/os/common/startup/ARMCMx/compilers/GCC/vectors.S:631    .text:0000000000000002 Vector148
-../../chibios_trunk/os/common/startup/ARMCMx/compilers/GCC/vectors.S:633    .text:0000000000000002 Vector14C
-../../chibios_trunk/os/common/startup/ARMCMx/compilers/GCC/vectors.S:635    .text:0000000000000002 Vector150
-../../chibios_trunk/os/common/startup/ARMCMx/compilers/GCC/vectors.S:637    .text:0000000000000002 Vector154
-../../chibios_trunk/os/common/startup/ARMCMx/compilers/GCC/vectors.S:639    .text:0000000000000002 Vector158
-../../chibios_trunk/os/common/startup/ARMCMx/compilers/GCC/vectors.S:641    .text:0000000000000002 Vector15C
-../../chibios_trunk/os/common/startup/ARMCMx/compilers/GCC/vectors.S:255    .text:0000000000000000 $t
-../../chibios_trunk/os/common/startup/ARMCMx/compilers/GCC/vectors.S:1025   .text:0000000000000006 _unhandled_exception
-../../chibios_trunk/os/common/startup/ARMCMx/compilers/GCC/vectors.S:1026   .text:0000000000000006 .stay
+/home/rob/Projects/ChibiStudio/ChibiStudio_20/chibios_trunk/os/common/startup/ARMCMx/compilers/GCC/vectors.S:569    .text:0000000000000002 VectorDC
+/home/rob/Projects/ChibiStudio/ChibiStudio_20/chibios_trunk/os/common/startup/ARMCMx/compilers/GCC/vectors.S:573    .text:0000000000000002 VectorE0
+/home/rob/Projects/ChibiStudio/ChibiStudio_20/chibios_trunk/os/common/startup/ARMCMx/compilers/GCC/vectors.S:575    .text:0000000000000002 VectorE4
+/home/rob/Projects/ChibiStudio/ChibiStudio_20/chibios_trunk/os/common/startup/ARMCMx/compilers/GCC/vectors.S:577    .text:0000000000000002 VectorE8
+/home/rob/Projects/ChibiStudio/ChibiStudio_20/chibios_trunk/os/common/startup/ARMCMx/compilers/GCC/vectors.S:579    .text:0000000000000002 VectorEC
+/home/rob/Projects/ChibiStudio/ChibiStudio_20/chibios_trunk/os/common/startup/ARMCMx/compilers/GCC/vectors.S:581    .text:0000000000000002 VectorF0
+/home/rob/Projects/ChibiStudio/ChibiStudio_20/chibios_trunk/os/common/startup/ARMCMx/compilers/GCC/vectors.S:583    .text:0000000000000002 VectorF4
+/home/rob/Projects/ChibiStudio/ChibiStudio_20/chibios_trunk/os/common/startup/ARMCMx/compilers/GCC/vectors.S:585    .text:0000000000000002 VectorF8
+/home/rob/Projects/ChibiStudio/ChibiStudio_20/chibios_trunk/os/common/startup/ARMCMx/compilers/GCC/vectors.S:587    .text:0000000000000002 VectorFC
+/home/rob/Projects/ChibiStudio/ChibiStudio_20/chibios_trunk/os/common/startup/ARMCMx/compilers/GCC/vectors.S:591    .text:0000000000000002 Vector100
+/home/rob/Projects/ChibiStudio/ChibiStudio_20/chibios_trunk/os/common/startup/ARMCMx/compilers/GCC/vectors.S:593    .text:0000000000000002 Vector104
+/home/rob/Projects/ChibiStudio/ChibiStudio_20/chibios_trunk/os/common/startup/ARMCMx/compilers/GCC/vectors.S:595    .text:0000000000000002 Vector108
+/home/rob/Projects/ChibiStudio/ChibiStudio_20/chibios_trunk/os/common/startup/ARMCMx/compilers/GCC/vectors.S:597    .text:0000000000000002 Vector10C
+/home/rob/Projects/ChibiStudio/ChibiStudio_20/chibios_trunk/os/common/startup/ARMCMx/compilers/GCC/vectors.S:599    .text:0000000000000002 Vector110
+/home/rob/Projects/ChibiStudio/ChibiStudio_20/chibios_trunk/os/common/startup/ARMCMx/compilers/GCC/vectors.S:601    .text:0000000000000002 Vector114
+/home/rob/Projects/ChibiStudio/ChibiStudio_20/chibios_trunk/os/common/startup/ARMCMx/compilers/GCC/vectors.S:603    .text:0000000000000002 Vector118
+/home/rob/Projects/ChibiStudio/ChibiStudio_20/chibios_trunk/os/common/startup/ARMCMx/compilers/GCC/vectors.S:605    .text:0000000000000002 Vector11C
+/home/rob/Projects/ChibiStudio/ChibiStudio_20/chibios_trunk/os/common/startup/ARMCMx/compilers/GCC/vectors.S:609    .text:0000000000000002 Vector120
+/home/rob/Projects/ChibiStudio/ChibiStudio_20/chibios_trunk/os/common/startup/ARMCMx/compilers/GCC/vectors.S:611    .text:0000000000000002 Vector124
+/home/rob/Projects/ChibiStudio/ChibiStudio_20/chibios_trunk/os/common/startup/ARMCMx/compilers/GCC/vectors.S:613    .text:0000000000000002 Vector128
+/home/rob/Projects/ChibiStudio/ChibiStudio_20/chibios_trunk/os/common/startup/ARMCMx/compilers/GCC/vectors.S:615    .text:0000000000000002 Vector12C
+/home/rob/Projects/ChibiStudio/ChibiStudio_20/chibios_trunk/os/common/startup/ARMCMx/compilers/GCC/vectors.S:617    .text:0000000000000002 Vector130
+/home/rob/Projects/ChibiStudio/ChibiStudio_20/chibios_trunk/os/common/startup/ARMCMx/compilers/GCC/vectors.S:619    .text:0000000000000002 Vector134
+/home/rob/Projects/ChibiStudio/ChibiStudio_20/chibios_trunk/os/common/startup/ARMCMx/compilers/GCC/vectors.S:621    .text:0000000000000002 Vector138
+/home/rob/Projects/ChibiStudio/ChibiStudio_20/chibios_trunk/os/common/startup/ARMCMx/compilers/GCC/vectors.S:623    .text:0000000000000002 Vector13C
+/home/rob/Projects/ChibiStudio/ChibiStudio_20/chibios_trunk/os/common/startup/ARMCMx/compilers/GCC/vectors.S:627    .text:0000000000000002 Vector140
+/home/rob/Projects/ChibiStudio/ChibiStudio_20/chibios_trunk/os/common/startup/ARMCMx/compilers/GCC/vectors.S:629    .text:0000000000000002 Vector144
+/home/rob/Projects/ChibiStudio/ChibiStudio_20/chibios_trunk/os/common/startup/ARMCMx/compilers/GCC/vectors.S:631    .text:0000000000000002 Vector148
+/home/rob/Projects/ChibiStudio/ChibiStudio_20/chibios_trunk/os/common/startup/ARMCMx/compilers/GCC/vectors.S:633    .text:0000000000000002 Vector14C
+/home/rob/Projects/ChibiStudio/ChibiStudio_20/chibios_trunk/os/common/startup/ARMCMx/compilers/GCC/vectors.S:635    .text:0000000000000002 Vector150
+/home/rob/Projects/ChibiStudio/ChibiStudio_20/chibios_trunk/os/common/startup/ARMCMx/compilers/GCC/vectors.S:637    .text:0000000000000002 Vector154
+/home/rob/Projects/ChibiStudio/ChibiStudio_20/chibios_trunk/os/common/startup/ARMCMx/compilers/GCC/vectors.S:639    .text:0000000000000002 Vector158
+/home/rob/Projects/ChibiStudio/ChibiStudio_20/chibios_trunk/os/common/startup/ARMCMx/compilers/GCC/vectors.S:641    .text:0000000000000002 Vector15C
+/home/rob/Projects/ChibiStudio/ChibiStudio_20/chibios_trunk/os/common/startup/ARMCMx/compilers/GCC/vectors.S:255    .text:0000000000000000 $t
+/home/rob/Projects/ChibiStudio/ChibiStudio_20/chibios_trunk/os/common/startup/ARMCMx/compilers/GCC/vectors.S:1025   .text:0000000000000006 _unhandled_exception
+/home/rob/Projects/ChibiStudio/ChibiStudio_20/chibios_trunk/os/common/startup/ARMCMx/compilers/GCC/vectors.S:1026   .text:0000000000000006 .stay
 
 UNDEFINED SYMBOLS
 __main_stack_end__
